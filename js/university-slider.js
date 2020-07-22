@@ -1,7 +1,6 @@
 $(document).ready(function () {
     $('.universities__slider').slick({
         infinite: true,
-        // centerPadding: '20px',
         slidesToShow: 6,
         slidesToScroll: 1,
         arrows: false,
@@ -14,8 +13,6 @@ $(document).ready(function () {
             {
                 breakpoint: 1024,
                 settings: {
-                    arrows: false,
-                    // centerMode: true,
                     centerPadding: '40px',
                     slidesToShow: 3
                 }
@@ -23,8 +20,6 @@ $(document).ready(function () {
             {
                 breakpoint: 480,
                 settings: {
-                    arrows: false,
-                    // centerMode: true,
                     centerPadding: '40px',
                     slidesToShow: 1
                 }

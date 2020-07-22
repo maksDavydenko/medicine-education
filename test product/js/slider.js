@@ -30,13 +30,13 @@ $(document).ready(function () {
 });
 
 
-// $('.sliderSlick').on('init', function (slick) {
-//     var active = $('.sliderSlick .slick-active');
-//     var first = active.eq(0);
-//     var last = active.eq(active.length - 1);
-//     first.addClass('test');
-//     last.addClass('test');
-// });
+$('.sliderSlick').on('init', function (slick) {
+    var active = $('.sliderSlick .slick-active');
+    var first = active.eq(0);
+    var last = active.eq(active.length - 1);
+    first.addClass('test');
+    last.addClass('test');
+});
 
 // $('.sliderSlick').on('afterChange', function (event, slick, currentSlide, nextSlide) {
 //     var active = $('.sliderSlick .slick-active');

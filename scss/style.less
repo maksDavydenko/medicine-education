@@ -250,3 +250,41 @@ color: #FFFFFF;
     border-radius: 50%;
     background: linear-gradient(188.21deg, #0066FF -8.5%, #00369C 51.46%, #0031C4 130.73%, #018FF6 130.74%);
 }
+
+
+@iterations: 10;
+
+// helper class, will never show up in resulting css
+// will be called as long the index is above 0
+.slider-line-point  (@index) when (@index > 0) {
+
+    // create the actual css selector, example will result in
+    // .myclass_30, .myclass_28, .... , .myclass_1
+    // (~".span@{index}") {
+    //     // your resulting css
+    //     width: percentage((@index - 1) *0.01);
+    // }
+    // @left: @index * @index - 1;
+    // .slider-line-point-@{index} {
+    //     left: ~"@{left}%";
+    // }
+
+    @left: 11.11% * (@index - 1);
+
+    .slider-line-point:nth-child(@{index}) {
+        left: ~"@{left}";
+    }
+
+
+   
+    // next iteration
+    .slider-line-point(@index - 1);
+}
+
+
+
+// .slider-line-point
+// end the loop when index is 0
+.slider-line-point (0) {};
+// "call" the loopingClass the first time with highest value
+.slider-line-point (@iterations);
