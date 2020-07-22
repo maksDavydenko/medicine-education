@@ -80,7 +80,9 @@ a {
   background: linear-gradient(180.08deg, #0066ff -8.5%, #00369c 51.46%, #0031c4 130.73%, #018ff6 130.74%);
 }
 .line--slide-item {
-  width: 80%;
+  width: 152.36px;
+  height: 3px;
+  margin-bottom: 20px;
 }
 .line::before {
   top: 0px;
@@ -113,23 +115,53 @@ a {
   border: 3px solid #fff;
   border-radius: 50%;
 }
-.universities-wrap {
+.line-circle--slide-item {
+  width: 12px;
+  height: 12px;
+}
+.universities {
   background-image: url('../img/photo/bg_section_1.png');
   background-repeat: no-repeat;
   background-position: center center;
 }
+.universities__slider {
+  display: flex;
+  padding: 0 132px;
+}
 .slider-item {
   border-radius: 12px;
-  max-width: 233px;
-  border: 1px solid Red;
+  border: 1px solid #ccc;
   border-bottom: 5px solid #00369C;
+  text-align: center;
+  font-family: Roboto;
+  margin: 0 20px;
+  background-color: #fff;
+}
+.slider-item__content {
+  padding: 8px 8px 17px 8px;
 }
 .slider-item__photo {
-  border-top-right-radius: 12px;
-  border-top-left-radius: 12px;
+  border-radius: 12px;
   display: block;
   max-width: 100%;
   object-fit: cover;
+  border-bottom: 3px solid #B8B8B8;
+}
+.slider-item__header {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #0031C4;
+  margin-bottom: 8px;
+}
+.slider-item__info {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #6F6F6F;
+  margin-bottom: 20px;
 }
 .slider-item__btn {
   padding: 6px 22px;
@@ -144,4 +176,23 @@ a {
   line-height: 15px;
   text-align: center;
   color: #FFFFFF;
+}
+.opacity {
+  opacity: 0.5;
+}
+.slider-line {
+  top: 60px;
+  position: relative;
+  width: 975px;
+  height: 3px;
+  background: linear-gradient(179.84deg, #f4f4f4 -0.37%, #b8b8b8 104.82%);
+}
+.slider-line-point {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: linear-gradient(188.21deg, #0066ff -8.5%, #00369c 51.46%, #0031c4 130.73%, #018ff6 130.74%);
 }
