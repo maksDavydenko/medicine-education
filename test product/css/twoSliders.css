@@ -1,0 +1,32 @@
+.slider__subitems{
+    width: 800px;
+    position: relative;
+    top: -100px;
+}
+
+.wrapper{
+    overflow: hidden;
+}
+
+.slider-item-wrap{
+    height: 100% ;
+    height: 80%;
+}
+
+.slider__block,
+.slider__nums{
+    /* position: relative; */
+    z-index: 999;
+}
+
+/* .slide-img{
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+} */
+
+@media screen and (max-width: 1000px){
+    .slider__subitems{
+        display: none
+    }
+}

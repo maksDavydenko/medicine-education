@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+.slider__images{
+    transition: 0.8s;
+    position: relative;
+    padding: 30px;
+    background-image: url('../img/tulane-medical-school\ 2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center center; */
+}
+
+.active-num{
+    color: greenyellow;
+}
+
+.slider__subitems{    
+    display: flex;
+    overflow-x: hidden;
+}
+
+.slider__track{
+    /* transition: 0.7s; */
+   display: flex;
+
+
+}
+
+.slider__block{
+    margin-top: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.wrap-slide{
+    width: 900px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 99999;
+}
+
+.slider__subitems-wrap{
+    /* overflow-x: hidden; */
+  
+    /* display: flex; */
+    /* justify-content: center; */
+    /* transition: 0.7s; */
+  
+}
+
+
+.slider__nums{
+    margin: 100px 0 400px;
+    position: relative;
+    z-index: 2;
+}
+
+.slider__subitems{
+  
+    display: flex;
+}
+
+.subitem{
+    flex-basis: 200px;
+    background-color: honeydew;
+    margin: 0 30px;
+    transition: 0.3s;
+
+}
+
+.subitem:hover{
+    background-color: slateblue;
+}
+
+.buttons-wrap{
+    margin-top: 40px;
+}
+
+
+.slider{
+    position: relative;
+    overflow: hidden;
+}
+.squere{
+    position: absolute;
+    /* width: 400px;
+    height: 300px; */
+    background-color: seagreen;
+   
+    opacity: 0.5;
+    width: 1355.16px;
+    height: 1263.78px;
+    left:-34%;
+    top: -30%;
+    z-index: 1;
+
+    border-radius: 45px;
+    transform: rotate(-45deg)
+}
+
+.slider-test-wrap{
+    position: relative;
+    top: -10px;
+}
+
+
+.test-itea{
+    width: 30px;
+    height: 50px;
+    background-color: tomato;
+    margin: 0px 30px;
+}
+
+
+@media screen and (max-width: 1000px){
+    .wrap-slide{
+        display: none
+    }
+}
