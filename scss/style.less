@@ -12,7 +12,6 @@ ul{
     list-style: none;
 }
 
-
 .container{
     max-width: 1080px;
     width: 90%;
@@ -33,10 +32,8 @@ a{
 
     &--sticky {
         background: #FFFFFF;
-opacity: 0.9;
-/* 2 */
-
-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+        opacity: 0.9;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
     }
 
     &-wrap{
@@ -66,12 +63,12 @@ box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
         color: #343434;
         transition: 0.3s;
     }
-    
 }
 
 .title-block {
     text-align: center;
     font-family: Roboto;
+
     &__header{
         font-style: normal;
         font-weight: bold;
@@ -85,10 +82,8 @@ box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
         font-size: 14px;
         line-height: 16px;
         color: #6F6F6F;
-    }
-
-   
-    }
+    }   
+}
 
 
     .line {
@@ -115,7 +110,6 @@ box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
             background-color: #fff;
             right: -3px;
             transform: rotate(45deg);
-            
         }
 
         &::after{
@@ -150,41 +144,44 @@ box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
 .universities {
     background-image: url('../img/photo/bg_section_1.png');
     background-repeat: no-repeat;
-    // background-size: cover;
     background-position: center center;
 
     &__slider {
         display: flex;
-        padding: 0 132px
+        align-items: center;
+        padding: 0 132px;
     }
 }
-
+.slider-item:hover >  .slider-item__btn{
+    background-color:#CE0000 !important;
+}
 
 .slider-item {
     border-radius: 12px;
-    // max-width: 233px;
     border: 1px solid #ccc;
     border-bottom: 5px solid #00369C;
     text-align: center;
     font-family: Roboto;
     margin: 0 20px;
     background-color: #fff;
+    transition: 0.3s;
+  
 
-&__content{
-    padding: 8px 8px 17px 8px;
-}
+    &:hover {
+        transform: scale(1.2);
+        border-bottom: 5px solid #CE0000;
+    }
+
+    &__content{
+        padding: 8px 8px 17px 8px;
+    }
 
     &__photo {
         border-radius: 12px;
-        // border-top-left-radius: 12px;
         display: block;
         max-width: 100%;
         object-fit: cover;
         border-bottom: 3px solid #B8B8B8;
-        // margin-bottom: 8px;
-
-        // background: linear-gradient(144.36deg, #F4F4F4 -0.37%, #B8B8B8 104.82%);;
-
     }
 
     &__header{
@@ -201,10 +198,8 @@ box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
-
         color: #6F6F6F;
         margin-bottom: 20px;
-
     }
 
     &__btn{
@@ -212,21 +207,36 @@ box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
     }
 }
 
+.slick-list {
+    margin: 50px 0;
+    overflow: hidden;
+}
 .btn {
-    // display: block;
-    background: linear-gradient(181.56deg, #0066FF -8.5%, #00369C 51.46%, #0031C4 130.73%, #018FF6 130.74%);
-border-radius: 18.5px;
+    background: linear-gradient(181.56deg, #0066FF -8.5%, #00369C 51.46%,
+     #0031C4 130.73%, #018FF6 130.74%);
+    border-radius: 18.5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 13px;
-line-height: 15px;
-text-align: center;
+    &--posive {
+        background: linear-gradient(165.36deg, #F4F4F4 -0.37%, #B8B8B8 104.82%);
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 18.5px;
+       
+        color:  #0031C4;
+    }
 
-color: #FFFFFF;
+    &--university {
+        padding: 9px 20px;
+        font-size: 20px;
+        border: none;
 
-
+    }
 }
 
 .opacity {
@@ -234,11 +244,15 @@ color: #FFFFFF;
 }
 
 .slider-line {
-    top: 60px;
+   
     position: relative;
-    width: 975px;
+    width: 80%;
     height: 3px;
     background: linear-gradient(179.84deg, #F4F4F4 -0.37%, #B8B8B8 104.82%);
+}
+
+.slick-track {
+    padding: 50px 0;
 }
 
 .slider-line-point {
@@ -248,43 +262,123 @@ color: #FFFFFF;
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: linear-gradient(188.21deg, #0066FF -8.5%, #00369C 51.46%, #0031C4 130.73%, #018FF6 130.74%);
+    background: linear-gradient(188.21deg, #0066FF -8.5%, #00369C 51.46%,
+     #0031C4 130.73%, #018FF6 130.74%);
 }
 
 
 @iterations: 10;
 
-// helper class, will never show up in resulting css
-// will be called as long the index is above 0
 .slider-line-point  (@index) when (@index > 0) {
-
-    // create the actual css selector, example will result in
-    // .myclass_30, .myclass_28, .... , .myclass_1
-    // (~".span@{index}") {
-    //     // your resulting css
-    //     width: percentage((@index - 1) *0.01);
-    // }
-    // @left: @index * @index - 1;
-    // .slider-line-point-@{index} {
-    //     left: ~"@{left}%";
-    // }
-
+  
     @left: 11.11% * (@index - 1);
 
     .slider-line-point:nth-child(@{index}) {
         left: ~"@{left}";
     }
-
-
-   
-    // next iteration
     .slider-line-point(@index - 1);
+}
+
+.slider-line-point (0) {};
+.slider-line-point (@iterations);
+
+.slider-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-wrap {
+    display: flex;
+}
+.slider-nav-btn {
+    border: none;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--next {
+        margin-left: 15px;
+    }
+}
+
+.btn--university {
+    margin-right: 22px;
+    &:last-of-type {
+        margin-left: auto;
+        margin-right: 0;
+
+    }
+}
+.universities-navigations {
+    display: flex;
+   
+    // &:last-child {
+    // }
+    // justify-content: space-between;
+}
+
+.admission-block-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.admission-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.admission-form {
+    padding: 18px 26px 22px 26px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(132.24deg, #F4F4F4 -0.37%, #B8B8B8 104.82%);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+
+    &__header {
+        font-size: 28px;
+        line-height: 133.3%;
+        /* or 37px */
+        font-style: bold;
+        text-align: center;
+        
+        /* Linear */
+        
+        color: #0031C4;
+        
+    }
+
+    &__subtitle {
+        font-size: 10px;
+        line-height: 12px;
+        text-align: justify;
+        color: #737373;
+    }
+
+    &__input {
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+        font-size: 16px;
+        line-height: 19px;
+        color: #737373;
+        opacity: 0.9;
+        padding: 10px 13px;
+        border-radius: 10px;
+        border: none;
+        margin-bottom: 28px;
+    }
 }
 
 
 
-// .slider-line-point
-// end the loop when index is 0
-.slider-line-point (0) {};
-// "call" the loopingClass the first time with highest value
-.slider-line-point (@iterations);
+
+
+
+
+
+
+
+
+
+

@@ -28,7 +28,6 @@ a {
 .header--sticky {
   background: #FFFFFF;
   opacity: 0.9;
-  /* 2 */
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
 }
 .header-wrap {
@@ -126,7 +125,11 @@ a {
 }
 .universities__slider {
   display: flex;
+  align-items: center;
   padding: 0 132px;
+}
+.slider-item:hover > .slider-item__btn {
+  background-color: #CE0000 !important;
 }
 .slider-item {
   border-radius: 12px;
@@ -136,6 +139,11 @@ a {
   font-family: Roboto;
   margin: 0 20px;
   background-color: #fff;
+  transition: 0.3s;
+}
+.slider-item:hover {
+  transform: scale(1.2);
+  border-bottom: 5px solid #CE0000;
 }
 .slider-item__content {
   padding: 8px 8px 17px 8px;
@@ -166,6 +174,10 @@ a {
 .slider-item__btn {
   padding: 6px 22px;
 }
+.slick-list {
+  margin: 50px 0;
+  overflow: hidden;
+}
 .btn {
   background: linear-gradient(181.56deg, #0066ff -8.5%, #00369c 51.46%, #0031c4 130.73%, #018ff6 130.74%);
   border-radius: 18.5px;
@@ -177,15 +189,28 @@ a {
   text-align: center;
   color: #FFFFFF;
 }
+.btn--posive {
+  background: linear-gradient(165.36deg, #f4f4f4 -0.37%, #b8b8b8 104.82%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 18.5px;
+  color: #0031C4;
+}
+.btn--university {
+  padding: 9px 20px;
+  font-size: 20px;
+  border: none;
+}
 .opacity {
   opacity: 0.5;
 }
 .slider-line {
-  top: 60px;
   position: relative;
-  width: 975px;
+  width: 80%;
   height: 3px;
   background: linear-gradient(179.84deg, #f4f4f4 -0.37%, #b8b8b8 104.82%);
+}
+.slick-track {
+  padding: 50px 0;
 }
 .slider-line-point {
   top: 50%;
@@ -225,4 +250,74 @@ a {
 }
 .slider-line-point:nth-child(1) {
   left: 0%;
+}
+.slider-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn-wrap {
+  display: flex;
+}
+.slider-nav-btn {
+  border: none;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-nav-btn--next {
+  margin-left: 15px;
+}
+.btn--university {
+  margin-right: 22px;
+}
+.btn--university:last-of-type {
+  margin-left: auto;
+  margin-right: 0;
+}
+.universities-navigations {
+  display: flex;
+}
+.admission-block-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.admission-item {
+  display: flex;
+  justify-content: space-between;
+}
+.admission-form {
+  padding: 18px 26px 22px 26px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(132.24deg, #f4f4f4 -0.37%, #b8b8b8 104.82%);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+}
+.admission-form__header {
+  font-size: 28px;
+  line-height: 133.3%;
+  /* or 37px */
+  font-style: bold;
+  text-align: center;
+  /* Linear */
+  color: #0031C4;
+}
+.admission-form__subtitle {
+  font-size: 10px;
+  line-height: 12px;
+  text-align: justify;
+  color: #737373;
+}
+.admission-form__input {
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  line-height: 19px;
+  color: #737373;
+  opacity: 0.9;
+  padding: 10px 13px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 28px;
 }
