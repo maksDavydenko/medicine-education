@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('.universities__slider').slick({
+    $('.courses__slider').slick({
         infinite: true,
         slidesToShow: 6,
         slidesToScroll: 1,
@@ -53,8 +53,8 @@ $(document).ready(function () {
 
 //suctom buttons
 
-$('.js-university-slider__next-btn').on('click', function () {
-    $('.universities__slider').slick('slickNext');
+$('.js-courses-slider__next-btn').on('click', function () {
+    $('.courses__slider').slick('slickNext');
 
     // var num = $('.item-num-slide');
     // num.removeClass('item-num-slide_active');
@@ -72,8 +72,8 @@ $('.js-university-slider__next-btn').on('click', function () {
 
 
 
-$('.js-university-slider__prev-btn').on('click', function () {
-    $('.universities__slider').slick('slickPrev');
+$('.js-courses-slider__prev-btn').on('click', function () {
+    $('.courses__slider').slick('slickPrev');
 
     // var num = $('.item-num-slide');
     // num.removeClass('item-num-slide_active');
@@ -156,19 +156,20 @@ $('.js-university-slider__prev-btn').on('click', function () {
 // });
 
 
-$('.universities__slider').on('init', function (slick) {
-    var active = $('.universities__slider .slick-active');
+$('.courses__slider').on('init', function (slick) {
+    var active = $('.courses__slider .slick-active');
     var first = active.eq(0);
     var last = active.eq(active.length - 1);
     first.addClass('opacity');
     last.addClass('opacity');
 });
 
-$('.universities__slider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
-    var active = $('.universities__slider .slick-active');
+$('.courses__slider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
+    var active = $('.courses__slider .slick-active');
     var first = active.eq(0);
     var last = active.eq(active.length - 1);
     active.removeClass('opacity')
     first.addClass('opacity');
     last.addClass('opacity');
 });
+
