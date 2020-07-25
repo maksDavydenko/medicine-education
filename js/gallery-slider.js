@@ -12,6 +12,12 @@ $(document).ready(function () {
 
         responsive: [
             {
+                breakpoint: 1560,
+                settings: {
+                    slidesToShow: 5
+                }
+            },
+            {
                 breakpoint: 1024,
                 settings: {
                     centerPadding: '40px',
