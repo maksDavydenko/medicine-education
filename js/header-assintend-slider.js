@@ -5,9 +5,9 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: false,
         speed: 500,
-        adaptiveHeight: true,
-        autoplay: true,
-        autoplaySpeed: 5000,
+        // adaptiveHeight: true,
+        // autoplay: true,
+        // autoplaySpeed: 5000,
 
 
         responsive: [
@@ -59,8 +59,8 @@ $(document).ready(function () {
 
 //suctom buttons
 
-// $('.js-gallery-slider__next-btn').on('click', function () {
-//     $('.gallery__slider').slick('slickNext');
+$('.js-header-slide-prev').on('click', function () {
+    $('.header-assistent-slider').slick('slickPrev');
 
     // var num = $('.item-num-slide');
     // num.removeClass('item-num-slide_active');
@@ -74,13 +74,11 @@ $(document).ready(function () {
     // console.log(slider)
 
 
-// });
+});
 
 
-
-// $('.js-gallery-slider__prev-btn').on('click', function () {
-//     $('.gallery__slider').slick('slickPrev');
-
+$('.js-header-slide-next').on('click', function () {
+    $('.header-assistent-slider').slick('slickNext');
     // var num = $('.item-num-slide');
     // num.removeClass('item-num-slide_active');
 
@@ -100,7 +98,7 @@ $(document).ready(function () {
     // first.addClass('test');
     // last.addClass('test');
 
-// });
+});
 
 
 // $('.sliderSlick').on('afterChange', function (event, slick, currentSlide, nextSlide) {
