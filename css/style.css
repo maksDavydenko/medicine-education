@@ -70,10 +70,10 @@ a {
   display: flex;
 }
 .connection-info .connection-info__btn {
-  padding: 12px 20px;
+  padding: 12px 26px;
   margin-left: auto;
   background: linear-gradient(186.68deg, #ff0000 9.11%, #ce0000 98.12%);
-  border-radius: 17.5px;
+  border-radius: 30px;
   font-weight: bold;
   font-size: 20px;
 }
@@ -335,11 +335,15 @@ a {
   text-align: center;
   font-family: Roboto;
 }
+.title-block__img {
+  margin-bottom: 30px;
+}
 .title-block__header {
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
   color: #0031C4;
+  margin-bottom: 7px;
 }
 .title-block__info {
   font-style: normal;
@@ -348,19 +352,19 @@ a {
   line-height: 16px;
   color: #6F6F6F;
 }
-l.line {
+.line {
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto 16px;
   height: 5px;
   width: 542px;
   background: linear-gradient(180.08deg, #0066ff -8.5%, #00369c 51.46%, #0031c4 130.73%, #018ff6 130.74%);
 }
-l.line--slide-item {
+.line--slide-item {
   width: 152.36px;
   height: 3px;
   margin-bottom: 20px;
 }
-l.line::before {
+.line::before {
   top: 0px;
   content: "";
   position: absolute;
@@ -370,7 +374,7 @@ l.line::before {
   right: -3px;
   transform: rotate(45deg);
 }
-l.line::after {
+.line::after {
   top: 0px;
   content: "";
   position: absolute;
@@ -380,7 +384,7 @@ l.line::after {
   left: -3px;
   transform: rotate(-45deg);
 }
-l.line-circle {
+.line-circle {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -391,12 +395,12 @@ l.line-circle {
   border: 3px solid #fff;
   border-radius: 50%;
 }
-l.line-circle--slide-item {
+.line-circle--slide-item {
   width: 12px;
   height: 12px;
 }
 .universities {
-  margin-top: 140px;
+  margin: 140px 0 40px;
   background-image: url('../img/photo/bg_section_1.png');
   background-repeat: no-repeat;
   background-position: center center;
@@ -406,7 +410,7 @@ l.line-circle--slide-item {
   align-items: center;
 }
 .universities__slider .slick-track {
-  padding: 50px 0;
+  padding: 45px 0;
 }
 .slider-item:hover > .slider-item__btn {
   background-color: #CE0000 !important;
@@ -456,10 +460,6 @@ l.line-circle--slide-item {
 }
 .slider-item__btn {
   padding: 6px 22px;
-}
-.slick-list {
-  margin: 50px 0;
-  overflow: hidden;
 }
 .btn {
   background: linear-gradient(181.56deg, #0066ff -8.5%, #00369c 51.46%, #0031c4 130.73%, #018ff6 130.74%);
@@ -540,6 +540,7 @@ l.line-circle--slide-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 28px;
 }
 .btn-wrap {
   display: flex;
@@ -569,9 +570,17 @@ l.line-circle--slide-item {
   display: flex;
   justify-content: space-between;
 }
-.admission-item {
+.steps-wrap {
   display: flex;
   justify-content: space-between;
+}
+.admission-item-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.admission-item {
+  width: 65%;
+  max-width: 730px;
 }
 .admission-form {
   padding: 18px 26px 22px 26px;
@@ -579,6 +588,9 @@ l.line-circle--slide-item {
   flex-direction: column;
   background: linear-gradient(132.24deg, #f4f4f4 -0.37%, #b8b8b8 104.82%);
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+}
+.admission-form--in-block {
+  width: 33%;
 }
 .admission-form__header {
   font-size: 28px;
@@ -605,9 +617,96 @@ l.line-circle--slide-item {
   outline: none;
   margin-bottom: 28px;
 }
+.step-block {
+  flex-basis: 155px;
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.step-block__icon {
+  display: block;
+  justify-content: center;
+  margin: 0 auto 10px;
+  position: relative;
+}
+.step-block .tringle-decorate {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+  border: 55px solid transparent;
+  border-top: 15px solid #fff;
+}
+.step-block__header {
+  position: relative;
+  padding: 20px 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+  background: linear-gradient(183.02deg, #0066ff -8.5%, #00369c 51.46%, #0031c4 130.73%, #018ff6 130.74%);
+  overflow: hidden;
+}
+.step-block__header::after {
+  content: "";
+  position: absolute;
+  width: 55%;
+  height: 30px;
+  left: 50%;
+  background-color: #fff;
+  border-top: 3px solid red;
+  bottom: -15px;
+  transform: rotate(-20deg);
+}
+.step-block__header::before {
+  content: "";
+  position: absolute;
+  width: 55%;
+  height: 30px;
+  left: -12px;
+  background-color: #fff;
+  border-top: 3px solid red;
+  bottom: -14px;
+  transform: rotate(20deg);
+}
+.step-block__subtitle {
+  margin: 13px 0 6px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #00369C;
+}
+.step-block__line {
+  width: 113px;
+  height: 2px;
+  margin: auto;
+  background: linear-gradient(180.36deg, #018ff6 -6.36%, #00369c 93.4%);
+  border-radius: 18.5px;
+  border: none;
+}
+.step-block__info {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #737373;
+  padding: 6px 6px 30px 6px;
+}
 .academic-header {
   padding: 24px 0;
   background: linear-gradient(180.69deg, #0066ff -8.5%, #00369c 51.46%, #0031c4 130.73%, #018ff6 130.74%);
+}
+.academic-header__icon {
+  margin-right: 8px;
 }
 .academic-header__title {
   font-family: Raleway;
@@ -618,19 +717,26 @@ l.line-circle--slide-item {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin-right: 20px;
 }
 .academic-header__content {
   display: flex;
   align-items: center;
 }
+.courses {
+  margin: 35px 0 65px;
+}
+.courses .slick-track {
+  padding: 45px 0;
+}
 .academic {
-  margin-top: 20px;
   color: #FFFFFF;
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
-  align-items: center;
 }
 .academic__years {
+  padding: 0 8px;
   border: 2px solid #fff;
   font-family: Raleway;
   font-style: normal;
@@ -639,9 +745,7 @@ l.line-circle--slide-item {
   text-transform: uppercase;
 }
 .academic__title {
-  margin-bottom: 20px;
   font-size: 25px;
-  line-height: 54px;
   font-style: normal;
   font-weight: bold;
   letter-spacing: 0.025em;
@@ -715,6 +819,9 @@ l.line-circle--slide-item {
   height: 2px;
   background: linear-gradient(180.45deg, #ff0000 9.11%, #ce0000 98.12%);
   border-radius: 18.5px;
+}
+.gallery .slick-track {
+  padding: 40px 0 35px;
 }
 .gallery-slider-item {
   margin: 0px 28px;
