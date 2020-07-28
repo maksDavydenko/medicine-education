@@ -17,10 +17,16 @@ $(document).ready(function () {
                     slidesToShow: 5
                 }
             },
+
+            {
+                breakpoint: 1300,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
             {
                 breakpoint: 1024,
                 settings: {
-                    centerPadding: '40px',
                     slidesToShow: 3
                 }
             },

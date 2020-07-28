@@ -162,8 +162,8 @@ a{
     position: relative;
     z-index: 2;
     font-family: Roboto;
-    background: url('../img/photo/slider\ business.png');
-    background-color: #0031C4;
+    // background: url('../img/photo/slider\ business.png');
+    // background-color: #0031C4;
     color: #FFFFFF;
     
 
@@ -227,6 +227,15 @@ a{
         position: absolute;
     }
 }
+
+
+.header-slider-absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 .slider-header-btn {
     background-color: transparent;
     border: none;
@@ -254,7 +263,7 @@ a{
 }
 
 .square-decorate {
-    z-index: -1;
+    z-index: 99;
     position: absolute;
     height: 130%;
     width: 74%;
@@ -494,7 +503,7 @@ a{
     background-color:#CE0000 !important;
 }
 .slider-wrap {
-    padding: 0 132px;
+    padding: 0 6.7%;
 }
 
 .slider-item {
@@ -560,6 +569,7 @@ a{
     line-height: 15px;
     text-align: center;
     color: #FFFFFF;
+    outline: none;
 
     &--header-slider {
         padding: 7.5px 40px;
