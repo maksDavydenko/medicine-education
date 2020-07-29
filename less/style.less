@@ -160,13 +160,14 @@ a{
 .header-slider {
     overflow: hidden;
     position: relative;
+    background-image: url(../img/photo/computer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     z-index: 2;
     font-family: Roboto;
-    // background: url('../img/photo/slider\ business.png');
-    // background-color: #0031C4;
     color: #FFFFFF;
     
-
     &__content {
         position: relative;
     }
@@ -263,17 +264,36 @@ a{
 }
 
 .square-decorate {
-    z-index: 99;
+    // z-index: 99;
     position: absolute;
-    height: 130%;
-    width: 74%;
-    background: linear-gradient(274.44deg, #0066ff -9.04%, #00369c 41.93%);
+    height: 150%;
+    height: 150%;
+    width: 84%;
     border-radius: 28px;
-    opacity: 0.9;
-    transform: rotate(138deg);
-    border: 47px solid rgba(0, 150, 235, 0.4);
-    left: -21%;
+    transform: rotate(135deg);
+    background: rgba(0, 150, 235, 0.7);
+    left: -33%;
     top: -20%;
+
+    &__inner {
+        position: absolute;
+        height: 93.6%;
+        width: 95%;
+        background: linear-gradient(274.44deg, #0066ff -9.04%, #00369c 41.93%);
+        border-radius: 28px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        // opacity: 0.9;
+        // transform: rotate(138deg);
+        // border: 47px solid rgba(0, 150, 235, 0.7);
+    
+        // background: rgba(0, 150, 235, 0.7);
+        // left: -21%;
+        // top: -20%;
+    }
 }
 
 
@@ -570,6 +590,7 @@ a{
     text-align: center;
     color: #FFFFFF;
     outline: none;
+    border: none;
 
     &--header-slider {
         padding: 7.5px 40px;
@@ -674,17 +695,20 @@ a{
 }
 
 .steps-wrap{
+    margin-top: 26px;
     display: flex;
     justify-content: space-between;
     // width: 67%;
 }
 
 .admission-item-wrap {
+  
     display: flex;
     justify-content: space-between;
 }
 
 .admission-item {
+    margin-top: 36px;
     width: 65%;
     max-width: 730px;
 }
@@ -701,10 +725,9 @@ a{
     }
 
     &__header {
-        font-size: 28px;
+        font-size: 26px;
         line-height: 133.3%;
-        font-style: bold;
-        text-align: center;
+        font-weight: 800;
         color: #0031C4;
         
     }
@@ -714,6 +737,7 @@ a{
         line-height: 12px;
         text-align: justify;
         color: #737373;
+        margin-bottom: 10px;
     }
 
     &__input {
@@ -727,6 +751,19 @@ a{
         border: none;
         outline:none;
         margin-bottom: 28px;
+    }
+    &__btn {
+        // display: inline;
+        width: 145px;
+        margin: auto;
+        font-size: 22px;
+        padding: 8px 47px;
+        border-radius: 30px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        font-style: normal;
+        font-weight: normal
+        
     }
 }
 
@@ -835,6 +872,7 @@ a{
 
 .academic-header {
     padding: 24px 0;
+    margin-bottom: 50px;
     background: linear-gradient(180.69deg, #0066FF -8.5%, #00369C 51.46%, #0031C4 130.73%, #018FF6 130.74%);
     &__icon {
         margin-right: 8px;
@@ -936,11 +974,12 @@ a{
 .benefits {
     background: url('../img/photo/benefits.png');
     background-repeat: no-repeat;
-    // background-size: cover;
     background-position: center center;
+    margin-bottom: 75px;
 }
 
 .benefits-items {
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -1016,6 +1055,7 @@ a{
 .feedback-slider {
     border: 6px solid #0031C4;
     max-width: 935px;
+    margin: 0 auto;
     position: relative;
     .slick-list {
         margin: 0;
@@ -1077,29 +1117,63 @@ a{
 
 .footer {
     // padding-top: 65px;
-    // position: relative;
     background: linear-gradient(177.39deg, #0066FF -13.52%, #00318E 32.41%);
+position: relative;
+&::before {
+    content: "";
+    z-index: -999999;
+position: absolute;
+top: -30px;
+left: 50%;
+transform: translate(-50%, 0);
+
+width: 479.5px;
+height: 76.58px;
+border-radius: 30px;
+padding: 12px 90px 17px;
+
+background: #004ecb; 
+
+}
+// .footer-decarate {
+//     z-index: -999999;
+//     position: absolute;
+//     top: -30px;
+//     left: 50%;
+//     transform: translate(-50%, 0);
+    
+//     width: 479.5px;
+//     height: 76.58px;
+//     border-radius: 30px;
+//     padding: 12px 90px 17px;
+    
+//     background: #004ecb
+// }
 }
 .telephones {
+    top: -18px;
     position: relative;
+    margin: 0 auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: inline-flex;
+    // display: flex;
+    justify-content: center;
+    // position: absolute;
     // display: inline-flex;
     // top: -30px;
     // left: 50%;
     // transform: translate(-50%, 0);
-    // background:#0052d3;
-    // background: #004ecb; 
+
+   
     // z-index: -1;
 
-    border-radius: 30px;
-    padding: 12px 90px 17px;
+    // border-radius: 30px;
+    // padding: 12px 90px 17px;
 
-    &::before{
-        content: "";
-        width: 100px;
-        height: 100px;
-        //  background: #004ecb; 
-        background-color: red;
-    }
+ // background: #004ecb; 
+   
+   
    
     &__inner {
         display: flex;
@@ -1108,10 +1182,17 @@ a{
     }
 
     &__link {
+        position: relative;
+        z-index: 99;
         font-size: 23px;
         color: #FFFFFF;
         
     }
+
+&__icon{
+    position: relative;
+    z-index: 99;
+}
 }
 
 .upBtn {
@@ -1119,17 +1200,18 @@ a{
     bottom: 0;
     display: none;
     justify-content: center;
+    padding: 20px;
     cursor: pointer;
   
     .upArrow {
         position: relative;
         display: block;
-        margin-bottom: 20px;
         animation: animat 1s infinite;
     }
 }
 
 .form-title {
+    margin-bottom: 30px;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -1154,6 +1236,35 @@ a{
         border: 1px solid #BDBDBD;
         box-sizing: border-box;
         border-radius: 30px; 
+
+        &--name {
+            display: block;
+            flex-basis: 235px;
+            width: 235px;
+
+        }
+        &--country {
+            flex-basis: 125px;
+            width: 125px;
+        }
+
+        &--phone {
+            flex-basis: 195px;
+            width: 195px;
+        }
+
+        &--email {
+            flex-basis: 216px;
+            width: 216px;
+        }
+    }
+
+    &__btn {
+        padding: 8px 45px;
+        border-radius: 30px;
+        background: linear-gradient(185.19deg, #FF0000 9.11%, #CE0000 98.12%);
+        font-style: normal;
+        font-size: 22px;
     }
   
 }
