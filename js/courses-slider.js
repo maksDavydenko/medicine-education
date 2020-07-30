@@ -8,6 +8,8 @@ $(document).ready(function () {
         adaptiveHeight: true,
         // autoplay: true,
         // autoplaySpeed: 5000,
+        dots: true,
+        appendDots: $('.js-slider-line-courses'),
 
 
         responsive: [
@@ -59,45 +61,45 @@ $(document).ready(function () {
 
 //suctom buttons
 
-let currentSlideCourses = 1;
+// let currentSlideCourses = 1;
 
-const slidersCourses = document.querySelectorAll('.js-slider-item-courses');
-const sliderLineCourses = document.querySelector('.js-slider-line-courses');
+// const slidersCourses = document.querySelectorAll('.js-slider-item-courses');
+// const sliderLineCourses = document.querySelector('.js-slider-line-courses');
 
-const fragmentCourses = new DocumentFragment();
+// const fragmentCourses = new DocumentFragment();
 
-const leftPosCourses = 100 / (slidersCourses.length - 1); // left from 0% to 100%
-console.log('slidersCourses', slidersCourses.length)
+// const leftPosCourses = 100 / (slidersCourses.length - 1); // left from 0% to 100%
+// console.log('slidersCourses', slidersCourses.length)
 
 
-for (let i = 0; i < slidersCourses.length; i++) {
-    const li = document.createElement('li');
-    if (i === 0) {
-        li.classList.add('slider-line-point--active');
-    }
-    li.style.left = leftPosCourses * i + '%';
-    li.classList.add('slider-line-point', 'slider-line-point--courses')
-    fragmentCourses.append(li)
-}
+// for (let i = 0; i < slidersCourses.length; i++) {
+//     const li = document.createElement('li');
+//     if (i === 0) {
+//         li.classList.add('slider-line-point--active');
+//     }
+//     li.style.left = leftPosCourses * i + '%';
+//     li.classList.add('slider-line-point', 'slider-line-point--courses')
+//     fragmentCourses.append(li)
+// }
 
-sliderLineCourses.append(fragmentCourses)
+// sliderLineCourses.append(fragmentCourses)
 
-const sliderLinePointsCourses = document.querySelectorAll('.slider-line-point--courses')
+// const sliderLinePointsCourses = document.querySelectorAll('.slider-line-point--courses')
 
 
 $('.js-courses-slider__next-btn').on('click', function () {
     $('.courses__slider').slick('slickNext');
 
 
-    currentSlideCourses++;
+    // currentSlideCourses++;
 
-    currentSlideCourses = currentSlideCourses > slidersCourses.length ? 1 : currentSlideCourses
+    // currentSlideCourses = currentSlideCourses > slidersCourses.length ? 1 : currentSlideCourses
 
-    sliderLinePointsCourses.forEach(i => {
-        i.classList.remove('slider-line-point--active')
-    })
+    // sliderLinePointsCourses.forEach(i => {
+    //     i.classList.remove('slider-line-point--active')
+    // })
 
-    sliderLinePointsCourses[currentSlideCourses - 1].classList.add('slider-line-point--active');
+    // sliderLinePointsCourses[currentSlideCourses - 1].classList.add('slider-line-point--active');
     // var num = $('.item-num-slide');
     // num.removeClass('item-num-slide_active');
 
@@ -117,15 +119,15 @@ $('.js-courses-slider__next-btn').on('click', function () {
 $('.js-courses-slider__prev-btn').on('click', function () {
     $('.courses__slider').slick('slickPrev');
 
-    currentSlideCourses--;
+    // currentSlideCourses--;
 
-    currentSlideCourses = currentSlideCourses < 1 ? slidersCourses.length : currentSlideCourses;
+    // currentSlideCourses = currentSlideCourses < 1 ? slidersCourses.length : currentSlideCourses;
 
-    sliderLinePointsCourses.forEach(i => {
-        i.classList.remove('slider-line-point--active')
-    })
+    // sliderLinePointsCourses.forEach(i => {
+    //     i.classList.remove('slider-line-point--active')
+    // })
 
-    sliderLinePointsCourses[currentSlideCourses - 1].classList.add('slider-line-point--active');
+    // sliderLinePointsCourses[currentSlideCourses - 1].classList.add('slider-line-point--active');
 
     // var num = $('.item-num-slide');
     // num.removeClass('item-num-slide_active');
