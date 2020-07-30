@@ -1,51 +1,51 @@
-// $(document).ready(function () {
-//     $('.header-slider-wrap').slick({
-//         infinite: true,
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//         arrows: false,
-//         speed: 500,
-//         fade: true,
-//         // adaptiveHeight: true,
-//         // autoplay: true,
-//         // autoplaySpeed: 5000,
+$(document).ready(function () {
+    $('.header-slider-wrap').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        speed: 500,
+        fade: true,
+        // adaptiveHeight: true,
+        // autoplay: true,
+        // autoplaySpeed: 5000,
 
 
-//         responsive: [
-//             {
-//                 breakpoint: 1560,
-//                 settings: {
-//                     slidesToShow: 1
-//                 }
-//             },
-//             // {
-//             //     breakpoint: 1024,
-//             //     settings: {
-//             //         centerPadding: '40px',
-//             //         slidesToShow: 3
-//             //     }
-//             // },
-//             // {
-//             //     breakpoint: 480,
-//             //     settings: {
-//             //         centerPadding: '40px',
-//             //         slidesToShow: 1
-//             //     }
-//             // }
-//         ]
-//     });
-// });
+        //         responsive: [
+        //             {
+        //                 breakpoint: 1560,
+        //                 settings: {
+        //                     slidesToShow: 1
+        //                 }
+        //             },
+        //             // {
+        //             //     breakpoint: 1024,
+        //             //     settings: {
+        //             //         centerPadding: '40px',
+        //             //         slidesToShow: 3
+        //             //     }
+        //             // },
+        //             // {
+        //             //     breakpoint: 480,
+        //             //     settings: {
+        //             //         centerPadding: '40px',
+        //             //         slidesToShow: 1
+        //             //     }
+        //             // }
+        //         ]
+    });
+});
 
 
-// $('.js-header-slide-prev').on('click', function () {
-//     $('.header-slider-wrap').slick('slickPrev');
-// });
+$('.js-header-slide-prev').on('click', function () {
+    $('.header-slider-wrap').slick('slickPrev');
+});
 
 
-// $('.js-header-slide-next').on('click', function () {
-//     $('.header-slider-wrap').slick('slickNext');
+$('.js-header-slide-next').on('click', function () {
+    $('.header-slider-wrap').slick('slickNext');
 
-// });
+});
 
 
 

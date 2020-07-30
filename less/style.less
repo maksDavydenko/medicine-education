@@ -160,15 +160,18 @@ a{
 .header-slider {
     overflow: hidden;
     position: relative;
-    background-image: url(../img/photo/slider\ business.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    // background-image: url(../img/photo/slider\ business.png);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center center;
     z-index: 2;
     font-family: Roboto;
     color: #FFFFFF;
     border-bottom: 5px solid #B8B8B8;
 
+    &__img-wrap {
+        height: 100%;
+    }
     .arrow-decorate {
         position: absolute;
         top: -60px;
@@ -263,7 +266,45 @@ transform: matrix(0.71, -0.69, 0.72, 0.71, 0, 0);
 }
 
 
+.btn {
+    background: linear-gradient(181.56deg, #0066FF -8.5%, #00369C 51.46%,
+     #0031C4 130.73%, #018FF6 130.74%);
+    border-radius: 18.5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
 
+    &--header-slider {
+        padding: 7.5px 40px;
+        background: linear-gradient(185.59deg, #FF0000 9.11%, #CE0000 98.12%);
+        border-radius: 18.5px;
+    }
+
+    &--posive {
+        background: linear-gradient(165.36deg, #F4F4F4 -0.37%, #B8B8B8 104.82%);
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 18.5px;
+       
+        color:  #0031C4;
+    }
+
+    &--university {
+        padding: 9px 20px;
+        font-size: 20px;
+        border: none;
+    }
+
+}
+
+.opacity {
+    opacity: 0.5;
+}
 
 .header-slider-absolute {
     position: absolute;
@@ -576,11 +617,13 @@ transform: matrix(0.71, -0.69, 0.72, 0.71, 0, 0);
       
     }
 }
-.slider-item:hover >  .slider-item__btn{
-    background-color:#CE0000 !important;
-}
+
+
 .slider-wrap {
     padding: 0 6.7%;
+}
+.slick-slide:hover .btn {
+    background:#CE0000;
 }
 
 .slider-item {
@@ -599,6 +642,13 @@ transform: matrix(0.71, -0.69, 0.72, 0.71, 0, 0);
         border-bottom: 5px solid #CE0000;
     }
 
+    // :hover .btn{
+    //     background:#CE0000 !important;
+    // }
+
+    // :hover > a{
+    //     background-color:#CE0000 !important;
+    // }
     &__content{
         padding: 8px 8px 17px 8px;
     }
@@ -609,6 +659,9 @@ transform: matrix(0.71, -0.69, 0.72, 0.71, 0, 0);
         max-width: 100%;
         object-fit: cover;
         border-bottom: 3px solid #B8B8B8;
+        :hover .btn{
+            background:#CE0000;
+        }
     }
 
     &__header{
@@ -635,46 +688,7 @@ transform: matrix(0.71, -0.69, 0.72, 0.71, 0, 0);
 }
 
 
-.btn {
-    background: linear-gradient(181.56deg, #0066FF -8.5%, #00369C 51.46%,
-     #0031C4 130.73%, #018FF6 130.74%);
-    border-radius: 18.5px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 15px;
-    text-align: center;
-    color: #FFFFFF;
-    outline: none;
-    border: none;
 
-    &--header-slider {
-        padding: 7.5px 40px;
-        background: linear-gradient(185.59deg, #FF0000 9.11%, #CE0000 98.12%);
-        border-radius: 18.5px;
-    }
-
-    &--posive {
-        background: linear-gradient(165.36deg, #F4F4F4 -0.37%, #B8B8B8 104.82%);
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-        border-radius: 18.5px;
-       
-        color:  #0031C4;
-    }
-
-    &--university {
-        padding: 9px 20px;
-        font-size: 20px;
-        border: none;
-    }
-
-
-}
-
-.opacity {
-    opacity: 0.5;
-}
 
 .slider-line {
     position: relative;

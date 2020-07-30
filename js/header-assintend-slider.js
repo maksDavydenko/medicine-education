@@ -106,7 +106,7 @@ function changeContent() {
     // info.textContent = data[curSlide - 1].info;
 
     // link.href = data[curSlide - 1].link;
-    headerSlider.style.backgroundImage = data[curSlide - 1].img;
+    // headerSlider.style.backgroundImage = data[curSlide - 1].img;
     console.log(title)
 
 

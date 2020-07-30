@@ -133,14 +133,13 @@ a {
 .header-slider {
   overflow: hidden;
   position: relative;
-  background-image: url(../img/photo/slider\ business.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   z-index: 2;
   font-family: Roboto;
   color: #FFFFFF;
   border-bottom: 5px solid #B8B8B8;
+}
+.header-slider__img-wrap {
+  height: 100%;
 }
 .header-slider .arrow-decorate {
   position: absolute;
@@ -215,6 +214,38 @@ a {
 .square-decorate--transparent {
   background: transparent;
   border: 3px solid #B8B8B8;
+}
+.btn {
+  background: linear-gradient(181.56deg, #0066ff -8.5%, #00369c 51.46%, #0031c4 130.73%, #018ff6 130.74%);
+  border-radius: 18.5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  outline: none;
+  border: none;
+}
+.btn--header-slider {
+  padding: 7.5px 40px;
+  background: linear-gradient(185.59deg, #ff0000 9.11%, #ce0000 98.12%);
+  border-radius: 18.5px;
+}
+.btn--posive {
+  background: linear-gradient(165.36deg, #f4f4f4 -0.37%, #b8b8b8 104.82%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 18.5px;
+  color: #0031C4;
+}
+.btn--university {
+  padding: 9px 20px;
+  font-size: 20px;
+  border: none;
+}
+.opacity {
+  opacity: 0.5;
 }
 .header-slider-absolute {
   position: absolute;
@@ -477,11 +508,11 @@ a {
 .universities__slider .slick-track {
   padding: 45px 0;
 }
-.slider-item:hover > .slider-item__btn {
-  background-color: #CE0000 !important;
-}
 .slider-wrap {
   padding: 0 6.7%;
+}
+.slick-slide:hover .btn {
+  background: #CE0000;
 }
 .slider-item {
   border-radius: 12px;
@@ -507,6 +538,9 @@ a {
   object-fit: cover;
   border-bottom: 3px solid #B8B8B8;
 }
+.slider-item__photo :hover .btn {
+  background: #CE0000;
+}
 .slider-item__header {
   font-style: normal;
   font-weight: bold;
@@ -525,38 +559,6 @@ a {
 }
 .slider-item__btn {
   padding: 6px 22px;
-}
-.btn {
-  background: linear-gradient(181.56deg, #0066ff -8.5%, #00369c 51.46%, #0031c4 130.73%, #018ff6 130.74%);
-  border-radius: 18.5px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 15px;
-  text-align: center;
-  color: #FFFFFF;
-  outline: none;
-  border: none;
-}
-.btn--header-slider {
-  padding: 7.5px 40px;
-  background: linear-gradient(185.59deg, #ff0000 9.11%, #ce0000 98.12%);
-  border-radius: 18.5px;
-}
-.btn--posive {
-  background: linear-gradient(165.36deg, #f4f4f4 -0.37%, #b8b8b8 104.82%);
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 18.5px;
-  color: #0031C4;
-}
-.btn--university {
-  padding: 9px 20px;
-  font-size: 20px;
-  border: none;
-}
-.opacity {
-  opacity: 0.5;
 }
 .slider-line {
   position: relative;
