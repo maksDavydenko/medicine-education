@@ -65,9 +65,44 @@ $(document).ready(function () {
 
 //suctom buttons
 
+currentSlide = 1;
+
+const sliders = document.querySelectorAll('.js-slider-item-universities');
+const sliderLine = document.querySelector('.js-slider-line-universities');
+
+const fragment = new DocumentFragment();
+
+const leftPos = 100 / (sliders.length - 1); // left from 0% to 100%
+
+
+console.log(leftPos)
+
+for (let i = 0; i < sliders.length; i++) {
+    const li = document.createElement('li');
+    if (i === 0) {
+        li.classList.add('slider-line-point--active');
+    }
+    li.style.left = leftPos * i + '%';
+    li.classList.add('slider-line-point', 'slider-line-point--university')
+    fragment.append(li)
+}
+
+sliderLine.append(fragment)
+
+const sliderLinePoints = document.querySelectorAll('.slider-line-point--university')
+
 $('.js-university-slider__next-btn').on('click', function () {
     $('.universities__slider').slick('slickNext');
+    currentSlide++;
 
+    currentSlide = currentSlide > sliders.length ? 1 : currentSlide
+
+    console.log(currentSlide)
+    sliderLinePoints.forEach(i => {
+        i.classList.remove('slider-line-point--active')
+    })
+
+    sliderLinePoints[currentSlide - 1].classList.add('slider-line-point--active');
     // var num = $('.item-num-slide');
     // num.removeClass('item-num-slide_active');
 
@@ -86,6 +121,17 @@ $('.js-university-slider__next-btn').on('click', function () {
 
 $('.js-university-slider__prev-btn').on('click', function () {
     $('.universities__slider').slick('slickPrev');
+
+
+    currentSlide--;
+
+    currentSlide = currentSlide < 1 ? sliders.length : currentSlide;
+
+    sliderLinePoints.forEach(i => {
+        i.classList.remove('slider-line-point--active')
+    })
+
+    sliderLinePoints[currentSlide - 1].classList.add('slider-line-point--active');
 
     // var num = $('.item-num-slide');
     // num.removeClass('item-num-slide_active');
@@ -184,3 +230,7 @@ $('.universities__slider').on('afterChange', function (event, slick, currentSlid
     first.addClass('opacity');
     last.addClass('opacity');
 });
+
+
+
+

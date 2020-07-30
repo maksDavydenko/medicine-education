@@ -102,7 +102,26 @@ $('.js-courses-slider__prev-btn').on('click', function () {
 
 });
 
+// let sliders = document.querySelector('.courses__slider').childNodes;
 
+// // console.log(sliders.childNodes);
+
+// sliders = Array.from(sliders);
+
+
+// console.log(sliders);
+
+// sliders.forEach(slider => {
+//     try {
+//         if (slider.className.contains('.slick-slide') && !slider.classList.contains('.slick-cloned')) {
+
+//         }
+//     }
+//     catch (e) {
+//         console.log(e)
+//     }
+
+// })
 // $('.sliderSlick').on('afterChange', function (event, slick, currentSlide, nextSlide) {
 //     var active = $('.slick-active');
 
