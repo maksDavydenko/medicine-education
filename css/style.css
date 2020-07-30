@@ -156,6 +156,15 @@ a {
   letter-spacing: -0.02em;
   color: #FFFFFF;
 }
+.adaptive-menu {
+  position: absolute;
+  padding: 10px 35px;
+  width: 63.47%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(189.54deg, #0066ff -8.5%, #0041be 51.46%, #0031c4 130.73%, #018ff6 130.74%);
+  opacity: 0.88;
+}
 .header-slider {
   overflow: hidden;
   position: relative;
