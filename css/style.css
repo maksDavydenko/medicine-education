@@ -280,7 +280,7 @@ summary {
   margin-bottom: 10px;
 }
 .adaptive-header__inner--tablet a {
-  color: #00369c;
+  color: #00369C;
 }
 .drop-down__line {
   width: 78%;
@@ -335,7 +335,7 @@ summary {
 .header-slider {
   overflow: hidden;
   position: relative;
-  background-image: url(../img/photo/slider\ business.png);
+  background-image: url(../img/photo/headerSlider/medicine.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 40%;

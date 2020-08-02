@@ -14,11 +14,6 @@ $(document).ready(function () {
         slidesToScroll: 3,
         arrows: false,
         speed: 500,
-        // adaptiveHeight: true,
-        // autoplay: true,
-        // autoplaySpeed: 5000,
-
-
         responsive: [
             {
                 breakpoint: 1560,
@@ -103,14 +98,7 @@ function changeSlide() {
 
 function changeContent() {
     title.textContent = data[curSlide - 1].title;
-    // info.textContent = data[curSlide - 1].info;
-
-    // link.href = data[curSlide - 1].link;
-    // headerSlider.style.backgroundImage = data[curSlide - 1].img;
-    console.log(title)
-
-
-
+    headerSlider.style.backgroundImage = data[curSlide - 1].img;
 }
 
 
