@@ -60,6 +60,41 @@ a {
   color: #343434;
   transition: 0.3s;
 }
+.btn {
+  background: linear-gradient(181.56deg, #0066ff -8.5%, #00369c 51.46%, #0031c4 130.73%, #018ff6 130.74%);
+  border-radius: 18.5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  outline: none;
+  border: none;
+}
+.btn--header-slider {
+  padding: 7.5px 40px;
+  background: linear-gradient(185.59deg, #ff0000 9.11%, #ce0000 98.12%);
+  border-radius: 18.5px;
+}
+.btn--posive {
+  background: linear-gradient(165.36deg, #f4f4f4 -0.37%, #b8b8b8 104.82%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 18.5px;
+  color: #0031C4;
+}
+.btn--university {
+  padding: 9px 20px;
+  font-size: 20px;
+  border: none;
+}
+.logo--header {
+  flex-grow: 2;
+}
+#menu {
+  margin-left: 40px;
+}
 .diamond-decorate {
   position: absolute;
   width: 206.04px;
@@ -104,11 +139,18 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 38px;
   font-size: 13px;
   white-space: nowrap;
 }
 .connection-info .connection-info__btn {
+  padding: 12px 26px;
+  margin-left: auto;
+  background: linear-gradient(186.68deg, #ff0000 9.11%, #ce0000 98.12%);
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.connection-info__btn--red {
   padding: 12px 26px;
   margin-left: auto;
   background: linear-gradient(186.68deg, #ff0000 9.11%, #ce0000 98.12%);
@@ -161,6 +203,8 @@ a {
 }
 .navigation-item__icon {
   margin-right: 10px;
+  background-color: #0066FF;
+  border-radius: 50%;
 }
 .navigation-item__link {
   font-family: Roboto;
@@ -231,6 +275,9 @@ summary {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #0031C4;
+  margin-bottom: 10px;
 }
 .adaptive-header__inner--tablet a {
   color: #00369c;
@@ -375,35 +422,6 @@ summary {
 .square-decorate--transparent {
   background: transparent;
   border: 3px solid #B8B8B8;
-}
-.btn {
-  background: linear-gradient(181.56deg, #0066ff -8.5%, #00369c 51.46%, #0031c4 130.73%, #018ff6 130.74%);
-  border-radius: 18.5px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 15px;
-  text-align: center;
-  color: #FFFFFF;
-  outline: none;
-  border: none;
-}
-.btn--header-slider {
-  padding: 7.5px 40px;
-  background: linear-gradient(185.59deg, #ff0000 9.11%, #ce0000 98.12%);
-  border-radius: 18.5px;
-}
-.btn--posive {
-  background: linear-gradient(165.36deg, #f4f4f4 -0.37%, #b8b8b8 104.82%);
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 18.5px;
-  color: #0031C4;
-}
-.btn--university {
-  padding: 9px 20px;
-  font-size: 20px;
-  border: none;
 }
 .opacity {
   opacity: 0.5;
