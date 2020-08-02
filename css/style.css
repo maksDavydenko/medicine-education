@@ -97,8 +97,16 @@ a {
   align-items: center;
   justify-content: space-between;
 }
+.connection-info-tablet {
+  display: flex;
+}
 .connection-info__item {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 38px;
+  font-size: 13px;
+  white-space: nowrap;
 }
 .connection-info .connection-info__btn {
   padding: 12px 26px;
@@ -141,6 +149,9 @@ a {
   display: flex;
   align-items: center;
 }
+.navigation-item--tablet {
+  margin-right: 22px;
+}
 .navigation-item--phones {
   margin-right: 38px;
 }
@@ -156,18 +167,131 @@ a {
   letter-spacing: -0.02em;
   color: #FFFFFF;
 }
+details > summary::-webkit-details-marker {
+  display: none;
+}
+summary {
+  cursor: pointer;
+}
 .adaptive-menu {
   position: absolute;
   padding: 10px 35px;
-  width: 63.47%;
+  width: 80%;
+  max-width: 650px;
   left: 0;
   top: 0;
-  background: linear-gradient(189.54deg, #0066ff -8.5%, #0041be 51.46%, #0031c4 130.73%, #018ff6 130.74%);
-  opacity: 0.88;
+  font-family: Roboto;
+  color: #FFFFFF;
+  background: rgba(0, 102, 255, 0.88);
+  display: none;
+}
+.adaptive-menu__info {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 30px;
+}
+.adaptive-menu ul {
+  transition: 0.3s;
+}
+.adaptive-menu .drop-down {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.adaptive-menu .drop-down__header {
+  display: flex;
+  justify-content: space-between;
+  width: 210px;
+}
+.adaptive-menu summary {
+  width: 210px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: none;
+  border: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.adaptive-menu summary {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.adaptive-header__inner--tablet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.adaptive-header__inner--tablet a {
+  color: #00369c;
+}
+.drop-down__line {
+  width: 78%;
+  height: 2px;
+  background-color: #fff;
+  margin-right: auto;
+  border: none;
+}
+.drop-down__item {
+  margin: 8px 0;
+}
+.drop-down__link {
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.drop-down__link-icon {
+  margin-right: 5px;
+}
+.drop-down__line-small {
+  border: none;
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+}
+.navigation-menu {
+  font-family: Roboto;
+}
+.navigation-menu__wrap {
+  margin-top: 15px;
+}
+.navigation-menu__title {
+  display: inline;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+.navigation-menu__drop-down {
+  margin-bottom: 10px;
+}
+.social-links-list {
+  display: flex;
+  justify-content: flex-end;
+}
+.social-links-list--mobile {
+  margin-right: 23%;
+  margin-bottom: 43px;
+}
+.social-links-item {
+  margin: 0px 5px;
 }
 .header-slider {
   overflow: hidden;
   position: relative;
+  background-image: url(../img/photo/slider\ business.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 40%;
   z-index: 2;
   font-family: Roboto;
   color: #FFFFFF;
@@ -243,9 +367,7 @@ a {
   height: 403.12px;
   left: -401.88px;
   top: 671.09px;
-  /* Linear */
   background: linear-gradient(206.74deg, #ff0000 9.11%, #ce0000 98.12%);
-  /* 1 */
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 28px;
   transform: matrix(0.71, -0.69, 0.72, 0.71, 0, 0);
@@ -552,6 +674,7 @@ a {
   justify-content: space-between;
 }
 .universities .slick-dots li {
+  margin-top: -2px;
   width: 7px;
   height: 7px;
   border-radius: 50%;
@@ -843,6 +966,7 @@ a {
   align-items: center;
 }
 .courses .slick-dots li {
+  margin-top: -2px;
   width: 7px;
   height: 7px;
   border-radius: 50%;
@@ -958,6 +1082,25 @@ a {
 }
 .gallery .slick-track {
   padding: 40px 0 35px;
+}
+.gallery .slick-dots {
+  display: flex;
+  justify-content: space-between;
+}
+.gallery .slick-dots li {
+  margin-top: -2px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: linear-gradient(188.21deg, #0066ff -8.5%, #00369c 51.46%, #0031c4 130.73%, #018ff6 130.74%);
+}
+.gallery .slick-dots .slick-active {
+  width: 9px;
+  height: 9px;
+  background: linear-gradient(207.28deg, #ff0000 9.11%, #ce0000 98.12%);
+}
+.gallery .slick-dots button {
+  display: none;
 }
 .gallery-slider-item {
   margin: 0px 28px;

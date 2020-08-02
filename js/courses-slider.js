@@ -19,17 +19,28 @@ $(document).ready(function () {
                     slidesToShow: 5
                 }
             },
+
             {
-                breakpoint: 1024,
+                breakpoint: 1300,
                 settings: {
-                    centerPadding: '40px',
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 1100,
+                settings: {
                     slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 2
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
-                    centerPadding: '40px',
                     slidesToShow: 1
                 }
             }

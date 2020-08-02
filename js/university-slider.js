@@ -27,15 +27,20 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 1024,
+                breakpoint: 1100,
                 settings: {
                     slidesToShow: 3
                 }
             },
             {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
                 breakpoint: 480,
                 settings: {
-                    centerPadding: '40px',
                     slidesToShow: 1
                 }
             }
