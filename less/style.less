@@ -73,6 +73,70 @@ a{
     }
 }
 
+.header__item {
+    position: relative;
+}
+.adaptive-header {
+    display: none;
+}
+
+.hover-items {
+    position: absolute;
+    padding-top: 55px;
+     display: none;
+     transition: 0.3s;
+     &::before {
+         content: "";
+         position: absolute;
+        //  border-top-left-radius: 8px; TODO opacity
+        top: 15px;
+         left: 0;
+        border: 20px solid transparent; border-bottom: 20px solid rgba(244, 244, 244, 0.9); border-left: 20px solid rgba(244, 244, 244, 0.9);
+     }
+&__list{
+  
+    padding: 20px;
+    background: rgba(244, 244, 244, 0.9);
+    border-radius: 6px;
+    border-top-left-radius: 0;
+  
+}
+}
+
+.header__item:hover > .hover-items {
+    display: block;
+} 
+.subitem {
+    display: flex;
+    border-bottom: 2px solid #626365;
+    padding-bottom: 11px;
+    margin-bottom: 11px;
+    &-link {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 18px;
+        color: #555A61;
+        &:hover {
+            color: #fff;
+        }
+    }
+    &-icon {
+        margin-right: 16px;
+    }
+}
+
+.subitem:last-child {
+    border-bottom: 0;;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+
 .btn {
     background: linear-gradient(181.56deg, #0066FF -8.5%, #00369C 51.46%,
      #0031C4 130.73%, #018FF6 130.74%);
@@ -173,6 +237,9 @@ border-radius: 28px;
         // margin-bottom: 38px;
         font-size: 13px;
         white-space: nowrap;
+        &--tablet {
+            display: none;
+        }
         
     }
 
@@ -183,6 +250,7 @@ border-radius: 28px;
         border-radius: 30px;
         font-weight: bold;
         font-size: 20px;
+        
     }
 }
 
@@ -194,7 +262,13 @@ border-radius: 28px;
     font-weight: bold;
     font-size: 20px;
 }
+.connection-info__btn--tablet {
+    display: none;
+}
 
+#menu {
+    display: none;
+}
 .search {
     position: relative;
     margin-right: 60px;
@@ -1219,8 +1293,6 @@ display: none;
 
     }
 
-
-
 }
 
 .courses {
@@ -1642,6 +1714,7 @@ background: #004ecb;
     font-style: normal;
     font-weight: bold;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 40px;
     color: #FFFFFF;
     &__input {
