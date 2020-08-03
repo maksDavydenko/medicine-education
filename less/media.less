@@ -18,7 +18,9 @@
     }
 
     .academic-header {
-      
+      .arrow-decorate {
+          display: none;
+      }
         &__title {
             font-size: 84px; 
         }
@@ -63,6 +65,60 @@
         }
        
         }
-    
      
+}
+
+@media screen and (max-width: 997px)  {
+
+    .benefits-items {
+        justify-content: center;
+        margin: 50px -20px 0;
+      
+    }
+   
+    .benefits-item {
+        margin: 20px;
+    
+    }
+
+    .banner {
+        display: none;
+    }
+    .academic-header {
+        &__title {
+            font-size: 67px; 
+        }
+    }
+    
+}
+
+
+@media screen and (max-width: 800px) {
+   
+    .benefits-items {
+        margin: 50px 0 0 0;
+        display: grid;//
+        grid-template-areas: "one two"
+                            "three  four";
+        grid-gap: 30px;
+      
+    }
+
+    .benefits-item {
+        margin: 0;
+    }
+
+    .benefits-item:nth-child(1) {
+        grid-area: one;
+    }
+    .benefits-item:nth-child(2) {
+        grid-area: two;
+    }
+    .benefits-item:nth-child(3) {
+        grid-area: three;
+    }
+    .benefits-item:nth-child(4) {
+        grid-area: four;
+    }
+    
 }
