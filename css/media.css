@@ -5,7 +5,7 @@
   .header__nav {
     display: none;
   }
-  .connection-info {
+  .connection-info__item {
     display: none;
   }
   #menu,
