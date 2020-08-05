@@ -9,7 +9,7 @@ const data = [
     {
         img: 'url(./img/photo/headerSlider/business.png)',
         link: null,
-        title: 'busines',
+        title: 'business',
         info: 'The best thing about studying MBBS in Russia that there is no entrance test for admission in Russian medical colleges/universities. The degrees have been validated by WHO and UNESCO',
     },
     {

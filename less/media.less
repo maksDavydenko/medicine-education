@@ -1,9 +1,68 @@
+@media screen and (max-width: 1770px) {
+    .rectangle-decorate-block {
+        right: -88px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+
+    .rectangle-decorate {
+        // position: absolute;
+        // height: 150%;
+        // width: 84%;
+        // border-radius: 28px;
+        // transform: rotate(135deg);
+        // background: rgba(0, 150, 235, 0.7);
+        left: -45%;
+        top: -54%;
+        }
+    .universities {
+        .square-decorate {
+            top: -46%;
+            z-index: 2;
+            left: -434px;
+        
+            &--transparent {
+                top: -46%;
+                z-index: 2;
+                left: -396px;
+            }
+        }
+    }
+  
+    .header-assistent-slider {
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .header-assistent-slider {
+        left: 16%;
+    }
+}
+
+
+
 @media screen and (max-width: 1200px) {
     .header {
-        position: static;
         &__nav {
             display: none;
         }
+    }
+
+    .header-assistent-slider {
+        left: 16%;
+        max-width: 680px;
+    }
+    .rectangle-decorate {
+    // position: absolute;
+    // height: 150%;
+    // width: 84%;
+    // border-radius: 28px;
+    // transform: rotate(135deg);
+    // background: rgba(0, 150, 235, 0.7);
+    left: -45%;
+    top: -54%;
     }
 
     .connection-info__item {
@@ -27,45 +86,35 @@
     }
 
     .academic {
-    
         &__years {
-          
             font-size: 27px; 
-       
         }
-    
-    
-   
     }
+
     .banner {
-       
         font-size: 18px;
-     
         width: 91px;
         height: 91px;
-      
     }
+
     .banner::before {
-      
         width: 75px;
         height: 75px;
-     
     }
-
-
     .step-block {
         flex-basis: 136px;
-      
-        
         &__icon {
-          
             width: 90px; 
             height: 90px; 
-    
         }
-       
-        }
-     
+    }
+}
+
+
+@media screen and (max-width: 1100px){
+    .header-assistent-slider {
+        left: 11%;
+    }
 }
 
 @media screen and (max-width: 997px)  {
@@ -90,6 +139,10 @@
         }
     }
     
+    .connection-info__btn {
+        padding: 12px 26px;
+        margin-left: auto;
+    }
 }
 
 
@@ -122,3 +175,79 @@
     }
     
 }
+
+@media screen and (max-width: 890px) {
+    .footer-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &__input {
+          flex-basis: 100%;
+          width: 80%;
+          margin: 15px auto;
+        }
+
+        &__btn {
+            margin: 0 auto;
+        }
+    }
+
+    .footer-item{
+        
+        &--contact {
+            text-align: center;
+            margin: 0 auto;
+            width: 100vw;
+            flex-basis: 100%;
+            background: #001C53;
+        }
+
+}
+.admission-item-wrap {
+    // display: flex;
+    // flex-wrap: wrap;
+    flex-direction: column;
+}
+}
+
+// @media screen and (max-width: 1300px) {
+//     .arrow-decorate,
+//     .square-decorate {
+//         display: none;
+//     }
+//     .header-slider {
+        
+    
+//         &__nav {
+//             position: relative;
+//             margin-top: 40px;
+//             padding-bottom: 30px;
+//            max-width: 100%; //
+//            &-list {
+//             display: flex;//
+//             align-items: center;//
+//         }
+//             &-item {
+//                 padding: 9px 13px;//
+//                 background: linear-gradient(189.83deg, #0066FF -8.5%, #00369C 51.46%, #0031C4 130.73%, #018FF6 130.74%);//
+          
+//                 border-left: 0px;//
+               
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: center;
+//                 justify-content: center;
+//             }
+//             &-icon {
+//                 display: block;
+//                 margin-bottom: 8px;//
+//             }
+    
+//             &-num {
+//                 padding: 0px;//
+//             }
+//         }
+    
+       
+//     }
+// }
