@@ -78,6 +78,9 @@
   .header-assistent-slider {
     left: 11%;
   }
+  .opacity {
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 997px) {
   .benefits-items {
