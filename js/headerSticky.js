@@ -36,6 +36,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         }
     });
+
+    upBtn.addEventListener('click', () => {
+        window.scrollTo(0, 0);
+    })
+
+
     var $element = $('.footer');
     let counter = 0;
     $(window).scroll(function () {
@@ -49,8 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
             $('.upBtn').css('position', 'static');
             $('.upBtn').css('transform', 'translate(0, 0)');
 
-            console.log('rest')
-            // counter = 1;
+
         }
 
         if (scroll < offset - 80 && counter == 0) {

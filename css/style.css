@@ -584,7 +584,7 @@ summary {
   transform: rotate(135deg);
   background: rgba(0, 150, 235, 0.7);
   top: -20%;
-  left: -571px;
+  left: -660px;
 }
 .rectangle-decorate__inner {
   position: absolute;
@@ -916,6 +916,9 @@ summary {
 .universities-navigations {
   display: flex;
 }
+.admission {
+  position: relative;
+}
 .admission-block-wrap {
   display: flex;
   justify-content: space-between;
@@ -943,6 +946,7 @@ summary {
 }
 .admission-form--in-block {
   width: 33%;
+  min-width: 210px;
 }
 .admission-form__header {
   font-size: 26px;
@@ -1317,9 +1321,11 @@ summary {
   color: #0031C4;
 }
 .feedback-item__inner {
-  display: flex;
+  display: grid;
+  grid-template-areas: "img title" "img subtitle" "img textItem" ". textItem";
 }
 .feedback-item__img {
+  grid-area: img;
   position: relative;
   bottom: 40px;
   display: block;
@@ -1332,14 +1338,17 @@ summary {
   margin-right: 35px;
 }
 .feedback-item__title {
+  grid-area: title;
   font-size: 22px;
   margin-bottom: 15px;
 }
 .feedback-item__subtitle {
+  grid-area: subtitle;
   font-size: 12px;
   margin-bottom: 15px;
 }
 .feedback-item__text {
+  grid-area: textItem;
   font-size: 14px;
   color: #6F6F6F;
 }
@@ -1490,6 +1499,8 @@ summary {
   position: relative;
   font-size: 19px;
   margin-bottom: 24px;
+  color: #fff;
+  display: block;
 }
 .footer-item__subtitle::before {
   content: "";
