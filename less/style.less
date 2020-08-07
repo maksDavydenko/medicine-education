@@ -307,11 +307,12 @@ a{
 
 .connection-info__btn--sticky{
     display: none;
-  position: absolute;
-  bottom: -29px;
-  right: -29px;
-  padding: 7px 14px;
-  font-size: 15px;
+    position: absolute;
+    z-index: 3;
+    bottom: -29px;
+    right: -29px;
+    padding: 7px 14px;
+    font-size: 15px;
 }
 
 
@@ -559,6 +560,8 @@ display: none;
     
     &__content {
         position: relative;
+        display: flex;
+        flex-direction: column;
     }
 
     &__block {
@@ -1768,7 +1771,7 @@ background: #0052d5;
     position: fixed;
     bottom: 20px;
     display: none;
-    margin: auto;
+    margin: 20px auto;
     justify-content: center;
     padding: 20px;
     left: 50%;
@@ -1796,6 +1799,7 @@ background: #0052d5;
 .footer-form {
     padding-bottom: 40px;
     border-bottom: 2px solid #fff;
+    margin-bottom: 34px;
     display: flex;
     font-family: Roboto;
     font-style: normal;
@@ -1861,7 +1865,7 @@ background: #0052d5;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    padding: 0px 20px;
+    margin: 20px;
 
     &__text {
         font-size: 14px;

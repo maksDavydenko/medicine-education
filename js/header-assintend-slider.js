@@ -2,7 +2,7 @@ import data from './slliderData.js';
 
 const title = document.querySelector('.js-title');
 // $('.js-title');
-const info = document.querySelector('js-info');
+const info = document.querySelector('.js-info');
 const link = document.querySelector('.js-link');
 const headerSlider = document.querySelector('.header-slider')
 
@@ -92,6 +92,13 @@ function changeSlide() {
         indexDown++
     }
 
+    if (data[curSlide - 1].subtitle === null) {
+        info.style.marginBottom = '50px'
+        console.log(info)
+        console.log('object')
+    } else {
+        info.style.marginBottom = '0';
+    }
     nums[curSlide - 1].classList.add('header-slider__nav-item--active')
 
 }

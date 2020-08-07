@@ -359,14 +359,16 @@
     .header {
         position: static;
     }
+    .header-slider {
+        margin-top: 0;
+    }
     .header-assistent-slider,
     .connection-info__item--tablet,
     .connection-info__btn--tablet,
-    .social-links-list {
+    .social-links-list,
+    .social-nav {
        display: none;
    }
-
-    
 
     .social-links-list--mobile{
         display: flex;
@@ -411,11 +413,17 @@
     .benefits-item:nth-child(4) {
         grid-area: four;
     }
-    
+
+   
 }
 
 
 @media screen and (max-width: 500px){
+
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
     .connection-info-tablet{
         width: 100%;
         justify-content: space-between;
@@ -445,6 +453,62 @@
     }
 #menu {
     margin-left: 0;
+}
+
+.square-decorate {
+    display: none;
+}
+
+
+.header-slider {
+        
+    
+            &__nav {
+                position: relative;
+                margin-top: 40px;
+                padding-bottom: 30px;
+               max-width: 100%; //
+               margin: 0px -20px;
+               &-list {
+                display: flex;//
+                align-items: center;//
+            }
+                &-item {
+                    min-width: 18.6%;
+                    padding: 9px 13px;//
+                    background: linear-gradient(189.83deg, #0066FF -8.5%, #00369C 51.46%, #0031C4 130.73%, #018FF6 130.74%);//
+              
+                    border-left: 0px;//
+                   
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &-icon {
+                    display: block;
+                    margin-bottom: 8px;//
+                }
+        
+                &-num {
+                    padding: 0px;//
+                }
+            }
+        
+           
+        }
+.header-slider__buttons {
+    position: absolute;
+
+}
+.footer-item--contact {
+    background: #001C53;
+    margin: 20px 0 0 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 

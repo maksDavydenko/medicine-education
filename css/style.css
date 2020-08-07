@@ -264,6 +264,7 @@ a {
 .connection-info__btn--sticky {
   display: none;
   position: absolute;
+  z-index: 3;
   bottom: -29px;
   right: -29px;
   padding: 7px 14px;
@@ -475,6 +476,8 @@ summary {
 }
 .header-slider__content {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .header-slider__block {
   max-width: 445px;
@@ -1399,7 +1402,7 @@ summary {
   position: fixed;
   bottom: 20px;
   display: none;
-  margin: auto;
+  margin: 20px auto;
   justify-content: center;
   padding: 20px;
   left: 50%;
@@ -1424,6 +1427,7 @@ summary {
 .footer-form {
   padding-bottom: 40px;
   border-bottom: 2px solid #fff;
+  margin-bottom: 34px;
   display: flex;
   font-family: Roboto;
   font-style: normal;
@@ -1478,7 +1482,7 @@ summary {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  padding: 0px 20px;
+  margin: 20px;
 }
 .footer-item__text {
   font-size: 14px;
