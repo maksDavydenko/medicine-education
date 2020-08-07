@@ -442,8 +442,7 @@ summary {
   justify-content: flex-end;
 }
 .social-links-list--mobile {
-  margin-right: 23%;
-  margin-bottom: 43px;
+  display: none;
 }
 .social-links-item {
   margin: 0px 5px;
@@ -715,6 +714,9 @@ summary {
 }
 .assistent-slider-item__btn {
   padding: 6px 22px;
+}
+.button--sticky {
+  display: block;
 }
 .title-block {
   text-align: center;

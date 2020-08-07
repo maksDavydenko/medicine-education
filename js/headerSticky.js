@@ -23,16 +23,21 @@ document.addEventListener('DOMContentLoaded', function () {
     const upBtn = document.querySelector('.upBtn');
     const applyBtn = document.querySelector('.connection-info__btn--sticky');
 
+
     window.addEventListener('scroll', () => {
         if (window.pageYOffset > 100) {
             headerWrap.classList.add('header--sticky');
             upBtn.style.display = 'flex';
-            applyBtn.style.display = 'block';
+            applyBtn.classList.add('button--sticky');
 
-        } else if (window.pageYOffset < 100) {
+        } if (window.pageYOffset < 100) {
             headerWrap.classList.remove('header--sticky');
             upBtn.style.display = 'none';
-            applyBtn.style.display = 'none';
+            applyBtn.classList.remove('button--sticky');
+            // if (window.innerWidth >= 1200) {
+            //     applyBtn.style.display = 'none';
+
+            // }
 
         }
     });
