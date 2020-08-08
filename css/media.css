@@ -77,6 +77,9 @@
   .button--sticky {
     display: none;
   }
+  .connection-info__item--menu {
+    display: flex;
+  }
   .academic-header .arrow-decorate {
     display: none;
   }
@@ -254,11 +257,8 @@
   }
 }
 @media screen and (max-width: 800px) {
-  .header {
-    position: static;
-  }
-  .header-slider {
-    margin-top: 0;
+  .header--sticky {
+    opacity: 1;
   }
   .header-assistent-slider,
   .connection-info__item--tablet,

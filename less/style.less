@@ -280,6 +280,10 @@ a{
         &--tablet {
             display: none;
         }
+
+        &--menu {
+            display: block;
+        }
         
     }
 
@@ -349,6 +353,10 @@ a{
         justify-content: center;
         align-items: center;
         background: linear-gradient(188.21deg, #0066FF -8.5%, #00369C 51.46%, #0031C4 130.73%, #018FF6 130.74%);
+
+        &--menu {
+            background: linear-gradient(137.45deg, #F4F4F4 -0.37%, #B8B8B8 104.82%)
+        }
     }
 }
 
@@ -1807,10 +1815,13 @@ background: #0052d5;
     justify-content: space-between;
     flex-wrap: wrap;
     color: #FFFFFF;
+    &--item {
+        margin-bottom: 20px;
+    }
     &__input {
         padding: 12px 0 12px 15px;
         // margin: 0px 20px;
-        margin-bottom: 20px;
+      
         background: #FFFFFF;
         border: 1px solid #BDBDBD;
         box-sizing: border-box;

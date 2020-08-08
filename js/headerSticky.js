@@ -34,11 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
             headerWrap.classList.remove('header--sticky');
             upBtn.style.display = 'none';
             applyBtn.classList.remove('button--sticky');
-            // if (window.innerWidth >= 1200) {
-            //     applyBtn.style.display = 'none';
-
-            // }
-
         }
     });
 

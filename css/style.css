@@ -243,6 +243,9 @@ a {
 .connection-info__item--tablet {
   display: none;
 }
+.connection-info__item--menu {
+  display: block;
+}
 .connection-info .connection-info__btn {
   padding: 12px 26px;
   background: linear-gradient(186.68deg, #ff0000 9.11%, #ce0000 98.12%);
@@ -301,6 +304,9 @@ a {
   justify-content: center;
   align-items: center;
   background: linear-gradient(188.21deg, #0066ff -8.5%, #00369c 51.46%, #0031c4 130.73%, #018ff6 130.74%);
+}
+.search__btn--menu {
+  background: linear-gradient(137.45deg, #f4f4f4 -0.37%, #b8b8b8 104.82%);
 }
 .navigation-item {
   display: flex;
@@ -1436,9 +1442,11 @@ summary {
   flex-wrap: wrap;
   color: #FFFFFF;
 }
+.footer-form--item {
+  margin-bottom: 20px;
+}
 .footer-form__input {
   padding: 12px 0 12px 15px;
-  margin-bottom: 20px;
   background: #FFFFFF;
   border: 1px solid #BDBDBD;
   box-sizing: border-box;
