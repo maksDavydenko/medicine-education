@@ -254,6 +254,7 @@
     grid-area: textItem;
     font-size: 14px;
     color: #6F6F6F;
+
   }
 }
 @media screen and (max-width: 800px) {
@@ -377,4 +378,7 @@
     flex-direction: column;
     text-align: center;
   }
+}
+.universities .slider-item--test {
+  display: none;
 }

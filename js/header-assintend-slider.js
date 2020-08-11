@@ -92,13 +92,7 @@ function changeSlide() {
         indexDown++
     }
 
-    if (data[curSlide - 1].subtitle === null) {
-        info.style.marginBottom = '50px'
-        console.log(info)
-        console.log('object')
-    } else {
-        info.style.marginBottom = '0';
-    }
+
     nums[curSlide - 1].classList.add('header-slider__nav-item--active')
 
 }
