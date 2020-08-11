@@ -678,9 +678,10 @@ summary {
   z-index: 2;
 }
 .header-assistent-slider .slick-list {
-  padding: 5px 0;
+  padding: 13px 0 5px;
 }
 .assistent-slider-item {
+  position: relative;
   max-width: 266px;
   padding: 6px 18px 14px 18px;
   background: #FFFFFF;
@@ -689,6 +690,18 @@ summary {
   margin: 0 10px;
   text-align: center;
   z-index: 1;
+}
+.assistent-slider-item:before {
+  display: none;
+  content: "";
+  left: 50%;
+  top: -13px;
+  transform: translate(-50%, 0);
+  position: absolute;
+  width: 105px;
+  height: 105px;
+  background-color: #fff;
+  border-radius: 50%;
 }
 .assistent-slider-item__title-wrap {
   position: relative;
@@ -704,7 +717,7 @@ summary {
   line-height: 36px;
   text-align: center;
   color: #B8B8B8;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 .assistent-slider-item__icon {
   display: block;
@@ -746,6 +759,12 @@ summary {
 }
 .assistent-slider-item__btn {
   padding: 6px 22px;
+}
+.assistent-slider-item:hover:before {
+  display: block;
+}
+.assistent-slider-item:hover .assistent-slider-item__title {
+  opacity: 1;
 }
 .button--sticky {
   display: block;
