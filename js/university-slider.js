@@ -48,7 +48,56 @@ $(document).ready(function () {
     });
 });
 
+var filtered = false;
 
+$('.js-ua-universes').on('click', function () {
+    if (filtered === false) {
+        $('.universities__slider').slick('slickFilter', '.js-test');
+        // $(this).text('Unfilter Slides');
+        filtered = true;
+        // } else {
+        //     $('.filtering').slick('slickUnfilter');
+        //     $(this).text('Filter Slides');
+        //     filtered = false;
+        // }
+    }
+});
+
+
+// btnUaUniversity.addEventListener('click', () => {
+//     console.log('btnUaUniversity');
+
+//     sliderWrap.innerHTML = `<div class="slider-item js-slider-item-courses">
+//     <img src="./img/photo/kai 1.png" alt="slide" class="slider-item__photo">
+//     <div class="slider-item__content">
+//         <h4 class="slider-item__header">Saint-Petersburg State Agrarian University</h4>
+//         <div class="line line--slide-item">
+//             <span class="line-circle line-circle--slide-item"></span>
+//         </div>
+//         <p class="slider-item__info">
+//             gkdhvdvkhdk fvhscsdck jsckjs dkjcsd kjckjsd ckjsdbckjs bdkcskjdbckjs bckjs bckjskjc scndsncdv
+//             fdvfvdjhj hhhvhjvv hjvhjvh jvjhvjhvjhvjh vhjjhvjhvjhv jhvjhjhv jvjvjhvhj jhjhvjv jvjhvjhv jhvj
+//         </p>
+//         <a href="#" class="btn slider-item__btn">More Details</a>
+//     </div>
+// </div>
+// <div class="slider-item js-slider-item-courses">
+//     <img src="./img/photo/kai 1.png" alt="slide" class="slider-item__photo">
+//     <div class="slider-item__content">
+//         <h4 class="slider-item__header">Saint-Petersburg State Agrarian University</h4>
+//         <div class="line line--slide-item">
+//             <span class="line-circle line-circle--slide-item"></span>
+//         </div>
+//         <p class="slider-item__info">
+//             gkdhvdvkhdk fvhscsdck jsckjs dkjcsd kjckjsd ckjsdbckjs bdkcskjdbckjs bckjs bckjskjc scndsncdv
+//             fdvfvdjhj hhhvhjvv hjvhjvh jvjhvjhvjhvjh vhjjhvjhvjhv jhvjhjhv jvjvjhvhj jhjhvjv jvjhvjhv jhvj
+//         </p>
+//         <a href="#" class="btn slider-item__btn">More Details</a>
+//     </div>`
+
+
+
+// })
 // $('.sliderSlick').on('init', function (slick) {
 // var active = $('.sliderSlick .slick-active');
 // var first = active.eq(0);

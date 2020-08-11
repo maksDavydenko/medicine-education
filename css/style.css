@@ -147,7 +147,7 @@ a {
   color: #0031C4;
 }
 .btn--university {
-  padding: 9px 20px;
+  padding: 12px 31px;
   font-size: 20px;
   border: none;
 }
@@ -935,7 +935,8 @@ summary {
 .slider-line {
   position: relative;
   top: 2px;
-  width: 80%;
+  width: 95%;
+  max-width: 954.34px;
   height: 3px;
   background: linear-gradient(179.84deg, #f4f4f4 -0.37%, #b8b8b8 104.82%);
 }
@@ -1136,7 +1137,6 @@ summary {
   margin-right: 8px;
 }
 .academic-header__title {
-  font-family: Raleway;
   font-style: normal;
   font-weight: 800;
   font-size: 100px;
@@ -1185,7 +1185,6 @@ summary {
 .academic__years {
   padding: 0 8px;
   border: 2px solid #fff;
-  font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   font-size: 34px;
