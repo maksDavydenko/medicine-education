@@ -586,7 +586,7 @@ display: none;
         left: 20px;
       z-index: 1;
         &--right {
-            left: 82%;
+            left: 80%;
             top: -138px;
             z-index: -1;
         }
@@ -607,6 +607,7 @@ display: none;
         font-weight: 500;
         font-size: 85px;
         text-transform: uppercase;
+        margin-top: 50px;
         margin-bottom: 0;
     }
 
@@ -1216,6 +1217,12 @@ display: none;
 
 .admission {
     position: relative;
+    .arrow-decorate {
+        position: absolute;
+        right: 88px;
+        bottom: -50%;
+        transform: translate(0, -50%);
+    }
 }
 .admission-block-wrap {
     display: flex;
@@ -1250,11 +1257,12 @@ display: none;
 
     &--in-block {
         width: 33%;
-        min-width: 210px;
+        // min-width: 210px;
+        max-width: 341px;
     }
 
     &__header {
-        font-size: 26px;
+        font-size: 28px;
         line-height: 133.3%;
         font-weight: 800;
         color: #0031C4;
@@ -1270,16 +1278,20 @@ display: none;
     }
 
     &__input {
-        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
-        font-size: 16px;
-        line-height: 19px;
-        color: #737373;
-        opacity: 0.9;
-        padding: 10px 13px;
-        border-radius: 10px;
+        box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.25);
+        font-weight: 500;
+        font-size: 14px;
+        color: rgba(190, 190, 190, 0.9);
+        padding: 14px;
+        border-radius: 6px;
         border: none;
         outline:none;
         margin-bottom: 28px;
+        &::placeholder {
+            font-weight: 500;
+            font-size: 14px;
+            color: rgba(190, 190, 190, 0.9);
+        }
     }
     &__btn {
         // display: inline;
@@ -1301,8 +1313,11 @@ display: none;
     position: relative;
     background: #FFFFFF;
   
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+ 
     
+    &__wrap {
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    }
     &__icon {
         display: block;
         justify-content: center;
@@ -1433,8 +1448,13 @@ display: none;
 }
 
 .courses {
+    position: relative;
     margin: 35px 0 65px;
-    
+    .dots-decorate {
+        position: absolute;
+        left: 8.85%;
+        top: 0;
+    }
     .slick-track {
         padding: 45px 0;
     }
@@ -1824,6 +1844,10 @@ background: #0052d5;
         z-index: 99;
         font-size: 23px;
         color: #FFFFFF;
+
+        &--rus {
+            letter-spacing: 0.04em;
+        }
         
     }
 

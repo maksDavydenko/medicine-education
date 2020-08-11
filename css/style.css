@@ -490,7 +490,7 @@ summary {
   z-index: 1;
 }
 .header-slider .arrow-decorate--right {
-  left: 82%;
+  left: 80%;
   top: -138px;
   z-index: -1;
 }
@@ -507,6 +507,7 @@ summary {
   font-weight: 500;
   font-size: 85px;
   text-transform: uppercase;
+  margin-top: 50px;
   margin-bottom: 0;
 }
 .header-slider__assistant-subtitle {
@@ -973,6 +974,12 @@ summary {
 .admission {
   position: relative;
 }
+.admission .arrow-decorate {
+  position: absolute;
+  right: 88px;
+  bottom: -50%;
+  transform: translate(0, -50%);
+}
 .admission-block-wrap {
   display: flex;
   justify-content: space-between;
@@ -1000,10 +1007,10 @@ summary {
 }
 .admission-form--in-block {
   width: 33%;
-  min-width: 210px;
+  max-width: 341px;
 }
 .admission-form__header {
-  font-size: 26px;
+  font-size: 28px;
   line-height: 133.3%;
   font-weight: 800;
   color: #0031C4;
@@ -1016,16 +1023,20 @@ summary {
   margin-bottom: 10px;
 }
 .admission-form__input {
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
-  font-size: 16px;
-  line-height: 19px;
-  color: #737373;
-  opacity: 0.9;
-  padding: 10px 13px;
-  border-radius: 10px;
+  box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(190, 190, 190, 0.9);
+  padding: 14px;
+  border-radius: 6px;
   border: none;
   outline: none;
   margin-bottom: 28px;
+}
+.admission-form__input::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(190, 190, 190, 0.9);
 }
 .admission-form__btn {
   width: 145px;
@@ -1042,6 +1053,8 @@ summary {
   flex-basis: 155px;
   position: relative;
   background: #FFFFFF;
+}
+.step-block__wrap {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 .step-block__icon {
@@ -1151,7 +1164,13 @@ summary {
   align-items: center;
 }
 .courses {
+  position: relative;
   margin: 35px 0 65px;
+}
+.courses .dots-decorate {
+  position: absolute;
+  left: 8.85%;
+  top: 0;
 }
 .courses .slick-track {
   padding: 45px 0;
@@ -1440,6 +1459,9 @@ summary {
   z-index: 99;
   font-size: 23px;
   color: #FFFFFF;
+}
+.telephones__link--rus {
+  letter-spacing: 0.04em;
 }
 .telephones__icon {
   position: relative;
