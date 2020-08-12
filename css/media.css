@@ -24,6 +24,86 @@
   }
 }
 @media screen and (max-width: 1600px) {
+  .header-slider .dots-img {
+    width: 64px;
+    height: 50px;
+  }
+  .header-slider .arrow-decorate {
+    position: absolute;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+  }
+  .header-slider .arrow-decorate--right {
+    left: 80%;
+    top: -138px;
+    z-index: -1;
+  }
+  .header-slider__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .header-slider__block {
+    max-width: 445px;
+  }
+  .header-slider__mail-title {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 74px;
+    text-transform: uppercase;
+    margin-top: 24px;
+    margin-bottom: 0;
+  }
+  .header-slider__assistant-subtitle {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  .header-slider__subtitle {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 28px;
+    color: #FF0000;
+  }
+  .header-slider__info {
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: -0.02em;
+    margin-bottom: 50px;
+  }
+  .header-slider__nav {
+    position: relative;
+    margin-top: 40px;
+    padding-bottom: 30px;
+    max-width: 70px;
+  }
+  .header-slider__nav-item {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    border-left: 3px solid rgba(255, 255, 255, 0.8);
+    opacity: 0.8;
+  }
+  .header-slider__nav-num {
+    display: block;
+    padding: 12px 18px;
+    text-align: center;
+  }
+  .header-slider__nav-icon {
+    display: none;
+  }
+  .header-slider__buttons {
+    top: 75px;
+    right: -115px;
+    position: absolute;
+  }
   .rectangle-decorate {
     left: -45%;
     top: -54%;
@@ -225,15 +305,15 @@
   }
   .feedback-item__inner {
     display: grid;
-    grid-template-areas: "img title" "img subtitle" "textItem textItem";
+    grid-template-areas: "img img title" "textItem textItem textItem";
   }
   .feedback-item__img {
     grid-area: img;
     position: relative;
     bottom: 40px;
     display: block;
-    max-width: 100%;
-    max-height: 100%;
+    width: 400px;
+    height: 100%;
     object-fit: cover;
     border-radius: 28px;
     border-right: 4px solid #0031C4;
@@ -254,7 +334,6 @@
     grid-area: textItem;
     font-size: 14px;
     color: #6F6F6F;
-
   }
 }
 @media screen and (max-width: 800px) {

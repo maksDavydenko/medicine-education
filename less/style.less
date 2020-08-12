@@ -1191,8 +1191,8 @@ display: none;
 }
 .slider-nav-btn {
     border: none;
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1200,6 +1200,7 @@ display: none;
     &--next {
         margin-left: 15px;
     }
+  
 }
 
 .btn--university {
@@ -1495,19 +1496,21 @@ display: none;
    
     
     &__years {
-        padding: 0 8px;
-        border: 2px solid #fff;
-        // font-family: Raleway;
+        padding: 2px 8px;
+        border: 3px solid #fff;
         font-style: normal;
         font-weight: bold;
         font-size: 34px;
+        /* line-height: 54px; */
+        letter-spacing: -0.02em;
         text-transform: uppercase;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #FFFFFF;
     }
 
 
     &__title {
         font-size: 25px;
-     
         font-style: normal;
         font-weight: bold;
         letter-spacing: 0.025em;
@@ -1537,8 +1540,8 @@ display: none;
 .banner::before {
     content: "";
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 97px;
+    height: 97px;
     border-radius: 50%;
     top: 50%;
     left: 50%;
@@ -1656,9 +1659,16 @@ display: none;
 //feedback
 
 .feedback {
+    position: relative;
     background: url('../img/photo/feedback-bg.png');
     background-position: center center;
     background-repeat: no-repeat;
+
+    .feedback-arrow-decorate {
+        position: absolute;
+        right: 95px;
+        bottom: -65px;
+    }
 }
 .feedback-slider {
     border: 6px solid #0031C4;
@@ -1728,11 +1738,13 @@ display: none;
         // display: flex;
         display: grid;
         grid-template-areas: "img title"
-        "img subtitle"
-        "img textItem"
-        ". textItem";
+                            "img textItem"
+                           
     }
 
+    &__info {
+        grid-area: title;
+    }
     &__img {
         grid-area: img;
         position: relative;
@@ -1748,14 +1760,14 @@ display: none;
     }
     
     &__title {
-        grid-area: title;
+        // grid-area: title;
         font-size: 22px;
      
         margin-bottom: 15px;
     }
 
     &__subtitle {
-        grid-area: subtitle;
+        // grid-area: subtitle;
 
         font-size: 12px;
         margin-bottom: 15px;
@@ -1991,6 +2003,9 @@ background: #0052d5;
             width: 34px;
             height: 2px;
             background-color: #fff;
+        }
+        &--last {
+            margin-top: 11px;
         }
     }
 

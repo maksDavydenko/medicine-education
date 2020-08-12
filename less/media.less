@@ -29,6 +29,116 @@
 
 @media screen and (max-width: 1600px) {
 
+    .header-slider {
+        // margin-top: 52px;
+        // overflow: hidden;
+        // position: relative;
+        // background-image: url(../img/photo/headerSlider/medicine.png);
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position: center 40%;
+        // z-index: 2;
+        // font-family: Roboto;
+        // color: #FFFFFF;
+        // border-bottom: 5px solid #B8B8B8;
+    
+        // &__img-wrap {
+        //     height: 100%;
+        // }
+    
+        .dots-img {
+            width: 64px;
+            height: 50px;
+        }
+        .arrow-decorate {
+            position: absolute;
+            top: -60px;
+            left: 20px;
+          z-index: 1;
+            &--right {
+                left: 80%;
+                top: -138px;
+                z-index: -1;
+            }
+        }
+        
+        &__content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &__block {
+            max-width: 445px;
+        }
+    
+        &__mail-title {
+            font-style: italic;
+            font-weight: 500;
+            font-size: 74px; //
+            text-transform: uppercase;
+            margin-top: 24px; //
+            margin-bottom: 0;
+        }
+    
+        &__assistant-subtitle {
+            font-style: italic;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+    
+        &__subtitle {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 28px;//
+            color: #FF0000;
+        }
+    
+        &__info {
+            font-size: 14px;
+            color: #FFFFFF;
+            letter-spacing: -0.02em;
+            margin-bottom: 50px;
+        }
+    
+        &__nav {
+            position: relative;
+            margin-top: 40px;
+            padding-bottom: 30px;
+           max-width: 70px;
+          
+            &-item {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 15px;
+                line-height: 18px;
+                color: #FFFFFF;
+                border-left: 3px solid rgba(255,255,255, 0.8);
+                opacity: 0.8; 
+            }
+    
+            &-num {
+                display: block;
+                padding: 12px 18px;
+                text-align: center;
+            }
+            &-icon {
+                display: none;
+            }
+        }
+    
+        &__buttons {
+            top: 75px;
+            right: -115px;
+            position: absolute;
+        }
+    }
+    
+
     .rectangle-decorate {
         // position: absolute;
         // height: 150%;
@@ -316,9 +426,8 @@
     
         &__inner {
             display: grid; //
-            grid-template-areas: "img title"
-                                "img subtitle"
-                                "textItem textItem";
+            grid-template-areas: "img img title"
+                                    "textItem textItem textItem"
             
         }
     
@@ -327,8 +436,8 @@
             position: relative;
             bottom: 40px;
             display: block;
-            max-width: 100%;
-            max-height: 100%;
+            width: 400px;
+            height: 100%;
             object-fit: cover;
             border-radius: 28px;
             border-right: 4px solid #0031C4;

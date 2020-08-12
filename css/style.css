@@ -952,8 +952,8 @@ summary {
 }
 .slider-nav-btn {
   border: none;
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1202,12 +1202,16 @@ summary {
   flex-direction: column;
 }
 .academic__years {
-  padding: 0 8px;
-  border: 2px solid #fff;
+  padding: 2px 8px;
+  border: 3px solid #fff;
   font-style: normal;
   font-weight: bold;
   font-size: 34px;
+  /* line-height: 54px; */
+  letter-spacing: -0.02em;
   text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #FFFFFF;
 }
 .academic__title {
   font-size: 25px;
@@ -1235,8 +1239,8 @@ summary {
 .banner::before {
   content: "";
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 97px;
+  height: 97px;
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -1329,9 +1333,15 @@ summary {
   border-right: 3px solid #CE0000;
 }
 .feedback {
+  position: relative;
   background: url('../img/photo/feedback-bg.png');
   background-position: center center;
   background-repeat: no-repeat;
+}
+.feedback .feedback-arrow-decorate {
+  position: absolute;
+  right: 95px;
+  bottom: -65px;
 }
 .feedback-slider {
   border: 6px solid #0031C4;
@@ -1393,7 +1403,10 @@ summary {
 }
 .feedback-item__inner {
   display: grid;
-  grid-template-areas: "img title" "img subtitle" "img textItem" ". textItem";
+  grid-template-areas: "img title" "img textItem";
+}
+.feedback-item__info {
+  grid-area: title;
 }
 .feedback-item__img {
   grid-area: img;
@@ -1409,12 +1422,10 @@ summary {
   margin-right: 35px;
 }
 .feedback-item__title {
-  grid-area: title;
   font-size: 22px;
   margin-bottom: 15px;
 }
 .feedback-item__subtitle {
-  grid-area: subtitle;
   font-size: 12px;
   margin-bottom: 15px;
 }
@@ -1586,6 +1597,9 @@ summary {
   width: 34px;
   height: 2px;
   background-color: #fff;
+}
+.footer-item__subtitle--last {
+  margin-top: 11px;
 }
 .footer-item__link {
   font-size: 12px;
