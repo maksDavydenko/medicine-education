@@ -7,9 +7,8 @@
 @media screen and (max-width: 1770px) {
 
     
-
     .rectangle-decorate-block {
-        right: -88px;
+        right: 0px;
     }
     .diamond-decorate {
         position: absolute;
@@ -38,22 +37,25 @@
 
 @media screen and (max-width: 1600px) {
 
-    .header-slider {
-        // margin-top: 52px;
-        // overflow: hidden;
-        // position: relative;
-        // background-image: url(../img/photo/headerSlider/medicine.png);
-        // background-repeat: no-repeat;
-        // background-size: cover;
-        // background-position: center 40%;
-        // z-index: 2;
-        // font-family: Roboto;
-        // color: #FFFFFF;
-        // border-bottom: 5px solid #B8B8B8;
+    .rectangle-decorate {
+        right: 50%;
+        top: -142px;
+     
+        width: 989.42px;
+        height: 812.9px;
+        
+      
     
-        // &__img-wrap {
-        //     height: 100%;
-        // }
+        &__inner {
+            width: 939.89px;
+            height: 760.76px;
+          
+            // transform: matrix(0.71, -0.69, 0.72, 0.71, 0, 0);
+        }
+     }
+
+    .header-slider {
+      
     
         .dots-img {
             width: 64px;
@@ -199,19 +201,45 @@
         left: 16%;
         max-width: 680px;
     }
-    .rectangle-decorate {
-    // position: absolute;
-    // height: 150%;
-    // width: 84%;
-    // border-radius: 28px;
-    // transform: rotate(135deg);
-    // background: rgba(0, 150, 235, 0.7);
-    // left: -45%;
-    // top: -54%;
+
+    .rectangle-decorate-block {
+        right: -106px;
+        // top: -269px;
+        &__red {
+            overflow: hidden;
+            width: 234.19px;
+height: 234.19px;
+            background: linear-gradient(206.74deg, #FF0000 9.11%, #CE0000 98.12%);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 28px;
+            transform: matrix(0.71, -0.69, 0.72, 0.71, 0, 0);
+        }
+        &__transparent{
+            position: absolute;
+            width: 217px;
+            height: 217px;
+            border-radius: 28px;
+            position: absolute;
+            top: 47%;
+            left: 200px;
+            z-index: 2;
+            transform: matrix(0.71, -0.69, 0.72, 0.71, 0, 0) translate(0, -50%);
+            border: 4px solid #BDBDBD;
+        }
+        &__arr-white {
+            position: absolute;
+            top: -83px;
+            left: -28px;
+            z-index: 3;
+        }
+        &__arr-transparent {
+            position: absolute;
+            top: -83px;
+            left: -5px;
+            z-index: 3;
+        }
+        
     }
-
-
-   
     .connection-info__item {
         display: none;
     }

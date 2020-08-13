@@ -507,6 +507,8 @@ summary {
 }
 .header-slider__block {
   max-width: 445px;
+  position: relative;
+  z-index: 2;
 }
 .header-slider__mail-title {
   font-style: italic;
@@ -631,8 +633,12 @@ summary {
   background: linear-gradient(273.48deg, #0066ff -8.13%, #00369c 42.42%);
   border-radius: 28px;
 }
+.social-nav-wrap {
+  position: relative;
+  z-index: 9;
+}
 .social-nav {
-  position: absolute;
+  position: fixed;
   top: 50%;
   right: 45px;
   transform: translate(0, -50%);
@@ -1151,6 +1157,12 @@ summary {
   position: absolute;
   left: 61px;
   top: -134px;
+}
+.academic-header .diamond-decorate {
+  position: absolute;
+  top: 123px;
+  left: 91%;
+  transform: matrix(-0.71, -0.69, -0.72, 0.71, 0, 0);
 }
 .academic-header__icon {
   margin-right: 8px;
