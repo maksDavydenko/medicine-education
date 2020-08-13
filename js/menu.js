@@ -6,3 +6,8 @@ menu.addEventListener('click', () => {
         adaptiveMenu.style.display = 'none' :
         adaptiveMenu.style.display = 'block';
 })
+
+$('details').click(function (event) {
+    $('details').not(this).removeAttr("open");
+});
+

@@ -639,6 +639,7 @@ summary {
 }
 .social-nav {
   position: fixed;
+  display: none;
   top: 50%;
   right: 45px;
   transform: translate(0, -50%);
@@ -948,7 +949,7 @@ summary {
 .slider-line {
   position: relative;
   top: 2px;
-  width: 95%;
+  width: 85%;
   max-width: 954.34px;
   height: 3px;
   background: linear-gradient(179.84deg, #f4f4f4 -0.37%, #b8b8b8 104.82%);
@@ -991,6 +992,7 @@ summary {
   right: 88px;
   bottom: -50%;
   transform: translate(0, -50%);
+  z-index: -1;
 }
 .admission-block-wrap {
   display: flex;
