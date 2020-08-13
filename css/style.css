@@ -614,32 +614,22 @@ summary {
   margin-left: -50px;
 }
 .rectangle-decorate {
+  right: 50%;
+  top: -178px;
   position: absolute;
-  height: 150%;
-  width: 84%;
-  border-radius: 28px;
-  transform: rotate(135deg);
+  width: 1249.3px;
+  height: 1019.42px;
+  /* #0096EB */
   background: rgba(0, 150, 235, 0.7);
-  top: -20%;
-  left: -660px;
+  border-radius: 28px;
+  transform: matrix(0.71, -0.69, 0.72, 0.71, 0, 0);
 }
 .rectangle-decorate__inner {
   position: absolute;
-  height: 93.6%;
-  width: 95%;
-  background: linear-gradient(274.44deg, #0066ff -9.04%, #00369c 41.93%);
+  width: 1189.18px;
+  height: 954.03px;
+  background: linear-gradient(273.48deg, #0066ff -8.13%, #00369c 42.42%);
   border-radius: 28px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-}
-.rectangle-decorate .arrow-decorate {
-  position: absolute;
-  top: -3%;
-  left: 5%;
-  transform: rotate(224deg);
 }
 .social-nav {
   position: absolute;

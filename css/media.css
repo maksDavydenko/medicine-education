@@ -104,10 +104,6 @@
     right: -115px;
     position: absolute;
   }
-  .rectangle-decorate {
-    left: -45%;
-    top: -54%;
-  }
   .universities .square-decorate {
     top: -46%;
     z-index: 2;
@@ -137,10 +133,6 @@
   .header-assistent-slider {
     left: 16%;
     max-width: 680px;
-  }
-  .rectangle-decorate {
-    left: -45%;
-    top: -54%;
   }
   .connection-info__item {
     display: none;
