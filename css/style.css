@@ -861,6 +861,16 @@ summary {
   z-index: 2;
   left: -245px;
 }
+.universities .dots-decorate-red {
+  position: absolute;
+  right: 88px;
+  bottom: -31px;
+}
+.universities .dots-decorate-blue {
+  position: absolute;
+  left: 10%;
+  top: 31px;
+}
 .universities__slider {
   display: flex;
   align-items: center;
@@ -1265,6 +1275,11 @@ summary {
   bottom: 0;
   left: 6.25%;
   z-index: 2;
+}
+.benefits .dots-decorate {
+  position: absolute;
+  right: 6.25%;
+  bottom: 50px;
 }
 .benefits-items {
   margin-top: 50px;
