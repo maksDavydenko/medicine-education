@@ -1146,38 +1146,7 @@ display: none;
     }
 }
 
-// .slider-line-point {
-//     top: 50%;
-//     transform: translate(-50%, -50%);
-//     position: absolute;
-//     width: 7px;
-//     height: 7px;
-//     border-radius: 50%;
-//     background: linear-gradient(188.21deg, #0066FF -8.5%, #00369C 51.46%,
-//      #0031C4 130.73%, #018FF6 130.74%);
 
-//      &--active {
-//          width: 9px;
-//          height: 9px;
-//          background: linear-gradient(207.28deg, #FF0000 9.11%, #CE0000 98.12%);
-//      }
-// }
-
-
-// @iterations: 10;
-
-// .slider-line-point  (@index) when (@index > 0) {
-  
-//     @left: 11.11% * (@index - 1);
-
-//     .slider-line-point:nth-child(@{index}) {
-//         left: ~"@{left}";
-//     }
-//     .slider-line-point(@index - 1);
-// }
-
-// .slider-line-point (0) {};
-// .slider-line-point (@iterations);
 
 .slider-nav {
     display: flex;
@@ -1191,11 +1160,13 @@ display: none;
 }
 .slider-nav-btn {
     border: none;
-    width: 35px;
-    height: 35px;
+    // width: 35px;
+    // height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
+    cursor: pointer;
 
     &--next {
         margin-left: 15px;
@@ -1208,12 +1179,10 @@ display: none;
     &:last-of-type {
         margin-left: auto;
         margin-right: 0;
-
     }
 }
 .universities-navigations {
     display: flex;
-   
 }
 
 .admission {
@@ -1234,7 +1203,6 @@ display: none;
     margin-top: 26px;
     display: flex;
     justify-content: space-between;
-    // width: 67%;
 }
 
 .admission-item-wrap {
@@ -1258,7 +1226,6 @@ display: none;
 
     &--in-block {
         width: 33%;
-        // min-width: 210px;
         max-width: 341px;
     }
 

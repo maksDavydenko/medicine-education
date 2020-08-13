@@ -952,11 +952,11 @@ summary {
 }
 .slider-nav-btn {
   border: none;
-  width: 35px;
-  height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: transparent;
+  cursor: pointer;
 }
 .slider-nav-btn--next {
   margin-left: 15px;
