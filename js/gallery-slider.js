@@ -25,13 +25,13 @@ $(document).ready(function () {
                     slidesToShow: 3
                 }
             },
-            {
-                breakpoint: 800,
-                settings: {
-                    centerPadding: '40px',
-                    slidesToShow: 2
-                }
-            },
+            // {
+            //     breakpoint: 800,
+            //     settings: {
+            //         centerPadding: '40px',
+            //         slidesToShow: 2
+            //     }
+            // },
 
             {
                 breakpoint: 480,

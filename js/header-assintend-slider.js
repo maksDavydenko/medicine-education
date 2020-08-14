@@ -1,7 +1,6 @@
 import data from './slliderData.js';
 
 const title = document.querySelector('.js-title');
-// $('.js-title');
 const info = document.querySelector('.js-info');
 const link = document.querySelector('.js-link');
 const headerSlider = document.querySelector('.header-slider')
@@ -31,8 +30,8 @@ $(document).ready(function () {
             {
                 breakpoint: 480,
                 settings: {
-                    centerPadding: '40px',
-                    slidesToShow: 1
+                    centerPadding: '50px',
+                    slidesToShow: 3
                 }
             }
         ]

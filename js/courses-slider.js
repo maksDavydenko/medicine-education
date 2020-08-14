@@ -32,12 +32,12 @@ $(document).ready(function () {
                     slidesToShow: 3
                 }
             },
-            {
-                breakpoint: 900,
-                settings: {
-                    slidesToShow: 2
-                }
-            },
+            // {
+            //     breakpoint: 900,
+            //     settings: {
+            //         slidesToShow: 2
+            //     }
+            // },
             {
                 breakpoint: 480,
                 settings: {
