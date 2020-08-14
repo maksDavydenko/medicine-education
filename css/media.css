@@ -45,9 +45,10 @@
     z-index: 1;
   }
   .header-slider .arrow-decorate--right {
-    left: 80%;
-    top: -138px;
-    z-index: -1;
+    left: 93%;
+    top: -33px;
+    width: 111.32px;
+    height: 168.24px;
   }
   .header-slider__content {
     position: relative;
@@ -124,8 +125,37 @@
     z-index: 2;
     left: -396px;
   }
+  .universities .dots-decorate-red {
+    right: -37px;
+    bottom: -31px;
+  }
   .header-assistent-slider {
     left: 20%;
+  }
+  .academic-header .diamond-decorate {
+    top: 45px;
+    left: 98%;
+  }
+  .academic-header .arrow-decorate {
+    width: 103.16px;
+    height: 156.28px;
+    left: 10px;
+    top: -95px;
+  }
+  .benefits .arrow-decorate {
+    width: 121px;
+    height: 178px;
+    bottom: -151px;
+    left: 0;
+    z-index: -1;
+  }
+  .feedback .diamond-decorate {
+    left: -56px;
+    transform: matrix(-0.71, -0.69, -0.72, 0.71, 0, 0);
+    top: 241px;
+  }
+  .feedback .diamond-decorate .diamond-decorate-transparent {
+    display: none;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -139,6 +169,14 @@
 @media screen and (max-width: 1200px) {
   .header__nav {
     display: none;
+  }
+  .universities .dots-decorate-red {
+    width: 66.28px;
+    height: 51.55px;
+  }
+  .admission .diamond-decorate {
+    left: -163px;
+    top: -50px;
   }
   .header-assistent-slider {
     left: 16%;
@@ -172,6 +210,12 @@
   }
   .connection-info__item--menu {
     display: flex;
+  }
+  .academic-header .diamond-decorate {
+    display: none;
+  }
+  .academic-header .arrow-decorate {
+    display: none;
   }
   .banner {
     font-size: 18px;
@@ -208,6 +252,9 @@
   }
   .admission-form__header {
     font-size: 23px;
+  }
+  .footer-form__btn {
+    margin: 20px auto 0;
   }
 }
 @media screen and (max-width: 997px) {
@@ -337,49 +384,6 @@
   .admission-item-wrap {
     flex-direction: column;
   }
-  .feedback-item {
-    margin: 46px 50px;
-    padding: 23px 35px;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
-    border-radius: 14px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    color: #0031C4;
-  }
-  .feedback-item__inner {
-    display: grid;
-    grid-template-areas: "img img title" "textItem textItem textItem";
-  }
-  .feedback-item__img {
-    grid-area: img;
-    position: relative;
-    bottom: 40px;
-    display: block;
-    width: 400px;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 28px;
-    border-right: 4px solid #0031C4;
-    border-bottom: 4px solid #0031C4;
-    margin-right: 35px;
-  }
-  .feedback-item__title {
-    grid-area: title;
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-  .feedback-item__subtitle {
-    grid-area: subtitle;
-    font-size: 12px;
-    margin-bottom: 15px;
-  }
-  .feedback-item__text {
-    grid-area: textItem;
-    font-size: 14px;
-    color: #6F6F6F;
-  }
 }
 @media screen and (max-width: 800px) {
   .header--sticky {
@@ -426,6 +430,9 @@
   }
 }
 @media screen and (max-width: 720px) {
+  .header-slider__nav--mobile {
+    display: block;
+  }
   .slider-line {
     display: none;
   }
@@ -466,6 +473,23 @@
   .banner {
     display: none;
   }
+  .feedback-item__inner {
+    grid-template-areas: 'img header' 'title title';
+  }
+  .feedback-item__img img {
+    position: relative;
+    bottom: 40px;
+    display: block;
+    border-radius: 28px;
+    border-right: 4px solid #0031C4;
+    border-bottom: 4px solid #0031C4;
+    margin-right: 35px;
+  }
+  .header-slider__buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
 }
 @media screen and (max-width: 500px) {
   .container {
@@ -504,19 +528,21 @@
   .square-decorate {
     display: none;
   }
+  /* position: absolute; */
   .header-slider__nav {
     position: relative;
     margin-top: 40px;
+    width: 100vw;
     padding-bottom: 30px;
-    max-width: 100%;
-    margin: 0px -20px;
+    max-width: 100vw;
+    left: -20px;
   }
   .header-slider__nav-list {
     display: flex;
     align-items: center;
   }
   .header-slider__nav-item {
-    min-width: 18.6%;
+    width: 16.66%;
     padding: 9px 13px;
     background: linear-gradient(189.83deg, #0066ff -8.5%, #00369c 51.46%, #0031c4 130.73%, #018ff6 130.74%);
     border-left: 0px;
@@ -534,5 +560,6 @@
   }
   .header-slider__buttons {
     position: absolute;
+    z-index: 9999;
   }
 }
