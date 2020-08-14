@@ -59,10 +59,7 @@
     max-width: 445px;
   }
   .header-slider__mail-title {
-    font-style: italic;
-    font-weight: 500;
     font-size: 74px;
-    text-transform: uppercase;
     margin-top: 24px;
     margin-bottom: 0;
   }
@@ -75,10 +72,7 @@
     margin-bottom: 18px;
   }
   .header-slider__subtitle {
-    font-style: italic;
-    font-weight: bold;
     font-size: 28px;
-    color: #FF0000;
   }
   .header-slider__info {
     font-size: 14px;
@@ -102,18 +96,10 @@
     border-left: 3px solid rgba(255, 255, 255, 0.8);
     opacity: 0.8;
   }
-  .header-slider__nav-num {
-    display: block;
-    padding: 12px 18px;
-    text-align: center;
-  }
-  .header-slider__nav-icon {
-    display: none;
-  }
-  .header-slider__buttons {
-    top: 75px;
-    right: -115px;
-    position: absolute;
+  .header-slider__nav-item--active {
+    font-size: 25px;
+    line-height: 29px;
+    margin-left: 0;
   }
   .universities .square-decorate {
     top: -46%;
@@ -334,9 +320,6 @@
   .connection-info__btn {
     padding: 12px 26px;
     margin-left: auto;
-  }
-  .rectangle-decorate-block {
-    display: none;
   }
   .social-nav {
     right: 0;

@@ -544,9 +544,6 @@ summary {
   padding-bottom: 30px;
   max-width: 70px;
 }
-.header-slider__nav--mobile {
-  display: none;
-}
 .header-slider__nav-item {
   font-family: Roboto;
   font-style: normal;
