@@ -39,7 +39,7 @@ $(document).ready(function () {
             //     }
             // },
             {
-                breakpoint: 480,
+                breakpoint: 720,
                 settings: {
                     slidesToShow: 1
                 }

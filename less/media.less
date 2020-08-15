@@ -732,28 +732,13 @@
     .benefits-item:nth-child(4) {
         grid-area: four;
     }
-
    
 }
 
 
 @media screen and (max-width: 720px) {
-    .header-slider {
-        &__nav {
-        //    &--mobile {
-        //        display: block;
-        //    }
+    
 
-        //    &--desktop{
-        //        display: none;
-        //    }
-    }
-}
-
-
-    .slider-line {
-      display: none;
-    }
     .steps-wrap {
         flex-direction: column;
         justify-content: center;
@@ -788,6 +773,44 @@
                     bottom: -16px;
                     transform: rotate(20deg);
                 }
+
+                &__block {
+                    // max-width: 445px;
+                    // position: relative;
+                    // z-index: 2;
+                }
+            
+                &__mail-title {
+                    // font-style: italic;
+                    // font-weight: 500;
+                    // font-size: 85px;
+                    // text-transform: uppercase;
+                    // margin-top: 50px;
+                    // margin-bottom: 0;
+                }
+            
+                &__assistant-subtitle {
+                    // font-style: italic;
+                    // font-weight: 500;
+                    // font-size: 24px;
+                    // line-height: 28px;
+                    // text-transform: uppercase;
+                    // margin-bottom: 18px;
+                }
+            
+                &__subtitle {
+                    // font-style: italic;
+                    // font-weight: bold;
+                    // font-size: 37px;
+                    // color: #FF0000;
+                }
+            
+                &__info {
+                    // font-size: 14px;
+                    // color: #FFFFFF;
+                    // letter-spacing: -0.02em;
+                    // margin-bottom: 50px;
+                }
             }
         }   
   
@@ -817,11 +840,7 @@
        
     }
 
-    .header-slider__buttons {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-    }
+  
 
 }
 
@@ -868,61 +887,89 @@
     display: none;
 }
 
-// header-slider__nav {
-    /* position: absolute; */
-    // position: relative;
-    // margin-top: 40px;
-    // width: 100vw;
-    // padding-bottom: 30px;
-    // max-width: 130%;
-    // left: -20px;
-// }
 
-
-.header-slider {
-        
-    
-            &__nav {
-                position: relative;
-                margin-top: 40px;
-                width: 100vw;
-                padding-bottom: 30px;
-                max-width: 100vw;
-                left: -20px;
-        
-               &-list {
-                display: flex;//
-                align-items: center;//
-            }
-                &-item {
-                    width: 16.66%;
-                    padding: 9px 13px;//
-                    background: linear-gradient(189.83deg, #0066FF -8.5%, #00369C 51.46%, #0031C4 130.73%, #018FF6 130.74%);//
-              
-                    border-left: 0px;//
-                   
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                }
-                &-icon {
-                    display: block;
-                    margin-bottom: 8px;//
-                }
-        
-                &-num {
-                    padding: 0px;//
-                }
-            }
-        
-           
-        }
 .header-slider__buttons {
-    position: absolute;
-    z-index: 9999;
+    display: none;
+ }
+ .slider-header-btn{
+     display: block;
+     position: absolute;
+     top: 50%;
+     z-index: 999;
+ 
+ }
 
-}
+ .slider-header-btn--mobile-prev {
+     left: 10px;
+ }
+ .slider-header-btn--mobile-next {
+     right: 10px;
+ }
+
+ .rectangle-decorate-block,
+ .assistent-slider-wrap,
+ .btn--header-slider,
+ .header-slider__info  {
+     display: none;
+ }
+ .universities{
+     .square-decorate {
+         display: none;
+     }
+ }
+
+ .header-slider {
+    &__mail-title {
+         font-size: 36px;
+     }
+     
+     &__nav {
+         position: relative;
+         margin-top: 40px;
+         width: 100vw;
+         padding-bottom: 30px;
+         max-width: 100vw;
+         left: -20px;
+         bottom: -137px;
+ 
+        &-list {
+         display: flex;//
+         align-items: center;//
+     }
+         &-item {
+             width: 16.66%;
+             padding: 9px 13px;//
+             background: linear-gradient(189.83deg, #0066FF -8.5%, #00369C 51.46%, #0031C4 130.73%, #018FF6 130.74%);//
+       
+             border-left: 0px;//
+            
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             justify-content: center;
+         }
+         &-icon {
+             display: block;
+             margin-bottom: 8px;//
+         }
+ 
+         &-num {
+             padding: 0px;//
+         }
+     }
+ 
+    
+ }
+ .slider-line {
+   display: none;
+ }
+
+
+// .header-slider__buttons {
+//     position: absolute;
+//     z-index: 9999;
+
+// }
 
 
 
