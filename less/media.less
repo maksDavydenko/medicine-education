@@ -261,10 +261,20 @@
     }
 
     .connection-info__item--menu,
-    .connection-info__item--search{
+    .connection-info__item--search,
+    .connection-info__item--search-menu{
         display: flex;
     }
 
+    .connection-info__item--menu {
+        justify-content: space-between;
+        margin-bottom: 16px;
+    }
+
+    .connection-info__item--search-menu {
+        justify-content: flex-start;
+    }
+   
     // .connection-info--tablet-main {
     //     display: none;
     // }
@@ -272,7 +282,9 @@
     //     display: flex;
     //     justify-content: flex-start;
     // }
-    
+    .connection-info__btn--menu {
+        margin-left: 0;
+    }
     .academic-header .diamond-decorate {
         display: none;
     }
@@ -558,6 +570,9 @@
         left: 50%;
         transform: translate(-50%, 0);
     }
+    .connection-info__btn--menu {
+        margin-left: 0;
+    }
 }
 
 
@@ -611,7 +626,9 @@
         margin: 0 -20px 0 -20px;
     }
 
- 
+    .connection-info__btn--menu {
+        margin-left: 0;
+    }
     .admission-item-wrap {
         flex-direction: column;
     }
@@ -674,19 +691,30 @@
     .social-links-list--mobile,
     .social-links-list--menu {
         display: flex;
-        display: flex;
+       
+    }
+    .connection-info__item--search-menu {
+        justify-content: flex-start;
     }
     
+   
     .connection-info__btn--sticky {
         display: block;
     }
+
+    
 
     .connection-info__btn{
        padding: 7px;
        bottom: -31px;
        right: 10px
     }
-
+    .connection-info__item--search-menu {
+        display: flex;
+    }
+    .connection-info__btn--menu {
+        margin-left: 0;
+    }
     .rectangle-decorate-block {
         // position: absolute;
         // top: -287px;
