@@ -116,6 +116,8 @@ a{
 }
 }
 
+
+
 .header__item:hover > .hover-items {
     display: block;
 } 
@@ -201,6 +203,7 @@ a{
 
 #menu {
     margin-left: 40px;
+    display: none;
 }
 
 .diamond-decorate {
@@ -260,6 +263,19 @@ a{
     right: -29px;
     padding: 7px 14px;
     font-size: 15px;
+}
+
+.connection-info__btn--menu {
+    margin-left: 0;
+}
+.connection-info__item--search {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.connection-info__item--search-menu{
+    display: flex;
+    justify-content: flex-start;
 }
 .rectangle-decorate-block {
     position: absolute;
@@ -331,10 +347,12 @@ a{
         }
 
         &--menu {
-            display: block;
+            display: flex;
+            justify-content: flex-start;
         }
         
     }
+
 
     .connection-info__btn {
         padding: 12px 37px;
@@ -345,6 +363,7 @@ a{
         
     }
 }
+.connection-info
 
 
 
@@ -384,7 +403,8 @@ a{
         background: linear-gradient(188.21deg, #0066FF -8.5%, #00369C 51.46%, #0031C4 130.73%, #018FF6 130.74%);
 
         &--menu {
-            background: linear-gradient(137.45deg, #F4F4F4 -0.37%, #B8B8B8 104.82%)
+            background: linear-gradient(137.45deg, #F4F4F4 -0.37%, #B8B8B8 104.82%);
+            max-width: 195px;
         }
     }
 }
@@ -440,8 +460,15 @@ summary {
    top: 0;
    font-family: Roboto;
    color: #FFFFFF;
-   background: rgba(0, 102, 255, 0.88);
-display: none;
+   background: linear-gradient(188.21deg, #0066FF -8.5%, #0041BE 51.46%, #0031C4 130.73%, #018FF6 130.74%);
+    opacity: 0.97;
+    display: none;
+
+    &__social-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
    &__info {
     font-size: 16px;
@@ -491,6 +518,11 @@ display: none;
     }
 }
 
+
+.slider-header-btn--mobile-prev,
+.slider-header-btn--mobile-next {
+    display: none;
+}
 .adaptive-header {
     &__inner {
         &--tablet {
@@ -565,6 +597,10 @@ display: none;
         display: none;
         // margin-right: 23%;
         // margin-bottom: 43px;
+    }
+
+    &--menu {
+        display: flex;
     }
 }
 
@@ -952,6 +988,7 @@ display: none;
         font-size: 28px;
         color: #0031C4;
         margin-bottom: 7px;
+        text-transform: uppercase;
     }
 
     &__info{

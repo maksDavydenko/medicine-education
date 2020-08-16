@@ -260,9 +260,18 @@
         display: none;
     }
 
-    .connection-info__item--menu{
+    .connection-info__item--menu,
+    .connection-info__item--search{
         display: flex;
     }
+
+    // .connection-info--tablet-main {
+    //     display: none;
+    // }
+    // .connection-info__item--search-menu{
+    //     display: flex;
+    //     justify-content: flex-start;
+    // }
     
     .academic-header .diamond-decorate {
         display: none;
@@ -615,6 +624,8 @@
 }
 
 @media screen and (max-width: 800px) {
+
+    
     .header--sticky {
         opacity: 1;
     }
@@ -652,14 +663,17 @@
         padding: 3px 13px;
     }
   
-    .connection-info__item--tablet,
     .connection-info__btn--tablet,
+    .connection-info__item--search,
+    .connection-info--tablet-main,
     .social-links-list,
     .social-nav {
        display: none;
    }
 
-    .social-links-list--mobile{
+    .social-links-list--mobile,
+    .social-links-list--menu {
+        display: flex;
         display: flex;
     }
     
