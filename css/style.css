@@ -831,7 +831,8 @@ summary {
   position: relative;
   margin: 0 auto 16px;
   height: 5px;
-  width: 542px;
+  width: 80%;
+  max-width: 542px;
   background: linear-gradient(180.08deg, #0066ff -8.5%, #00369c 51.46%, #0031c4 130.73%, #018ff6 130.74%);
 }
 .line--slide-item {
@@ -880,6 +881,9 @@ summary {
   background-image: url('../img/photo/bg_section_1.png');
   background-repeat: no-repeat;
   background-position: center center;
+}
+.universities__mobile-navigations {
+  display: none;
 }
 .universities .square-decorate {
   top: -65%;

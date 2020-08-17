@@ -5,7 +5,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: false,
         speed: 500,
-        adaptiveHeight: true,
+        // adaptiveHeight: true,
         // autoplay: true,
         // autoplaySpeed: 5000,
         dots: true,
@@ -33,13 +33,13 @@ $(document).ready(function () {
                 }
             },
             // {
-            //     breakpoint: 900,
+            //     breakpoint: 720,
             //     settings: {
             //         slidesToShow: 2
             //     }
             // },
             {
-                breakpoint: 480,
+                breakpoint: 720,
                 settings: {
                     slidesToShow: 1
                 }

@@ -60,3 +60,17 @@
 .test {
   margin-top: 50px;
 }
+.about__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.about-text {
+  width: 60%;
+  text-align: justify;
+}
+.about-form {
+  display: flex;
+  width: 30%;
+  z-index: 999;
+}

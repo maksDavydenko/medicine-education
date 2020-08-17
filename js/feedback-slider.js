@@ -6,7 +6,7 @@ $(document).ready(function () {
         arrows: false,
         dots: true,
         speed: 500,
-        adaptiveHeight: true,
+        // adaptiveHeight: true,
         // autoplay: true,
         // autoplaySpeed: 5000,
         appendDots: $('.feedback-slider__list'),

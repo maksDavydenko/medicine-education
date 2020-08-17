@@ -626,10 +626,11 @@
         flex-direction: column;
     }
 
-    // 
- 
-    
-    
+     .btn--university {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
       
 }
 
@@ -713,10 +714,7 @@
         margin-left: 0;
     }
     .rectangle-decorate-block {
-        // position: absolute;
-        // top: -287px;
-        // z-index: 2;
-        // right: 215px;
+    
         right: -85px;
         &__red {
             width: 177.17px;
@@ -776,11 +774,16 @@
 
 
 @media screen and (max-width: 720px) {
-    
+    .dots-decorate,
+    .diamond-decorate {
+        display: none;
+    }
     .steps-wrap {
         flex-direction: column;
         justify-content: center;
     }
+
+   
     .step-block {
         max-width: 225px;
         margin: 0px auto 29px;
@@ -816,6 +819,58 @@
             }
         }   
   
+        .academic-header {
+            // position: relative;
+            // padding: 24px 0;
+            // margin-bottom: 50px;
+            // background: linear-gradient(180.69deg, #0066FF -8.5%, #00369C 51.46%, #0031C4 130.73%, #018FF6 130.74%);
+            // .arrow-decorate {
+            //     position: absolute;
+            //     left: 61px;
+            //     top: -134px;
+            // }
+        
+            // .diamond-decorate  {
+            //     position: absolute;
+            //     top: 123px;
+            //     left: 91%;
+            //     transform: matrix(-0.71, -0.69, -0.72, 0.71, 0, 0);
+               
+            // }
+            &__icon {
+                width: 49px;
+                // margin-right: 8px;
+            }
+            &__title {
+                font-size: 40px;
+                
+            }
+        
+            &__content {
+               
+                justify-content: center;
+        
+            }
+        
+        }
+
+        .academic {
+           
+        
+            
+        
+           
+            
+            &__years {
+                font-size: 20px;
+            }
+        
+            &__title {
+                font-size: 18px;
+            }
+        
+           
+        }
     .banner {
         display: none;
     }
@@ -826,20 +881,20 @@
             'title title';
         }
      
-    &__img{
-            img {
-                position: relative;
-                bottom: 40px;
-                display: block;
-             
-                border-radius: 28px;
-                border-right: 4px solid #0031C4;
-                border-bottom: 4px solid #0031C4;
-                margin-right: 35px;
-            }
-           
+        &__img{
+                img {
+                    position: relative;
+                    bottom: 40px;
+                    display: block;
+                
+                    border-radius: 28px;
+                    border-right: 4px solid #0031C4;
+                    border-bottom: 4px solid #0031C4;
+                    margin-right: 35px;
+                }
+            
         }
-       
+        
     }
 
   // slider 
@@ -850,7 +905,6 @@
     height: 436.23px;
     width: 436.23px;
     top: -39%;
-    // left: -600px;
     background: rgba(0, 150, 235, 0.7);
     border-radius: 28px;
     transform: skewX(-45deg); 
@@ -863,8 +917,7 @@
         left: -30px;
         background: linear-gradient(273.52deg, #0066FF -9.04%, #00369C 41.93%);
         border-radius: 28px;
-        // transform: skewX(-45deg); 
-        // transform: matrix(0.71, -0.86, 0.58, 0.71, 0, 0);
+       
     }
  }
 
@@ -872,7 +925,7 @@
  
  .header-subtitle-decorate {
      margin-left: -22px;
- }
+    }
   .header-slider {
     &__mail-title {
          font-size: 36px;
@@ -898,12 +951,13 @@
          width: 100vw;
          padding-bottom: 30px;
          max-width: 100vw;
-         left: -20px;
          bottom: -137px;
+         left: -20px;
  
         &-list {
          display: flex;//
          align-items: center;//
+         margin-left: -20px;
      }
          &-item {
              width: 16.66%;
@@ -928,47 +982,156 @@
      }
  
     
- }
- .slider-line {
-   display: none;
- }
- .square-decorate {
+    }
+    .slider-line {
     display: none;
-}
+    }
 
-.btn--header-slider{
-    padding: 7px;
-    font-size: 12px;
-}
-.header-slider__buttons {
-    display: none;
- }
- .slider-header-btn{
-     display: block;
-     position: absolute;
-     top: 64%;
-     z-index: 999;
- 
- }
+    .header-slider__nav-item--active {
+        font-size: 15px; 
+        line-height: 1;
+    }
+    .square-decorate {
+        display: none;
+    }
 
- .slider-header-btn--mobile-prev {
-     left: 10px;
- }
- .slider-header-btn--mobile-next {
-     right: 10px;
- }
+    .btn--header-slider{
+        padding: 7px;
+        font-size: 12px;
+    }
+    .header-slider__buttons {
+        display: none;
+    }
+    .slider-header-btn{
+        display: block;
+        position: absolute;
+        top: 64%;
+        z-index: 999;
+    
+    }
 
- .rectangle-decorate-block,
- .assistent-slider-wrap,
- .header-slider__info  {
-     display: none;
- }
- .universities{
-     .square-decorate {
-         display: none;
+    .slider-header-btn--mobile-prev {
+        left: 10px;
+    }
+    .slider-header-btn--mobile-next {
+        right: 10px;
+    }
+
+    .rectangle-decorate-block,
+    .assistent-slider-wrap,
+    .header-slider__info  {
+        display: none;
+    }
+    .universities{
+        margin: 0px 0 40px;
+        padding-top: 20px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 11px;
+            background: linear-gradient(188.21deg, #0066FF -8.5%, #00369C 51.46%, #0031C4 130.73%, #018FF6 130.75%);
+        }
+        .square-decorate {
+            display: none;
+        }
+
+        &__mobile-navigations {
+            margin: 14px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .universities__slider .slick-track {
+        padding: 0;
+    }
+
+    
+
+    .btn--university-top-universities,
+    .btn--university-universities-russia,
+    .btn--university-universities-ukraine {
+        display: none;
+    }
+
+    .btn--university {
+        padding: 10px;
+        font-size: 14px;
+        margin-right: 0;
+    }
+    
+    .courses .slick-track {
+        padding: 0;
+    }
+    // .btn--university {
+    //     padding: 10px;
+    //     font-size: 14px;
+    // }
+    // .btn--university:last-of-type {
+    //     margin-left: 0;
+    // }
+    .btn--university:last-of-type {
+        margin: 0;
+    }
+    .btn--university-ukraine-mobile {
+        margin-left: 0;
+    }
+    .btn--university-universities-more {
+        margin: 0px auto !important;
+    }
+
+    .slider-nav {
+        margin: 0;
+    }
+
+    .universities__slider,
+    .courses__slider  {
+        margin: 21px 0;
+    }
+
+    .btn-wrap {
+        &--university{
+         margin: auto;
+         width: 69%;
+         position: absolute;
+         justify-content: space-between;
+         display: flex;
+         left: 50%;
+         transform: translate(-50%, 0);
+         bottom: 66px;
+        }
+         &--courses{
+             margin: auto;
+             width: 69%;
+             position: absolute;
+             justify-content: space-between;
+             display: flex;
+             left: 50%;
+             transform: translate(-50%, 0);
+             bottom: 66px;
+         }
+        
      }
- }
+     .benefits-items{
+        display: flex;
+     }
 
+     .benefits-item {
+        padding: 15px 10px;
+         flex-basis: 138px;
+         font-size: 14px;
+
+         &__icon {
+             width: 69px;
+             height: 69px;
+         }
+         &__info::before {
+            content: "";
+           width: 80%;
+     } 
+    }
 }
 
 
@@ -1006,32 +1169,85 @@
             width: 113px;
         }
     }
-#menu {
-    margin-left: 0;
+    #menu {
+        margin-left: 0;
+    }
+
+    .rectangle-decorate {
+        top: -30%;
+        left: -148px
+    }
+    .header-slider__mail-title{
+        margin-top: 0;
+        font-size: 33px;
+    }
+    .slider-header-btn {
+        top: 50%;
+    }
+    .header-slider {
+        background-position: 71%, 40%;
+    }
+
+    .header-slider__nav {
+        position: relative;
+        margin-top: 176px;
+        &-list {
+            margin-left: 0;
+        }
+    }
+
+    
+    .academic-header {
+        padding: 14px 0;
+
+        &__icon {
+            width: 40px;
+        }
+       
+        &__title {
+          
+            font-size: 25px;
+          
+        }
+
+    
+    }
+
+    .academic {
+        
+        &__years {
+            font-size: 11px;
+        }
+    
+    
+        &__title {
+            font-size: 14px;
+           
+        }
+    
+       
+    }
+    
+
 }
 
-.rectangle-decorate {
-    top: -30%;
-    left: -148px
-}
-.header-slider__mail-title{
-    margin-top: 0;
-    font-size: 33px;
-}
-.slider-header-btn {
-    top: 50%;
-}
-.header-slider {
-    background-position: 71%, 40%;
-}
+@media screen and (max-width: 350px) {
+    .btn--university {
+        font-size: 10px;
+    }
 
-.header-slider__nav {
-    position: relative;
-    margin-top: 176px;
-}
+    .academic-header {
+       
+          &__title{
+            font-size: 22px;
 
+          }
+          
+        }
 
-
-
+        .benefits-item {
+            flex-basis: 113px;
+            font-size: 10px;
+        }
 
 }
