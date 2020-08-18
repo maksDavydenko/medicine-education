@@ -42,45 +42,27 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
 
-    // var $element = $('.footer');
-    // let counter = 0;
-    // $(window).scroll(function () {
-    //     var scroll = $(window).scrollTop() + $(window).height();
-    //     var offset = $element.offset().top
-
-    //     if (scroll > offset - 80 && counter == 0) {
-    //         $('.upBtn').css('position', 'static');
-    //         $('.upBtn').css('transform', 'translate(0, 0)');
-
-
-    //     }
-
-    //     if (scroll < offset - 80 && counter == 0) {
-    //         $('.upBtn').css('position', 'fixed');
-    //         $('.upBtn').css('transform', 'translate(-50%, 0)');
-
-    //     }
-    // });
-
-    var $elementText = $('.comment-item');
-    let counterThis = 0;
+    var $element = $('.footer');
+    let counter = 0;
     $(window).scroll(function () {
         var scroll = $(window).scrollTop() + $(window).height();
-        var offset = $elementText.offset().top
+        var offset = $element.offset().top
 
-        if (scroll > offset - 80 && counterThis == 0) {
-            $('.about-form').css('position', 'static');
-            // $('.about-form').css('transform', 'translate(0, 0)');
+        if (scroll > offset - 80 && counter == 0) {
+            $('.upBtn').css('position', 'static');
+            $('.upBtn').css('transform', 'translate(0, 0)');
 
 
         }
 
-        if (scroll < offset - 80 && counterThis == 0) {
-            $('.about-form').css('position', 'fixed');
-            // $('.upBtn').css('transform', 'translate(-50%, 0)');
+        if (scroll < offset - 80 && counter == 0) {
+            $('.upBtn').css('position', 'fixed');
+            $('.upBtn').css('transform', 'translate(-50%, 0)');
 
         }
     });
+
+
 })
 
 

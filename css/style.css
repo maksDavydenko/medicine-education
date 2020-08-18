@@ -831,7 +831,7 @@ summary {
   position: relative;
   margin: 0 auto 16px;
   height: 5px;
-  width: 80%;
+  width: 100%;
   max-width: 542px;
   background: linear-gradient(180.08deg, #0066ff -8.5%, #00369c 51.46%, #0031c4 130.73%, #018ff6 130.74%);
 }
@@ -1471,7 +1471,7 @@ summary {
   display: grid;
   grid-template-areas: 'img header' 'img title';
 }
-.feedback-item__header {
+.feedback-item__headers {
   grid-area: header;
 }
 .feedback-item__info {

@@ -572,16 +572,6 @@
 
 
 @media screen and (max-width: 890px) {
-
-    // .connection-info__item--tablet,
-    // .connection-info__btn--tablet{
-    //     display: none;
-    // }
-
-
-    // .social-nav {
-    //     display: none;
-    // }
     .connection-info__btn {
         padding: 9px 21px;
        
@@ -632,6 +622,27 @@
     }
 
       
+}
+
+@media screen and (max-width: 820px) {
+
+    .footer {
+        background: linear-gradient(162.73deg, #0042A5 6.44%, #01498B 45.77%, #002365 75.36%);
+    }
+    .footer-item--contact {
+        text-align: center;
+        margin: 0 auto 20px;
+
+        .footer-item__title::before,
+        .footer-item__subtitle::before{
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        .footer-item__subtitle::before {
+            width: 70%;
+        }
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -820,22 +831,7 @@
         }   
   
         .academic-header {
-            // position: relative;
-            // padding: 24px 0;
-            // margin-bottom: 50px;
-            // background: linear-gradient(180.69deg, #0066FF -8.5%, #00369C 51.46%, #0031C4 130.73%, #018FF6 130.74%);
-            // .arrow-decorate {
-            //     position: absolute;
-            //     left: 61px;
-            //     top: -134px;
-            // }
-        
-            // .diamond-decorate  {
-            //     position: absolute;
-            //     top: 123px;
-            //     left: 91%;
-            //     transform: matrix(-0.71, -0.69, -0.72, 0.71, 0, 0);
-               
+            
             // }
             &__icon {
                 width: 49px;
@@ -868,33 +864,53 @@
             &__title {
                 font-size: 18px;
             }
-        
-           
-        }
+    }
     .banner {
         display: none;
     }
 
     .feedback-item {
         &__inner {
-               grid-template-areas: 'img header'
-            'title title';
+            margin: 46px 15px;
+            padding: 18px;
+            display: flex;
+            flex-wrap: wrap;
         }
-     
-        &__img{
-                img {
-                    position: relative;
-                    bottom: 40px;
-                    display: block;
-                
-                    border-radius: 28px;
-                    border-right: 4px solid #0031C4;
-                    border-bottom: 4px solid #0031C4;
-                    margin-right: 35px;
+    
+        &__headers {
+            flex-basis: 47%;
+        }
+        &__info {
+           display: flex;
+           flex-wrap: wrap;
+           
+        }
+        &__img {
+            flex-basis: 20%;
+    
+            img {
+                width: 96px;
+                height: 96px;
                 }
-            
+           
         }
         
+        &__title {
+            flex-basis: 40%;
+        }
+    
+        &__subtitle {
+           
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+    
+        &__text {
+            grid-area: title;
+            font-size: 14px;
+            color: #6F6F6F;
+        }
+    
     }
 
   // slider 
@@ -962,8 +978,6 @@
          &-item {
              width: 16.66%;
              padding: 9px 13px;//
-             background: linear-gradient(189.83deg, #0066FF -8.5%, #00369C 51.46%, #0031C4 130.73%, #018FF6 130.74%);//
-       
              border-left: 0px;//
             
              display: flex;
@@ -1065,13 +1079,7 @@
     .courses .slick-track {
         padding: 0;
     }
-    // .btn--university {
-    //     padding: 10px;
-    //     font-size: 14px;
-    // }
-    // .btn--university:last-of-type {
-    //     margin-left: 0;
-    // }
+   
     .btn--university:last-of-type {
         margin: 0;
     }
@@ -1132,6 +1140,19 @@
            width: 80%;
      } 
     }
+
+    .footer {
+        &::before {
+            width: 53%;
+            background: linear-gradient(162.73deg, #0042A5 6.44%, #01498B 45.77%, #002365 75.36%);
+        }
+    }
+    .footer-form {
+        &__input {
+          width: 100%;
+        }
+    }
+
 }
 
 
@@ -1196,7 +1217,6 @@
         }
     }
 
-    
     .academic-header {
         padding: 14px 0;
 
@@ -1205,30 +1225,80 @@
         }
        
         &__title {
-          
             font-size: 25px;
-          
         }
-
-    
     }
 
     .academic {
-        
         &__years {
             font-size: 11px;
         }
-    
-    
         &__title {
             font-size: 14px;
-           
         }
-    
-       
+    }
+
+    .feedback-item {
+
+        &__img {
+            img {
+                margin-right: 20px;
+            }
+        }
+        &__title {
+            font-size: 14px;
+        }
+        &__subtitle {
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+        &__text {
+            font-size: 12px;
+        }
+    }
+
+
+    .footer {
+        &:before {
+            width: 33%;
+        }
+
+
+    }
+    .form-title, 
+    .telephones__link {
+        font-size: 14px;
+    }
+    .footer-items {
+        margin: 0 -17px;
+    }
+
+    .telephones__icon {
+        width: 24px;
+        height: 24px;
     }
     
+    .footer-item {
+        flex-basis: 146px;
+        margin: 15px;
+        img {
+            display: block;
+            max-width: 100%;
+            object-fit: cover;
+            width: 146px;
+            height: 53.2px;
+        }
+        &__title {
+            font-size: 19px;
+        }
+        &__subtitle {
+            font-size: 14px
+        }
+    }
 
+    .footer-item--contact {
+        margin: 17px auto;
+    }
 }
 
 @media screen and (max-width: 350px) {
@@ -1237,17 +1307,12 @@
     }
 
     .academic-header {
-       
           &__title{
             font-size: 22px;
-
           }
-          
         }
-
         .benefits-item {
             flex-basis: 113px;
             font-size: 10px;
         }
-
 }

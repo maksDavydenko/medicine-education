@@ -24,9 +24,6 @@ $(window).scroll(function () {
         $('.about-form').css('position', 'fixed');
         $('.about-form').css('top', '100px');
         $('.about-form').css('right', '10%');
-
-        // $('.upBtn').css('transform', 'translate(-50%, 0)');
-
     }
 
     if (scroll > offset - $('.about-form').height() - 200) {
@@ -46,21 +43,12 @@ $(window).scroll(function () {
         $('.commetns-form').css('position', 'fixed');
         $('.commetns-form').css('top', '100px');
         $('.commetns-form').css('right', '10%');
-
-        // $('.upBtn').css('transform', 'translate(-50%, 0)');
-
     }
 
     if (scroll > elementFooter - $('.commetns-form').height() - 200) {
         $('.commetns-form').css('position', 'static');
         $('.comment__wrap').css('align-items', 'flex-end');
     }
-
-
-    // if( $('. commetns-form').css('position', 'static');
-    // $('.about__wrap').css('align-items', 'flex-start');)
-
-    // comment__wrap
 });
 
 
