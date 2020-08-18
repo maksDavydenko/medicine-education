@@ -1,13 +1,24 @@
 .header-slider {
   background-image: url('../img//photo/assistent-img-bg.png');
 }
-.test {
-  margin-top: 50px;
-}
 .about__wrap {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+.decor-text-blue {
+  color: #0066FF;
+  font-weight: bold;
+}
+.paragraph {
+  font-size: 14px;
+  color: #737373;
+}
+.about-header {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  color: #00369C;
 }
 .about-text {
   width: 60%;
@@ -51,12 +62,12 @@
 .check-universe__list::before {
   content: "";
   position: absolute;
-  left: -20px;
+  left: 50%;
   top: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-60%, 0);
   height: 3px;
   background: linear-gradient(188.21deg, #0066ff -8.5%, #00369c 51.46%, #0031c4 130.73%, #018ff6 130.74%);
-  width: 100px;
+  width: 100%;
   z-index: -1;
 }
 .check-universe__list::after {
@@ -67,8 +78,39 @@
   border-radius: 50%;
   left: -20px;
   top: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -4px);
   background: linear-gradient(188.21deg, #0066ff -8.5%, #00369c 51.46%, #0031c4 130.73%);
+}
+.top-active::before {
+  top: 17%;
+}
+.top-active::after {
+  top: 17%;
+}
+.middle-active::before {
+  top: 50%;
+}
+.middle-active::after {
+  top: 50%;
+}
+.bottom-active::before {
+  top: 83%;
+}
+.bottom-active::after {
+  top: 83%;
+}
+.universe-items {
+  display: flex;
+  justify-content: space-between;
+}
+.universe-items--ukraine {
+  display: flex;
+}
+.universe-items--russia {
+  display: none;
+}
+.universe-items--admition {
+  display: none;
 }
 .universe-item {
   position: relative;

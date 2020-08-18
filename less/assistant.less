@@ -3,10 +3,6 @@
 }
 
 
-.test {
-    margin-top: 50px;
-}
-
 .about {
 
     &__wrap{
@@ -14,6 +10,23 @@
         justify-content: space-between;
         align-items: flex-start;
     }
+}
+
+.decor-text-blue {
+    color:#0066FF;
+    font-weight: bold;
+}
+.paragraph {
+    font-size: 14px;
+
+    color: #737373;
+}
+
+.about-header {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    color: #00369C; 
 }
 
 .about-text {
@@ -66,19 +79,19 @@
     }
 
     &__list{
+        position: relative;
         display: flex;
         justify-content: space-between;
         position: relative;
         &::before{
             content: "";
             position: absolute;
-            left: -20px;
+            left: 50%;
             top: 50%;
-            transform: translate(-50%, 0);
+            transform: translate(-60%, 0);
             height: 3px;
             background: linear-gradient(188.21deg, #0066FF -8.5%, #00369C 51.46%, #0031C4 130.73%, #018FF6 130.74%);
-            // width: 100%;
-            width: 100px;
+            width: 100%;
             z-index: -1;
         }
 
@@ -90,12 +103,56 @@
             border-radius: 50%;
             left: -20px;
             top: 50%;
-            transform: translate(-50%, 0);
+            transform: translate(-50%, -4px);
             background: linear-gradient(188.21deg, #0066FF -8.5%, #00369C 51.46%, #0031C4 130.73%);
         }
     }
 }
 
+
+.top-active {
+    &::before{
+        top: 17%;
+    }
+
+    &::after{
+        top: 17%;
+    }
+}
+
+.middle-active {
+    &::before{
+        top: 50%;
+    }
+
+    &::after{
+        top: 50%;
+    }
+}
+
+.bottom-active{
+    &::before{
+        top: 83%;
+    }
+
+    &::after{
+        top: 83%;
+    }
+}
+.universe-items  {
+    display: flex;
+    justify-content: space-between;
+    &--ukraine {
+        display: flex;
+    }
+    &--russia {
+        display: none;
+    }
+
+    &--admition {
+        display: none;
+    }
+}
 .universe-item {
     position: relative;
     padding: 25px 9px 7px;

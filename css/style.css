@@ -1361,6 +1361,9 @@ summary {
   background: linear-gradient(180.45deg, #ff0000 9.11%, #ce0000 98.12%);
   border-radius: 18.5px;
 }
+.gallery {
+  position: relative;
+}
 .gallery .slick-track {
   padding: 40px 0 35px;
 }
@@ -1382,6 +1385,18 @@ summary {
 }
 .gallery .slick-dots button {
   display: none;
+}
+.gallery-slider-mobile {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  background-color: transparent;
+}
+.gallery-slider-mobile--next {
+  right: 10px;
+}
+.gallery-slider-mobile--prev {
+  left: 10px;
 }
 .gallery-slider-item {
   margin: 0px 28px;
@@ -1410,6 +1425,20 @@ summary {
   left: 128px;
   top: -47px;
   z-index: -1;
+}
+.feedback-slider-mobile {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  bottom: 83px;
+  z-index: 3;
+  padding: 10px 0;
+}
+.feedback-slider-mobile--prev {
+  left: -19px;
+}
+.feedback-slider-mobile--next {
+  right: -19px;
 }
 .feedback-slider {
   border: 6px solid #0031C4;
@@ -1444,7 +1473,7 @@ summary {
   align-items: center;
   position: absolute;
   right: 50px;
-  bottom: -16px;
+  bottom: -21px;
   background-color: #fff;
 }
 .feedback-slider__list {

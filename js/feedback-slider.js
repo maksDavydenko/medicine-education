@@ -44,11 +44,24 @@ $('.js-feedback-slider__next-btn').on('click', function () {
 });
 
 
-
 $('.js-feedback-slider__prev-btn').on('click', function () {
     $('.feedback-slider__inner').slick('slickPrev');
 
 });
+
+$('.feedback-slider-mobile--next').on('click', function () {
+    $('.feedback-slider__inner').slick('slickNext');
+
+});
+
+
+$('.feedback-slider-mobile--prev').on('click', function () {
+    $('.feedback-slider__inner').slick('slickPrev');
+
+});
+
+
+
 
 
 // $('.sliderSlick').on('init', function (slick) {
