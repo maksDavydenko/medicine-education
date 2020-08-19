@@ -939,6 +939,9 @@
   .academic__title {
     font-size: 14px;
   }
+  .gallery-slider-mobile {
+    display: block;
+  }
   .feedback-item__img img {
     margin-right: 20px;
   }
