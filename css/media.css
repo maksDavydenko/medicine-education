@@ -208,6 +208,7 @@
   }
   .connection-info__item--search-menu {
     justify-content: flex-start;
+    align-items: flex-start;
   }
   .connection-info__btn--menu {
     margin-left: 0;
@@ -580,6 +581,9 @@
   }
 }
 @media screen and (max-width: 720px) {
+  .navigation-menu {
+    margin-bottom: 73px;
+  }
   .dots-decorate,
   .diamond-decorate {
     display: none;
@@ -873,6 +877,17 @@
   .container {
     width: 100%;
     padding: 0 20px;
+  }
+  .search__input--menu {
+    width: 100%;
+    margin-right: 0;
+  }
+  .search {
+    width: 100%;
+    margin-right: 0;
+  }
+  .connection-info__btn--menu {
+    margin: 0 auto;
   }
   .connection-info-tablet {
     width: 100%;

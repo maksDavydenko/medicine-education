@@ -1,7 +1,29 @@
 .header-slider {
   background-image: url('../img//photo/assistent-img-bg.png');
 }
+.header-decorate {
+  position: absolute;
+  width: 1240.78px;
+  height: 1019.42px;
+  right: 56%;
+  top: -124%;
+  background: rgba(0, 150, 235, 0.7);
+  border-radius: 28px;
+  transform: matrix(0.71, -0.69, 0.72, 0.71, 0, 0);
+}
+.header-decorate__inner {
+  position: absolute;
+  width: 1178.66px;
+  height: 954.03px;
+  background: linear-gradient(273.52deg, #0066ff -9.04%, #00369c 41.93%);
+  opacity: 0.85;
+  border-radius: 28px;
+}
+.about {
+  position: relative;
+}
 .about__wrap {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -161,11 +183,15 @@
 .universe-item:hover::after {
   opacity: 1;
 }
-.comment__wrap {
+.comments__wrap {
+  position: relative;
   display: flex;
 }
 .comments {
   width: 60%;
+}
+.comments-items {
+  position: relative;
 }
 .comment-item {
   z-index: 2;
@@ -265,4 +291,9 @@
   margin-left: auto;
   color: #FFFFFF;
   min-width: 156px;
+}
+.commetns-form {
+  display: flex;
+  width: 30%;
+  z-index: 999;
 }

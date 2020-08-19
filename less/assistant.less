@@ -2,10 +2,30 @@
     background-image: url('../img//photo/assistent-img-bg.png');
 }
 
+.header-decorate {
+    position: absolute;
+    width: 1240.78px;
+    height: 1019.42px;
+    right: 56%;
+    top: -124%;
+    background: rgba(0, 150, 235, 0.7);
+    border-radius: 28px;
+    transform: matrix(0.71, -0.69, 0.72, 0.71, 0, 0);
+
+        &__inner {
+        position: absolute;
+        width: 1178.66px;
+        height: 954.03px;
+        background: linear-gradient(273.52deg, #0066FF -9.04%, #00369C 41.93%);
+        opacity: 0.85;
+        border-radius: 28px;
+    }
+}
 
 .about {
-
+    position: relative;
     &__wrap{
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -18,7 +38,6 @@
 }
 .paragraph {
     font-size: 14px;
-
     color: #737373;
 }
 
@@ -211,14 +230,19 @@
  }
 
 
- .comment {
-     &__wrap {
-       display: flex;
-     }
+ .comments__wrap {
+    position: relative;
+   display: flex;
  }
 
  .comments {
-    width: 60%;
+   width: 60%;
+ }
+
+ .comments-items {
+     position: relative;
+    //  display: flex;
+   
  }
  .comment-item {
      position: relative;
@@ -352,4 +376,8 @@
     }
 }
 
-
+.commetns-form {
+    display: flex;
+    width: 30%;
+    z-index: 999;
+}

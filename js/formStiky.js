@@ -1,7 +1,7 @@
-var $elementText = $('.comment');
+var $elementText = $('.comments');
 var $elementAbout = $('.about');
 
-var $elementTextComent = $('.comment');
+var $elementTextComent = $('.comments');
 var $elementFooter = $('.footer')
 
 let counterThis = 0;
@@ -31,12 +31,10 @@ $(window).scroll(function () {
         $('.about__wrap').css('align-items', 'flex-end');
     }
 
-
-
     // 
     if (scroll < elementTextComent) {
         $('.commetns-form').css('position', 'static');
-        $('.comment__wrap').css('align-items', 'flex-start');
+        $('.comments__wrap').css('align-items', 'flex-start');
     }
 
     if (scroll > elementTextComent) {
@@ -47,7 +45,7 @@ $(window).scroll(function () {
 
     if (scroll > elementFooter - $('.commetns-form').height() - 200) {
         $('.commetns-form').css('position', 'static');
-        $('.comment__wrap').css('align-items', 'flex-end');
+        $('.comments__wrap').css('align-items', 'flex-end');
     }
 });
 
