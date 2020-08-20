@@ -107,7 +107,6 @@
 .about-content {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
 }
 .about-text {
   text-align: justify;
@@ -116,10 +115,16 @@
   width: 65%;
   z-index: 3;
 }
+.forms-wrap {
+  display: flex;
+  flex-direction: column;
+}
 .about-form {
   display: flex;
-  width: 30%;
   z-index: 999;
+}
+.quick-navigation {
+  margin-bottom: 32px;
 }
 .check-universe {
   margin-bottom: 40px;
@@ -409,6 +414,5 @@
 }
 .commetns-form {
   display: flex;
-  width: 30%;
   z-index: 999;
 }

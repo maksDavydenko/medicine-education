@@ -1,5 +1,5 @@
 var $elementText = $('.comments');
-var $elementAbout = $('.about');
+var $elementAbout = $('.quick-navigation');
 
 var $elementTextComent = $('.comments');
 var $elementFooter = $('.footer')
@@ -15,20 +15,24 @@ $(window).scroll(function () {
     var elementTextComent = $elementTextComent.offset().top
 
 
-    if (scroll < offsetAbout) {
+    if (scroll < offsetAbout + $('.quick-navigation').height()) {
         $('.about-form').css('position', 'static');
-        $('.about-content').css('align-items', 'flex-start');
+        $('.about-form').css('margin-top', '0');
+        $('.about-form').css('width', '100%');
     }
 
-    if (scroll > offsetAbout) {
+    if (scroll > offsetAbout + $('.quick-navigation').height()) {
         $('.about-form').css('position', 'fixed');
         $('.about-form').css('top', '100px');
         $('.about-form').css('right', '10%');
+        $('.about-form').css('width', '30%');
     }
 
-    if (scroll > offset - $('.about-form').height() - 200) {
+    if (scroll > offset - $('.about-form').height() - 300) {
         $('.about-form').css('position', 'static');
-        $('.about-content').css('align-items', 'flex-end');
+        $('.about-form').css('position', 'static');
+        $('.about-form').css('margin-top', 'auto');
+        $('.about-form').css('width', '100%');
     }
 
     // 
@@ -41,6 +45,7 @@ $(window).scroll(function () {
         $('.commetns-form').css('position', 'fixed');
         $('.commetns-form').css('top', '100px');
         $('.commetns-form').css('right', '10%');
+        $('.commetns-form').css('width', '30%');
     }
 
     if (scroll > elementFooter - $('.commetns-form').height() - 200) {
