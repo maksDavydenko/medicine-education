@@ -107,6 +107,7 @@ a {
   content: url('../img/icons/menu-item-arr-decor.svg');
 }
 .subitem-link {
+  position: relative;
   display: flex;
   align-items: center;
   white-space: nowrap;
@@ -116,10 +117,12 @@ a {
   font-size: 15px;
   line-height: 18px;
   color: #555A61;
-  margin-left: 11px;
 }
 .subitem-link:hover {
   color: #00369C;
+}
+.subitem:hover .subitem-link {
+  left: 11px;
 }
 .subitem:hover::before {
   display: block;
@@ -160,6 +163,10 @@ a {
 }
 .btn--header {
   padding: 6px 37px;
+}
+.btn--university-active {
+  background: linear-gradient(181.56deg, #0066ff -8.5%, #00369c 51.46%, #0031c4 130.73%, #018ff6 130.74%);
+  color: #fff;
 }
 .header .header-slider__content .btn--header {
   padding: 6px 37px;

@@ -17,7 +17,7 @@ $(window).scroll(function () {
 
     if (scroll < offsetAbout) {
         $('.about-form').css('position', 'static');
-        $('.about__wrap').css('align-items', 'flex-start');
+        $('.about-content').css('align-items', 'flex-start');
     }
 
     if (scroll > offsetAbout) {
@@ -28,7 +28,7 @@ $(window).scroll(function () {
 
     if (scroll > offset - $('.about-form').height() - 200) {
         $('.about-form').css('position', 'static');
-        $('.about__wrap').css('align-items', 'flex-end');
+        $('.about-content').css('align-items', 'flex-end');
     }
 
     // 

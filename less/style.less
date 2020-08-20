@@ -130,6 +130,7 @@ a{
         content:  url('../img/icons/menu-item-arr-decor.svg');
     }
     &-link {
+        position: relative;
         display: flex;
         align-items: center;
         white-space: nowrap;
@@ -139,7 +140,6 @@ a{
         font-size: 15px;
         line-height: 18px;
         color: #555A61;
-        margin-left: 11px;
         &:hover {
             color:  #00369C;
         }
@@ -147,9 +147,9 @@ a{
 
 }
 
-// .subitem:hover .subitem-link{
-//     padding-left: 11px;
-// }
+.subitem:hover .subitem-link{
+    left: 11px;
+}
 
 .subitem:hover::before {
   display: block;
@@ -197,6 +197,11 @@ a{
     }
     &--header {
         padding: 6px 37px;
+    }
+    &--university-active {
+        background: linear-gradient(181.56deg, #0066FF -8.5%, #00369C 51.46%,
+        #0031C4 130.73%, #018FF6 130.74%);
+        color: #fff;
     }
 
 }

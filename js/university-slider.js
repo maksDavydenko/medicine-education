@@ -52,6 +52,11 @@ $('.js-ua-universes').on('click', function () {
 });
 
 
+// $('.universities-navigations').on('click', () => {
+//     $('.btn--university').removeClass('.btn--university-active')
+// })
+
+
 
 $('.js-university-slider__next-btn').on('click', function () {
     $('.universities__slider').slick('slickNext');
