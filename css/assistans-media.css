@@ -55,4 +55,15 @@
   .header-slider__block {
     margin-top: 85px;
   }
+  .universe-item {
+    max-width: 88px;
+  }
+  .universe-item__title {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 997px) {
+  .header-slider {
+    background-position: 52%, 40%;
+  }
 }

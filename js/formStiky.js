@@ -4,6 +4,13 @@ var $elementAbout = $('.quick-navigation');
 var $elementTextComent = $('.comments');
 var $elementFooter = $('.footer')
 
+let blockWidth = $('.about-form').outerWidth();
+
+
+$(window).resize(function () {
+    blockWidth = $('.about-form').outerWidth();
+});
+
 let counterThis = 0;
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
@@ -26,7 +33,7 @@ $(window).scroll(function () {
         $('.about-form').css('top', '100px');
         $('.about-form').css('right', '10%');
         // $('.about-form').css('width', '30%');
-        $('.about-form').css('width', '400px');
+        $('.about-form').css('width', blockWidth + 'px');
 
     }
 
@@ -47,7 +54,7 @@ $(window).scroll(function () {
         $('.commetns-form').css('position', 'fixed');
         $('.commetns-form').css('top', '100px');
         $('.commetns-form').css('right', '10%');
-        $('.commetns-form').css('width', '30%');
+        $('.commetns-form').css('width', blockWidth + 'px');
     }
 
     if (scroll > elementFooter - $('.commetns-form').height() - 200) {
