@@ -1,4 +1,4 @@
-const menu = document.querySelector('.menu');
+const menu = document.getElementById('menu');
 const header = document.querySelector('header');
 const headerSlider = document.querySelector('.header-slider');
 const adaptiveMenu = document.querySelector('.adaptive-menu');
@@ -22,7 +22,7 @@ const adaptiveMenu = document.querySelector('.adaptive-menu');
 document.addEventListener('click', (e) => {
     const target = e.target;
     const menuWrap = target.closest(".adaptive-menu");
-    const menuBtn = target.closest(".menu");
+    const menuBtn = target.closest("#menu");
     if (!menuWrap && !menuBtn) {
         header.style.position = 'fixed';
         adaptiveMenu.style.display = 'none';

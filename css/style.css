@@ -690,6 +690,13 @@ summary {
   background: linear-gradient(273.48deg, #0066ff -8.13%, #00369c 42.42%);
   border-radius: 28px;
 }
+.rectangle-decorate__arr {
+  position: absolute;
+  z-index: 99;
+  top: 81.5%;
+  right: 88px;
+  transform: rotate(45deg);
+}
 .social-nav-wrap {
   position: relative;
   z-index: 9;
