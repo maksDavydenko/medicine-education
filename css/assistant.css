@@ -124,7 +124,9 @@
   z-index: 999;
 }
 .quick-navigation {
+  position: relative;
   margin-bottom: 32px;
+  z-index: 3;
 }
 .check-universe {
   margin-bottom: 40px;
@@ -183,10 +185,10 @@
   background: linear-gradient(188.21deg, #0066ff -8.5%, #00369c 51.46%, #0031c4 130.73%);
 }
 .top-active::before {
-  top: 17%;
+  top: 14%;
 }
 .top-active::after {
-  top: 17%;
+  top: 14%;
 }
 .middle-active::before {
   top: 50%;
@@ -195,10 +197,10 @@
   top: 50%;
 }
 .bottom-active::before {
-  top: 83%;
+  top: 85%;
 }
 .bottom-active::after {
-  top: 83%;
+  top: 85%;
 }
 .universe-items {
   display: flex;

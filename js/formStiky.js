@@ -25,7 +25,9 @@ $(window).scroll(function () {
         $('.about-form').css('position', 'fixed');
         $('.about-form').css('top', '100px');
         $('.about-form').css('right', '10%');
-        $('.about-form').css('width', '30%');
+        // $('.about-form').css('width', '30%');
+        $('.about-form').css('width', '400px');
+
     }
 
     if (scroll > offset - $('.about-form').height() - 300) {
