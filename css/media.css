@@ -160,6 +160,9 @@
   .connection-info {
     padding-top: 15px;
   }
+  .header-slider__content {
+    padding-bottom: 20px;
+  }
   .header-slider__info {
     margin-bottom: 30px;
   }
@@ -177,6 +180,9 @@
   }
 }
 @media screen and (max-width: 1200px) {
+  .header-slider__content {
+    padding-top: 20px;
+  }
   .header-slider__mail-title {
     font-size: 68px;
   }
@@ -386,7 +392,6 @@
     font-size: 14px;
     color: #FFFFFF;
     letter-spacing: -0.02em;
-    margin-bottom: 50px;
   }
   .header-slider__nav {
     position: relative;
@@ -506,9 +511,6 @@
   .header--sticky {
     opacity: 1;
   }
-  .header-slider {
-    padding-bottom: 100px;
-  }
   .header-slider__mail-title {
     font-size: 45px;
   }
@@ -527,7 +529,7 @@
   }
   .header-assistent-slider {
     max-width: 590px;
-    left: 56%;
+    left: 66%;
   }
   .header-slider__nav-num {
     padding: 3px 13px;
