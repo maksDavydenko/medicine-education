@@ -78,7 +78,6 @@ $('.js-university-slider__next-btn').on('click', function () {
 
 });
 
-
 $('.js-university-slider__prev-btn').on('click', function () {
     $('.universities__slider').slick('slickPrev');
 });

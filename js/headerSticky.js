@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const headerWrap = document.querySelector('.header');
     const upBtn = document.querySelector('.upBtn');
     const applyBtn = document.querySelector('.connection-info__btn--sticky');
+    const hoverItems = document.querySelectorAll('.hover-items');
 
 
     window.addEventListener('scroll', () => {
@@ -29,11 +30,16 @@ document.addEventListener('DOMContentLoaded', function () {
             headerWrap.classList.add('header--sticky');
             upBtn.style.display = 'flex';
             applyBtn.classList.add('button--sticky');
+            hoverItems.forEach(item => item.classList.add('hover-items--stiky'))
+
 
         } if (window.pageYOffset < 100) {
             headerWrap.classList.remove('header--sticky');
             upBtn.style.display = 'none';
             applyBtn.classList.remove('button--sticky');
+            hoverItems.forEach(item => item.classList.remove('hover-items--stiky'))
+
+
         }
     });
 
@@ -42,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
 
-    var $element = $('.footer');
+    let $element = $('.footer');
     let counter = 0;
     $(window).scroll(function () {
         var scroll = $(window).scrollTop() + $(window).height();

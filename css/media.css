@@ -841,7 +841,6 @@
     display: none;
   }
   .btn--university {
-    padding: 10px;
     font-size: 14px;
     margin-right: 0;
   }
@@ -947,6 +946,9 @@
     margin-right: 5px;
     width: 9px;
     height: 9px;
+  }
+  .btn--university {
+    padding: 10px;
   }
   .header-wrap {
     display: flex;
