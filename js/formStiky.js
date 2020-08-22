@@ -5,10 +5,17 @@ var $elementTextComent = $('.comments');
 var $elementFooter = $('.footer')
 
 let blockWidth = $('.about-form').outerWidth();
+let rigthPosition = '10%';
 
+if ($(window).width() < 1200) {
+    rigthPosition = '3%';
+}
 
 $(window).resize(function () {
     blockWidth = $('.about-form').outerWidth();
+    if ($(window).width() < 1200) {
+        rigthPosition = '3%';
+    }
 });
 
 let counterThis = 0;
@@ -28,12 +35,22 @@ $(window).scroll(function () {
         $('.about-form').css('width', '100%');
     }
 
+    // if (scroll > offsetAbout + $('.quick-navigation').height()) {
+    //     $('.about-form').css('position', 'fixed');
+    //     $('.about-form').css('top', '100px');
+    //     $('.about-form').css('right', rigthPosition);
+    //     // $('.about-form').css('width', '30%');
+    //     $('.about-form').css('width', blockWidth + 'px');
+
+    // }
     if (scroll > offsetAbout + $('.quick-navigation').height()) {
-        $('.about-form').css('position', 'fixed');
-        $('.about-form').css('top', '100px');
-        $('.about-form').css('right', '10%');
+        $('.about-form').css('position', 'absolute');
+        $('.about-form').css('top', $(window).scrollTop() - $('.about-form').height() + 50);
+        // $('.about-form').css('right', rigthPosition);
+
+        // $('.about-form').css('right', 0);
         // $('.about-form').css('width', '30%');
-        $('.about-form').css('width', blockWidth + 'px');
+        // $('.about-form').css('width', blockWidth + 'px');
 
     }
 
@@ -51,10 +68,12 @@ $(window).scroll(function () {
     }
 
     if (scroll > elementTextComent) {
-        $('.commetns-form').css('position', 'fixed');
-        $('.commetns-form').css('top', '100px');
-        $('.commetns-form').css('right', '10%');
-        $('.commetns-form').css('width', blockWidth + 'px');
+        $('.commetns-form').css('top', $(window).scrollTop() - $('.commetns-form').height() + 50);
+        $('.commetns-form').css('position', 'absolute');
+
+        // $('.commetns-form').css('top', '100px');
+        // $('.commetns-form').css('right', rigthPosition);
+        // $('.commetns-form').css('width', blockWidth + 'px');
     }
 
     if (scroll > elementFooter - $('.commetns-form').height() - 200) {

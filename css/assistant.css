@@ -105,6 +105,7 @@
   color: #00369C;
 }
 .about-content {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
