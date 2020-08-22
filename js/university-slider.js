@@ -51,24 +51,32 @@ $(document).ready(function () {
 var filtered = false;
 
 $('.js-ua-universes').on('click', function () {
-    if (filtered === false) {
-        $('.universities__slider').slick('slickFilter', '.js-test');
-        filtered = true;
-    }
+    filterSlider()
+    $('.universities__slider').slick('slickFilter', '.js-ua-universe');
+    $('.js-ua-universes').addClass('btn--university-active');
 });
 
+$('.js-rus-universes').on('click', function () {
+    filterSlider()
+    $('.universities__slider').slick('slickFilter', '.js-rus-universe');
+    $('.js-rus-universes').addClass('btn--university-active');
+});
 
-// $('.universities-navigations').on('click', () => {
-//     $('.btn--university').removeClass('.btn--university-active')
-// })
+$('.js-all-universes').on('click', function () {
+    filterSlider();
+    $('.js-all-universes').addClass('btn--university-active');
+});
 
+function filterSlider() {
+    $('.universities__slider').slick('slickUnfilter');
+    $('.btn-universities-nav').removeClass('btn--university-active');
+}
 
 
 $('.js-university-slider__next-btn').on('click', function () {
     $('.universities__slider').slick('slickNext');
 
 });
-
 
 
 $('.js-university-slider__prev-btn').on('click', function () {
