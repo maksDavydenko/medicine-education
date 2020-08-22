@@ -154,6 +154,27 @@
   .diamond-decorate {
     left: -167px;
   }
+  .container {
+    max-width: 1200px;
+  }
+  .connection-info {
+    padding-top: 15px;
+  }
+  .header-slider__info {
+    margin-bottom: 30px;
+  }
+  .header-slider__nav-num {
+    padding: 3px 18px;
+  }
+  .header-slider__buttons {
+    top: 26px;
+  }
+  .header-slider__mail-title {
+    margin-top: 10px;
+  }
+  .header-assistent-slider {
+    left: 10%;
+  }
 }
 @media screen and (max-width: 1200px) {
   .header-slider__mail-title {

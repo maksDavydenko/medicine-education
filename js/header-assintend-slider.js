@@ -12,7 +12,7 @@ $(document).ready(function () {
         slidesToShow: 3,
         slidesToScroll: 3,
         arrows: false,
-        speed: 500,
+        speed: 1200,
         responsive: [
             {
                 breakpoint: 1560,
