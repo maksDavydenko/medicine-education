@@ -20,6 +20,8 @@ $(document).ready(function () {
                 }
             },
 
+
+
             {
                 breakpoint: 1300,
                 settings: {

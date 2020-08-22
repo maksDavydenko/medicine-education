@@ -19,7 +19,13 @@ $(document).ready(function () {
                     slidesToShow: 5
                 }
             },
-
+            {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 4,
+                    centerMode: true,
+                }
+            },
             {
                 breakpoint: 1300,
                 settings: {
