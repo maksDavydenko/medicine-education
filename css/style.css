@@ -391,6 +391,9 @@ a {
   background-color: #0066FF;
   border-radius: 50%;
 }
+.navigation-item__icon--header-slider {
+  background-color: transparent;
+}
 .navigation-item__link {
   font-family: Roboto;
   letter-spacing: -0.02em;
