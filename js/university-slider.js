@@ -23,7 +23,8 @@ $(document).ready(function () {
                 breakpoint: 1400,
                 settings: {
                     slidesToShow: 4,
-                    centerMode: true,
+
+
                 }
             },
             {
@@ -83,40 +84,20 @@ $('.js-university-slider__prev-btn').on('click', function () {
 });
 
 
-// $('.universities__slider').on('init', function (slick) {
-//     var active = $('.universities__slider .slick-active');
-//     var first = active.eq(0);
-//     var last = active.eq(active.length - 1);
-//     first.addClass('opacity');
-//     last.addClass('opacity');
-// });
-
-// $('.universities__slider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
-//     var active = $('.universities__slider .slick-active');
-//     var first = active.eq(0);
-//     var last = active.eq(active.length - 1);
-//     active.removeClass('opacity')
-//     first.addClass('opacity');
-//     last.addClass('opacity');
-// });
-
-
-$('.slick-slide').addClass('slick-slider-opacity');
-//Убираем прозрачность у центральных элементов
-$('.slick-slide.slick-active').eq(1).removeClass('slick-slider-opacity');
-$('.slick-slide.slick-active').eq(2).removeClass('slick-slider-opacity');
-//Вешаем обработчик на событие слайдера
-$(".universities__slider").on("afterChange", function () {
-    //Добавляем прозрачность всем элементам, обнуляя её у нужных
-    $('.slick-slide').addClass('slick-slider-opacity');
-    $('.slick-slide.slick-active').eq(1).removeClass('slick-slider-opacity');
-    $('.slick-slide.slick-active').eq(2).removeClass('slick-slider-opacity');
+$('.universities__slider').on('init', function (slick) {
+    let active = $('.universities__slider .slick-active');
+    let first = active.eq(0);
+    let last = active.eq(active.length - 1);
+    first.addClass('opacity');
+    last.addClass('opacity');
 });
 
-// const sliders = document.querySelectorAll('.slick-active');
-
-// [...sliders].forEach(item => {
-//     console.log(item)
-// })
-
+$('.universities__slider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
+    let active = $('.universities__slider .slick-active');
+    let first = active.eq(0);
+    let last = active.eq(active.length - 1);
+    active.removeClass('opacity')
+    first.addClass('opacity');
+    last.addClass('opacity');
+});
 

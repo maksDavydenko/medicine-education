@@ -31,8 +31,10 @@
     height: 812.9px;
   }
   .rectangle-decorate__inner {
-    width: 939.89px;
+    width: 1032.89px;
     height: 760.76px;
+    top: 0px;
+    left: -89px;
   }
   .rectangle-decorate__arr {
     top: 78.5%;
@@ -591,6 +593,9 @@
     display: grid;
     grid-template-areas: "one two" "three  four";
     grid-gap: 30px;
+  }
+  .benefits-items .dots-decorate {
+    display: none;
   }
   .benefits-item {
     margin: 0;

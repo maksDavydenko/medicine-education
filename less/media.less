@@ -43,9 +43,10 @@
         height: 812.9px;
         
         &__inner {
-            width: 939.89px;
+            width: 1032.89px;
             height: 760.76px;
-          
+            top: 0px;
+            left: -89px;
         }
         &__arr {
             top: 78.5%;
@@ -777,11 +778,13 @@
 
     .benefits-items {
         margin: 50px 0 0 0;
-        display: grid;//
+        display: grid;
         grid-template-areas: "one two"
                             "three  four";
         grid-gap: 30px;
-      
+        .dots-decorate {
+            display: none;
+        }
     }
 
     .benefits-item {
