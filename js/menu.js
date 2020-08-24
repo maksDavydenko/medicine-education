@@ -3,22 +3,6 @@ const header = document.querySelector('header');
 const headerSlider = document.querySelector('.header-slider');
 const adaptiveMenu = document.querySelector('.adaptive-menu');
 
-// const details = document.querySelectorAll('details');
-
-
-// $(document).ready(function () {
-//     $('#menu').click(function () {
-//         ('.adaptive-menu').toggle();
-//     });
-// });
-// $(document).mouseup(function (e) {
-//     const container = $(".adaptive-menu");
-//     if (container.has(e.target).length === 0) {
-//         container.hide();
-//     }
-// });
-
-
 document.addEventListener('click', (e) => {
     const target = e.target;
     const menuWrap = target.closest(".adaptive-menu");
@@ -41,6 +25,7 @@ menu.addEventListener('click', () => {
         adaptiveMenu.style.display = 'block';
         header.style.position = 'static';
         headerSlider.style.marginTop = '0';
+        window.scrollTo(0, 0);
     }
 
 })
