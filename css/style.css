@@ -456,6 +456,7 @@ summary {
   justify-content: space-between;
   width: 210px;
   text-transform: uppercase;
+  padding-bottom: 8px;
 }
 .adaptive-menu summary {
   width: 210px;
@@ -518,7 +519,7 @@ summary {
   margin-bottom: 150px;
 }
 .navigation-menu__wrap {
-  margin-top: 15px;
+  margin-top: 30px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -529,6 +530,7 @@ summary {
   text-transform: uppercase;
   color: #fff;
   border-bottom: 2px solid #fff;
+  padding-bottom: 13px;
 }
 .navigation-menu__drop-down {
   margin-bottom: 10px;

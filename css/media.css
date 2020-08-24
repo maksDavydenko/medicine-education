@@ -1029,6 +1029,17 @@
   #menu {
     margin-left: 0;
   }
+  .adaptive-menu__info {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+  }
+  .adaptive-menu__social-wrap {
+    margin-bottom: 15px;
+  }
+  .adaptive-menu__social-wrap .menu-logo {
+    margin: 15px 0;
+  }
   .rectangle-decorate {
     top: -36%;
     left: -126px;
