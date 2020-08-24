@@ -9,7 +9,7 @@ const headerSlider = document.querySelector('.header-slider')
 $(document).ready(function () {
     $('.header-assistent-slider').slick({
         infinite: true,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 3,
         arrows: false,
         speed: 1500,
