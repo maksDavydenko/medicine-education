@@ -242,20 +242,20 @@ $('.js-courses-slider__prev-btn').on('click', function () {
 // });
 
 
-$('.courses__slider').on('init', function (slick) {
-    var active = $('.courses__slider .slick-active');
-    var first = active.eq(0);
-    var last = active.eq(active.length - 1);
-    first.addClass('opacity');
-    last.addClass('opacity');
-});
+// $('.courses__slider').on('init', function (slick) {
+//     var active = $('.courses__slider .slick-active');
+//     var first = active.eq(0);
+//     var last = active.eq(active.length - 1);
+//     first.addClass('opacity');
+//     last.addClass('opacity');
+// });
 
-$('.courses__slider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
-    var active = $('.courses__slider .slick-active');
-    var first = active.eq(0);
-    var last = active.eq(active.length - 1);
-    active.removeClass('opacity')
-    first.addClass('opacity');
-    last.addClass('opacity');
-});
+// $('.courses__slider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
+//     var active = $('.courses__slider .slick-active');
+//     var first = active.eq(0);
+//     var last = active.eq(active.length - 1);
+//     active.removeClass('opacity')
+//     first.addClass('opacity');
+//     last.addClass('opacity');
+// });
 

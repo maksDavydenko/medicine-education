@@ -177,13 +177,20 @@
         top: -95px
     }
 
-    .benefits .arrow-decorate {
+    .benefits {
+
+    .arrow-decorate {
         width: 121px;
         height: 178px;
         bottom: -151px;
         left: 0;
         z-index: -1;
     }
+        .dots-decorate {
+            bottom: -88px;
+        }
+    }
+
 
     .feedback .diamond-decorate{
         left: -56px;
@@ -196,6 +203,11 @@
 }
 
 @media screen and (max-width: 1400px){
+
+    .slider-wrap {
+        padding: 0;
+    }
+
     .header-assistent-slider {
         left: 16%;
     }
@@ -237,6 +249,10 @@
 
     .header-assistent-slider {
         left: 10%;
+    }
+    .slider-line {
+        max-width: 1073.34px;
+        width: 90%;
     }
 }
 
@@ -328,6 +344,10 @@
     .connection-info__btn--menu {
         margin-left: 0;
     }
+
+    .slider-line {
+        width: 85%;
+    }
     .academic-header .diamond-decorate {
         display: none;
     }
@@ -353,6 +373,7 @@
             height: 90px; 
         }
     }
+
 }
 
 
@@ -400,6 +421,13 @@
 }
 
 @media screen and (max-width: 997px)  {
+
+    .benefits {
+        .dots-decorate {
+            bottom: 50px;
+        }
+    }
+
     .benefits-items {
         justify-content: center;
         margin: 50px -20px 0;
@@ -407,7 +435,6 @@
    
     .benefits-item {
         margin: 20px;
-    
     }
 
     .banner {
@@ -775,7 +802,9 @@
         
     }
   
-
+    .benefits .dots-decorate {
+        display: none;
+    }
     .benefits-items {
         margin: 50px 0 0 0;
         display: grid;
@@ -945,6 +974,10 @@
             color: #6F6F6F;
         }
     
+    }
+
+    .btn--slider-link {
+        width: 175px;
     }
 
   // slider 
@@ -1179,6 +1212,12 @@
     }
 
     .gallery {
+        .slider-wrap {
+            padding: 0;
+        }
+        .gallery-slider-item {
+            max-width: 235.37px !important;
+        }
         .btn-wrap {
             display: none;
         }
@@ -1186,6 +1225,10 @@
 
     .gallery .slick-track {
         padding: 0;
+    }
+
+    .gallery-slider__btn  {
+        display: block;
     }
 
     .footer {
@@ -1302,12 +1345,18 @@
     }
     
     .feedback-item {
+        &__inner {
+            margin: 15px;
+        }
 
         &__img {
             img {
                 margin-right: 20px;
+                    bottom: 25px;
             }
         }
+
+       
         &__title {
             font-size: 14px;
         }

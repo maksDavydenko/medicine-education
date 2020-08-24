@@ -23,7 +23,7 @@ $(document).ready(function () {
                 breakpoint: 1400,
                 settings: {
                     slidesToShow: 4,
-
+                    centerMode: true,
 
                 }
             },
@@ -84,20 +84,20 @@ $('.js-university-slider__prev-btn').on('click', function () {
 });
 
 
-$('.universities__slider').on('init', function (slick) {
-    let active = $('.universities__slider .slick-active');
-    let first = active.eq(0);
-    let last = active.eq(active.length - 1);
-    first.addClass('opacity');
-    last.addClass('opacity');
-});
+// $('.universities__slider').on('init', function (slick) {
+//     let active = $('.universities__slider .slick-active');
+//     let first = active.eq(0);
+//     let last = active.eq(active.length - 1);
+//     first.addClass('opacity');
+//     last.addClass('opacity');
+// });
 
-$('.universities__slider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
-    let active = $('.universities__slider .slick-active');
-    let first = active.eq(0);
-    let last = active.eq(active.length - 1);
-    active.removeClass('opacity')
-    first.addClass('opacity');
-    last.addClass('opacity');
-});
+// $('.universities__slider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
+//     let active = $('.universities__slider .slick-active');
+//     let first = active.eq(0);
+//     let last = active.eq(active.length - 1);
+//     active.removeClass('opacity')
+//     first.addClass('opacity');
+//     last.addClass('opacity');
+// });
 

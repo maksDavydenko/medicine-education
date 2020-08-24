@@ -15,6 +15,14 @@ $(document).ready(function () {
                 }
             },
             {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 3,
+                    centerMode: true,
+                }
+            },
+
+            {
                 breakpoint: 1100,
                 settings: {
                     slidesToShow: 3
@@ -26,6 +34,7 @@ $(document).ready(function () {
                 settings: {
                     centerMode: true,
                     slidesToShow: 1,
+                    // centerPadding: '100px',
                 }
             }
         ]
