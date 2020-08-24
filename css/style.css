@@ -426,6 +426,7 @@ summary {
   display: none;
 }
 .adaptive-menu__social-wrap {
+  margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -717,7 +718,6 @@ summary {
 }
 .social-nav {
   position: fixed;
-  display: none;
   top: 50%;
   right: 45px;
   transform: translate(0, -50%);
@@ -750,10 +750,6 @@ summary {
 .assistent-slider-wrap {
   position: relative;
   z-index: 29;
-}
-.assistent-slider-wrap .assistent-slider__wrap {
-  display: flex;
-  justify-content: space-between;
 }
 .header-assistent-slider {
   position: absolute;

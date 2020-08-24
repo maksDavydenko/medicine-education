@@ -153,6 +153,9 @@
   }
 }
 @media screen and (max-width: 1400px) {
+  .social-nav {
+    right: 15px;
+  }
   .slider-wrap {
     padding: 0;
   }
@@ -292,6 +295,9 @@
   }
   .opacity {
     opacity: 1;
+  }
+  .social-nav {
+    display: none;
   }
   .universities__slider,
   .courses__slider,

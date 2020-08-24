@@ -9,12 +9,10 @@ const headerSlider = document.querySelector('.header-slider')
 $(document).ready(function () {
     $('.header-assistent-slider').slick({
         infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToShow: 4,
+        slidesToScroll: 3,
         arrows: false,
-        // speed: 1500,
         speed: 1500,
-        fade: true,
         responsive: [
             {
                 breakpoint: 1560,

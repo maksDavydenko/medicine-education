@@ -5,7 +5,6 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: false,
         speed: 500,
-        fade: true,
         // adaptiveHeight: true,
         dots: true,
         appendDots: $('.js-slider-line-universities'),
