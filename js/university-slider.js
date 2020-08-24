@@ -5,6 +5,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: false,
         speed: 500,
+        fade: true,
         // adaptiveHeight: true,
         dots: true,
         appendDots: $('.js-slider-line-universities'),
@@ -22,17 +23,10 @@ $(document).ready(function () {
             {
                 breakpoint: 1400,
                 settings: {
-                    slidesToShow: 4,
-                    centerMode: true,
+                    slidesToShow: 6,
+                }
+            },
 
-                }
-            },
-            {
-                breakpoint: 1300,
-                settings: {
-                    slidesToShow: 4
-                }
-            },
             {
                 breakpoint: 1100,
                 settings: {
@@ -84,20 +78,20 @@ $('.js-university-slider__prev-btn').on('click', function () {
 });
 
 
-// $('.universities__slider').on('init', function (slick) {
-//     let active = $('.universities__slider .slick-active');
-//     let first = active.eq(0);
-//     let last = active.eq(active.length - 1);
-//     first.addClass('opacity');
-//     last.addClass('opacity');
-// });
+$('.universities__slider').on('init', function (slick) {
+    let active = $('.universities__slider .slick-active');
+    let first = active.eq(0);
+    let last = active.eq(active.length - 1);
+    first.addClass('opacity');
+    last.addClass('opacity');
+});
 
-// $('.universities__slider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
-//     let active = $('.universities__slider .slick-active');
-//     let first = active.eq(0);
-//     let last = active.eq(active.length - 1);
-//     active.removeClass('opacity')
-//     first.addClass('opacity');
-//     last.addClass('opacity');
-// });
+$('.universities__slider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
+    let active = $('.universities__slider .slick-active');
+    let first = active.eq(0);
+    let last = active.eq(active.length - 1);
+    active.removeClass('opacity')
+    first.addClass('opacity');
+    last.addClass('opacity');
+});
 

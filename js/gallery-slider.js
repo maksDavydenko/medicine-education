@@ -17,8 +17,7 @@ $(document).ready(function () {
             {
                 breakpoint: 1400,
                 settings: {
-                    slidesToShow: 3,
-                    centerMode: true,
+                    slidesToShow: 5,
                 }
             },
 
@@ -68,7 +67,6 @@ $('.gallery-slider-mobile--prev').on('click', function () {
     $('.gallery__slider').slick('slickPrev');
 
 });
-
 
 
 

@@ -190,6 +190,11 @@
     max-width: 1073.34px;
     width: 90%;
   }
+  .universities__slider,
+  .courses__slider,
+  .gallery__slider {
+    margin: 0px -90px;
+  }
 }
 @media screen and (max-width: 1200px) {
   .header-slider__content {
@@ -287,6 +292,11 @@
   }
   .opacity {
     opacity: 1;
+  }
+  .universities__slider,
+  .courses__slider,
+  .gallery__slider {
+    margin: 0px;
   }
   .academic-header .arrow-decorate {
     display: none;
@@ -944,6 +954,9 @@
   .gallery-slider__btn {
     display: block;
   }
+  .gallery-slider-mobile {
+    display: block;
+  }
   .footer::before {
     width: 53%;
     background: linear-gradient(162.73deg, #0042a5 6.44%, #01498b 45.77%, #002365 75.36%);
@@ -1012,7 +1025,7 @@
     top: 63%;
   }
   .header-slider {
-    background-position: 71%, 40%;
+    background-position: 63%, 40%;
   }
   .header-slider__nav {
     position: relative;
@@ -1035,9 +1048,6 @@
   }
   .academic__title {
     font-size: 14px;
-  }
-  .gallery-slider-mobile {
-    display: block;
   }
   .feedback-item__inner {
     margin: 15px;

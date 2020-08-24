@@ -751,6 +751,10 @@ summary {
   position: relative;
   z-index: 29;
 }
+.assistent-slider-wrap .assistent-slider__wrap {
+  display: flex;
+  justify-content: space-between;
+}
 .header-assistent-slider {
   position: absolute;
   top: -128px;
@@ -1778,7 +1782,4 @@ summary {
   to {
     top: 0;
   }
-}
-.slick-slide[aria-hidden="true"] {
-  opacity: 0.5;
 }
