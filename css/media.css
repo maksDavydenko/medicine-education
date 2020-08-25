@@ -107,12 +107,12 @@
     margin-left: 0;
   }
   .universities .square-decorate {
-    top: -46%;
+    top: -45%;
     z-index: 2;
     left: -434px;
   }
   .universities .square-decorate--transparent {
-    top: -46%;
+    top: -45%;
     z-index: 2;
     left: -396px;
   }
@@ -181,7 +181,8 @@
     padding: 3px 18px;
   }
   .header-slider__buttons {
-    top: 26px;
+    right: -88px;
+    top: 5px;
   }
   .header-slider__mail-title {
     margin-top: 10px;
@@ -197,6 +198,35 @@
   .courses__slider,
   .gallery__slider {
     margin: 0px -90px;
+  }
+  .header-slider .arrow-decorate--left {
+    left: -60px;
+  }
+  .header-assistent-slider {
+    top: -150px;
+  }
+  .subtitle-wrap .dots-img {
+    margin-right: 24px;
+    margin-top: 7px;
+  }
+  .rectangle-decorate-block {
+    top: -269px;
+  }
+  .academic-header__content {
+    justify-content: center;
+  }
+  .academic-header__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: 0.02em;
+  }
+  .banner {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 1370px) {
+  .header-slider__buttons {
+    right: -118px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -272,6 +302,9 @@
   .academic-header .arrow-decorate {
     display: none;
   }
+  .academic-header__title {
+    font-size: 89px;
+  }
   .banner {
     font-size: 18px;
     width: 91px;
@@ -313,6 +346,9 @@
   .academic__years {
     font-size: 27px;
   }
+  .academic-header__title {
+    font-size: 65px;
+  }
   .admission-form__header {
     font-size: 23px;
   }
@@ -339,9 +375,6 @@
   .banner::before {
     width: 57px;
     height: 57px;
-  }
-  .academic-header__title {
-    font-size: 65px;
   }
   .connection-info__btn {
     padding: 12px 26px;
