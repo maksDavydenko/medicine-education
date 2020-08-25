@@ -12,7 +12,7 @@ $(document).ready(function () {
         slidesToShow: 3,
         slidesToScroll: 3,
         arrows: false,
-        speed: 1500,
+        speed: 700,
         responsive: [
             {
                 breakpoint: 1560,
@@ -44,52 +44,55 @@ let curSlide = 1;
 $('.js-header-slide-prev').on('click', function () {
     $('.header-assistent-slider').slick('slickPrev');
 
-    curSlide--;
-    curSlide = curSlide < 1 ? 6 : curSlide;
-    changeSlide();
-    changeContent();
+    // curSlide--;
+    // curSlide = curSlide < 1 ? 6 : curSlide;
+    // setTimeout(renderSlide, 0)
+    setTimeout(renderSlidePrev, 100)
+
 
 });
 
 $('.js-header-slide-prev-mobile').on('click', function () {
-    // $('.header-assistent-slider').slick('slickPrev');
-
-    curSlide--;
-    curSlide = curSlide < 1 ? 6 : curSlide;
-    changeSlide();
-    changeContent();
-    // alert('jjj');
-
+    // curSlide--;
+    // curSlide = curSlide < 1 ? 6 : curSlide;
+    // setTimeout(renderSlide, 0)
+    setTimeout(renderSlidePrev, 100)
 });
-
-
-
 
 
 $('.js-header-slide-next').on('click', function () {
     $('.header-assistent-slider').slick('slickNext');
-    curSlide++;
-    curSlide = curSlide > 6 ? 1 : curSlide;
-
-    changeSlide();
-    changeContent();
-
+    // curSlide++;
+    // curSlide = curSlide > 6 ? 1 : curSlide;
+    // changeSlide();
+    // changeContent();
+    // setTimeout(renderSlide, 0)
+    setTimeout(renderSlideNext, 100)
 });
 
 $('.js-header-slide-next-mobile').on('click', function () {
-    // $('.header-assistent-slider').slick('slickNext');
-    curSlide++;
-    curSlide = curSlide > 6 ? 1 : curSlide;
-
-    changeSlide();
-    changeContent();
-    // alert('jjj');
-
+    // curSlide++;
+    // curSlide = curSlide > 6 ? 1 : curSlide;
+    // setTimeout(renderSlide, 0)
+    // renderSlideNext
+    setTimeout(renderSlideNext, 100)
 });
 
+function renderSlideNext() {
+    curSlide++;
+    curSlide = curSlide > 6 ? 1 : curSlide;
+    changeSlide();
+    changeContent();
+}
+
+function renderSlidePrev() {
+    curSlide--;
+    curSlide = curSlide < 1 ? 6 : curSlide;
+    changeSlide();
+    changeContent();
+}
+
 let nums = $('.header-slider__nav-item');
-// let numsMobile = $('.header-slider__nav-item-mobile');
-// document.querySelectorAll('.header-slider__nav-item')
 nums = Array.from(nums);
 
 function changeSlide() {
@@ -101,8 +104,6 @@ function changeSlide() {
         element.classList.remove('header-slider__nav-item--active');
 
     });
-
-
 
     let indexUp = 1;
     let indexDown = 1;
@@ -118,9 +119,7 @@ function changeSlide() {
         indexDown++
     }
 
-
     nums[curSlide - 1].classList.add('header-slider__nav-item--active')
-
 }
 
 function changeContent() {
@@ -128,4 +127,68 @@ function changeContent() {
     headerSlider.style.backgroundImage = data[curSlide - 1].img;
 }
 
-changeSlide()
+changeSlide();
+
+//auto play
+
+let pauseAutoPlay = false;
+// header-slider__nav
+setInterval(autoPlay, 4000);
+
+function autoPlay() {
+    if (!pauseAutoPlay) {
+        curSlide++;
+        curSlide = curSlide > 6 ? 1 : curSlide;
+        $('.header-assistent-slider').slick('slickNext');
+        changeSlide();
+        changeContent();
+    }
+}
+
+const sliderList = document.querySelector('.header-slider__nav-list');
+const headerAssistentSlider = document.querySelector('.header-assistent-slider');
+const headerSliderButtons = document.querySelector('.header-slider__buttons');
+
+sliderList.addEventListener('click', e => {
+    const target = e.target;
+    const sliderNum = parseInt(target.closest('LI').getAttribute('data-num'));
+    curSlide = sliderNum;
+
+    $('.header-assistent-slider').slick('slickGoTo', curSlide * 3 - 2, true);
+    changeSlide();
+    changeContent();
+})
+
+
+
+headerAssistentSlider.addEventListener('mouseover', () => {
+    pauseAutoPlay = true;
+    console.log(pauseAutoPlay)
+});
+
+headerAssistentSlider.addEventListener('mouseleave', () => {
+    pauseAutoPlay = false;
+    console.log(pauseAutoPlay)
+});
+
+sliderList.addEventListener('mouseover', () => {
+    pauseAutoPlay = true;
+    console.log(pauseAutoPlay)
+});
+
+sliderList.addEventListener('mouseleave', () => {
+    pauseAutoPlay = false;
+    console.log(pauseAutoPlay)
+});
+
+headerSliderButtons.addEventListener('mouseover', () => {
+    pauseAutoPlay = true;
+    console.log(pauseAutoPlay)
+});
+
+headerSliderButtons.addEventListener('mouseleave', () => {
+    pauseAutoPlay = false;
+    console.log(pauseAutoPlay)
+});
+
+
