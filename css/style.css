@@ -632,6 +632,7 @@ summary {
   color: #FFFFFF;
   border-left: 3px solid rgba(255, 255, 255, 0.8);
   opacity: 0.8;
+  cursor: pointer;
 }
 .header-slider__nav-num {
   display: block;

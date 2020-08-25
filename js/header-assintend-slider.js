@@ -42,12 +42,9 @@ $(document).ready(function () {
 //suctom buttons
 let curSlide = 1;
 $('.js-header-slide-prev').on('click', function () {
-    $('.header-assistent-slider').slick('slickPrev');
 
-    // curSlide--;
-    // curSlide = curSlide < 1 ? 6 : curSlide;
-    // setTimeout(renderSlide, 0)
-    setTimeout(renderSlidePrev, 100)
+    renderSlidePrev();
+    $('.header-assistent-slider').slick('slickGoTo', curSlide * 3 - 2, false);
 
 
 });
@@ -56,7 +53,9 @@ $('.js-header-slide-prev-mobile').on('click', function () {
     // curSlide--;
     // curSlide = curSlide < 1 ? 6 : curSlide;
     // setTimeout(renderSlide, 0)
-    setTimeout(renderSlidePrev, 100)
+    renderSlidePrev();
+    $('.header-assistent-slider').slick('slickGoTo', curSlide * 3 - 2, false);
+
 });
 
 
@@ -67,7 +66,8 @@ $('.js-header-slide-next').on('click', function () {
     // changeSlide();
     // changeContent();
     // setTimeout(renderSlide, 0)
-    setTimeout(renderSlideNext, 100)
+    renderSlideNext();
+    $('.header-assistent-slider').slick('slickGoTo', curSlide * 3 - 2, false);
 });
 
 $('.js-header-slide-next-mobile').on('click', function () {
@@ -75,7 +75,8 @@ $('.js-header-slide-next-mobile').on('click', function () {
     // curSlide = curSlide > 6 ? 1 : curSlide;
     // setTimeout(renderSlide, 0)
     // renderSlideNext
-    setTimeout(renderSlideNext, 100)
+    renderSlideNext();
+    $('.header-assistent-slider').slick('slickGoTo', curSlide * 3 - 2, false);
 });
 
 function renderSlideNext() {
@@ -137,11 +138,8 @@ setInterval(autoPlay, 4000);
 
 function autoPlay() {
     if (!pauseAutoPlay) {
-        curSlide++;
-        curSlide = curSlide > 6 ? 1 : curSlide;
-        $('.header-assistent-slider').slick('slickNext');
-        changeSlide();
-        changeContent();
+        renderSlideNext()
+        $('.header-assistent-slider').slick('slickGoTo', curSlide * 3 - 2, false);
     }
 }
 
@@ -154,7 +152,7 @@ sliderList.addEventListener('click', e => {
     const sliderNum = parseInt(target.closest('LI').getAttribute('data-num'));
     curSlide = sliderNum;
 
-    $('.header-assistent-slider').slick('slickGoTo', curSlide * 3 - 2, true);
+    $('.header-assistent-slider').slick('slickGoTo', curSlide * 3 - 2, false);
     changeSlide();
     changeContent();
 })
