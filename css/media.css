@@ -152,7 +152,7 @@
     display: none;
   }
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1450px) {
   .social-nav {
     right: 15px;
   }
@@ -187,7 +187,7 @@
     margin-top: 10px;
   }
   .header-assistent-slider {
-    left: 10%;
+    left: 12%;
   }
   .slider-line {
     max-width: 1073.34px;
