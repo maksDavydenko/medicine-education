@@ -180,6 +180,10 @@
   .header-slider__nav-num {
     padding: 3px 18px;
   }
+  .header-slider__nav-icon {
+    width: 32px;
+    height: 32px;
+  }
   .header-slider__buttons {
     right: -88px;
     top: 5px;
@@ -688,6 +692,9 @@
   .courses__slider .slider-item {
     width: 400px;
   }
+  .slider-item:hover {
+    transform: scale(1);
+  }
   .navigation-menu {
     margin-bottom: 73px;
   }
@@ -867,7 +874,9 @@
     font-size: 15px;
     line-height: 1.2;
   }
-  .square-decorate {
+  .square-decorate,
+  .assistent-slider-wrap,
+  .feedback-arrow-decorate {
     display: none;
   }
   .btn--header-slider {
@@ -989,6 +998,9 @@
   }
   .gallery .gallery-slider-item {
     max-width: 235.37px !important;
+  }
+  .gallery .gallery-slider-item:hover {
+    transform: scale(1);
   }
   .gallery .btn-wrap {
     display: none;

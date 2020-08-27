@@ -134,7 +134,7 @@ changeSlide();
 
 let pauseAutoPlay = false;
 // header-slider__nav
-setInterval(autoPlay, 4000);
+// setInterval(autoPlay, 4000);
 
 function autoPlay() {
     if (!pauseAutoPlay) {

@@ -240,9 +240,9 @@ a {
   display: none;
   position: absolute;
   z-index: 3;
-  bottom: -29px;
-  right: -47px;
-  padding: 8px 14px;
+  bottom: -22px;
+  right: -56px;
+  padding: 8px 23px;
   font-size: 17px;
 }
 .connection-info__btn--menu {
@@ -741,6 +741,9 @@ summary {
   height: 47px;
   border-radius: 50%;
   background: linear-gradient(188.21deg, #0066ff -8.5%, #00369c 51.46%, #0031c4 130.73%, #018ff6 130.74%);
+}
+.social-nav__main img {
+  margin-bottom: 3px;
 }
 .social-nav__list {
   position: relative;
