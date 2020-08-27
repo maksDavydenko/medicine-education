@@ -8,8 +8,8 @@ $(document).ready(function () {
         // adaptiveHeight: true,
         dots: true,
         appendDots: $('.js-slider-line-universities'),
-        // autoplay: true,
-        // autoplaySpeed: 5000,
+        autoplay: true,
+        autoplaySpeed: 15000,
 
 
         responsive: [

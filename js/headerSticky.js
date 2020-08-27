@@ -1,23 +1,3 @@
-// const applyBtn = document.querySelector('.connection-info__btn--sticky');
-// var $element = $('.footer');
-// let counter = 0;
-// $(window).scroll(function () {
-//     var scroll = $(window).scrollTop() + $(window).height();
-//     //Если скролл до конца елемента
-//     //var offset = $element.offset().top + $element.height();
-//     //Если скролл до начала елемента
-//     var offset = $element.offset().top
-
-//     if (scroll > offset && counter == 0) {
-//         $('.connection-info__btn--sticky').fadeIn(500);
-//         console.log('rest')
-//         counter = 1;
-//     }
-// });
-// $('.btn').click(function(){
-// $('#block').slideUp();
-// });
-
 document.addEventListener('DOMContentLoaded', function () {
     const headerWrap = document.querySelector('.header');
     const upBtn = document.querySelector('.upBtn');

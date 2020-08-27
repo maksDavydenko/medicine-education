@@ -5,6 +5,9 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: false,
         speed: 500,
+        autoplay: true,
+
+        autoplaySpeed: 15000,
         dots: true,
         appendDots: $('.js-slider-line-gallery'),
         responsive: [

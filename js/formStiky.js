@@ -36,13 +36,14 @@ $(window).scroll(function () {
     // comment-form
     //
 
-    if (scroll < offsercheckUniverse + $('.quick-navigation1').height()) {
+    if (scroll < offsercheckUniverse) {
         $('.comment-form').css('position', 'static');
         $('.comment-form').css('margin-top', '0');
     }
 
-    if (scroll > offsercheckUniverse + $('.quick-navigation1').height()) {
+    if (scroll > offsercheckUniverse) {
         $('.comment-form').css('position', 'absolute');
+        $('.comment-form').css('right', '0');
         $('.comment-form').css('top', $(window).scrollTop() - offsercheckUniverse - 100);
 
     }
