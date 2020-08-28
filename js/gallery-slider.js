@@ -36,7 +36,7 @@ $(document).ready(function () {
                 settings: {
                     centerMode: true,
                     slidesToShow: 1,
-                    // centerPadding: '100px',
+                    centerPadding: '30px',
                 }
             }
         ]
