@@ -767,6 +767,9 @@
   .banner {
     display: none;
   }
+  .gallery .opacity {
+    opacity: 0.5;
+  }
   .feedback-item__inner {
     margin: 46px 15px;
     padding: 18px;
@@ -821,6 +824,9 @@
   .header-subtitle-decorate {
     margin-left: -22px;
   }
+  .header-slider {
+    border-bottom: none;
+  }
   .header-slider__mail-title {
     font-size: 36px;
   }
@@ -849,6 +855,8 @@
     display: flex;
     align-items: center;
     margin-left: -20px;
+    position: relative;
+    bottom: -4px;
   }
   .header-slider__nav-item {
     width: 16.66%;
@@ -997,7 +1005,10 @@
     padding: 0;
   }
   .gallery .gallery-slider-item {
-    max-width: 235.37px !important;
+    max-width: 100%;
+    max-height: 267px;
+    object-fit: cover;
+    display: block;
   }
   .gallery .gallery-slider-item:hover {
     transform: scale(1);
@@ -1053,6 +1064,9 @@
   .navigation-item__link {
     font-size: 8px;
   }
+  .navigation-item__link--adaptive-menu {
+    font-size: 13px;
+  }
   .navigation-item__icon {
     margin-right: 5px;
     width: 9px;
@@ -1078,6 +1092,9 @@
   }
   #menu {
     margin-left: 0;
+  }
+  .adaptive-menu {
+    padding: 10px 17px;
   }
   .adaptive-menu__info {
     margin-bottom: 10px;
@@ -1122,12 +1139,17 @@
   }
   .academic__years {
     font-size: 11px;
+    border: 2px solid #fff;
   }
   .academic__title {
     font-size: 14px;
   }
+  .subtitle-wrap .dots-img {
+    margin-right: 11px;
+    margin-top: 2px;
+  }
   .feedback-item__inner {
-    margin: 15px;
+    margin: 21px 24px 24px 24px;
   }
   .feedback-item__img img {
     margin-right: 20px;

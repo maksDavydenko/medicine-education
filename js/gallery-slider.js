@@ -6,7 +6,6 @@ $(document).ready(function () {
         arrows: false,
         speed: 500,
         autoplay: true,
-
         autoplaySpeed: 15000,
         dots: true,
         appendDots: $('.js-slider-line-gallery'),
@@ -36,7 +35,8 @@ $(document).ready(function () {
                 settings: {
                     centerMode: true,
                     slidesToShow: 1,
-                    centerPadding: '30px',
+                    variableWidth: true,
+                    adaptiveHeight: true
                 }
             }
         ]
@@ -56,7 +56,6 @@ $('.js-gallery-slider__next-btn').on('click', function () {
 
 $('.js-gallery-slider__prev-btn').on('click', function () {
     $('.gallery__slider').slick('slickPrev');
-
 });
 
 
@@ -71,14 +70,29 @@ $('.gallery-slider-mobile--prev').on('click', function () {
 
 });
 
+let screenSize = $(window).width();
+$(window).resize(function () {
+    screenSize = $(window).width();
+    console.log(screenSize)
+})
 
 
 $('.gallery__slider').on('init', function (slick) {
     var active = $('.gallery__slider .slick-active');
+
+
     var first = active.eq(0);
     var last = active.eq(active.length - 1);
     first.addClass('opacity');
     last.addClass('opacity');
+
+    if (screenSize < 721) {
+        const sliders = $('.gallery-slider-item');
+        const curSlider = $('.slick-center');
+        sliders.addClass('opacity');
+        curSlider.removeClass('opacity');
+    }
+
 });
 
 $('.gallery__slider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
@@ -88,5 +102,14 @@ $('.gallery__slider').on('afterChange', function (event, slick, currentSlide, ne
     active.removeClass('opacity')
     first.addClass('opacity');
     last.addClass('opacity');
+
+    if (screenSize < 721) {
+        const sliders = $('.gallery-slider-item');
+        const curSlider = $('.slick-center');
+        sliders.addClass('opacity');
+        curSlider.removeClass('opacity');
+    }
 });
+
+
 
