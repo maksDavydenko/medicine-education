@@ -1037,6 +1037,11 @@
   }
   .connection-info__btn--menu {
     margin: 0 auto;
+    width: calc(100% + 9px) !important;
+    padding: 10px 0;
+  }
+  .search__btn {
+    right: 0px;
   }
   .connection-info-tablet {
     width: 100%;
