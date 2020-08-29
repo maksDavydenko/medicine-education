@@ -57,6 +57,12 @@
     }
 }
 
+@media screen and (max-width: 1450px) {
+    .header-decorate {
+        top: -154%;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .header-decorate {
         right: 55%;
@@ -65,32 +71,115 @@
     .header-slider__mail-title {
         font-size: 55px;
     }
-    .header-slider__block {
-        margin-top: 85px;
+    .header-slider__subtitle {
+        font-size: 27px; 
     }
-
+    .header-slider__block {
+        margin-top: 80px;
+    }
 
     .universe-item {       
-        max-width: 88px;
+        max-width: 80px;
+        border-radius: 30px;
     
         &__title {        
-            font-size: 14px; 
+            font-size: 12px; 
+        }
+
+        &__text {
+            font-size: 10px;   
         }
     }
-    .forms-wrap,
-    .comment-form {
-        max-width: 304px;
+    // .forms-wrap,
+    // .comment-form {
+    //     max-width: 304px;
+    // }
+
+    .admission-form {
+        padding: 18px 22px 22px 22px;
+        &__header {
+            font-size: 24px;
+        }
     }
-  
 }
 
-@media screen and (max-width: 997px) {
-
-}
 
 @media screen and (max-width: 997px){
     .header-slider {
         background-position: 52%, 40%;
+    }
+    .rectangle-decorate-block {
+        right: -231px;
+    }
+    .about {
+        width: 60%;
+    }
+
+    // .forms-wrap,
+    // .comment-form {
+    //     max-width: 232px;
+    // }
+
+    .admission-form {
+        // padding: 18px 26px 22px 26px;
+        // display: flex;
+        // flex-direction: column;
+        // background: linear-gradient(132.24deg, #F4F4F4 -0.37%, #B8B8B8 104.82%);
+        // box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    
+        // &--in-block {
+        //     width: 33%;
+        //     max-width: 341px;
+        // }
+    
+        &__header {
+            font-size: 18px;
+            
+        }
+    
+    //     &__subtitle {
+    //         font-size: 10px;
+    //         line-height: 12px;
+    //         text-align: justify;
+    //         color: #737373;
+    //         margin-bottom: 10px;
+    //     }
+    
+    //     &__input {
+    //         box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.25);
+    //         font-weight: 500;
+    //         font-size: 14px;
+    //         color:  #737373;
+    //         padding: 14px;
+    //         border-radius: 6px;
+    //         border: none;
+    //         outline:none;
+    //         margin-bottom: 28px;
+    //         &::placeholder {
+    //             font-weight: 500;
+    //             font-size: 14px;
+    //             color: rgba(190, 190, 190, 0.9);
+    //         }
+    //     }
+    //     &__btn {
+    //         // display: inline;
+    //         width: 145px;
+    //         margin: auto;
+    //         font-size: 22px;
+    //         padding: 8px 47px;
+    //         border-radius: 30px;
+    //         text-align: center;
+    //         letter-spacing: 0.03em;
+    //         font-style: normal;
+    //         font-weight: normal
+            
+    //     }
+    }
+
+    .admission-form {
+        &__item {
+           padding: 14px 0;
+        }
     }
 }
 

@@ -134,6 +134,9 @@
 .about {
     width: 65%;
     z-index: 3;
+    &__wrap {
+        margin-top: 25px;
+    }
 }
 .forms-wrap {
     display: flex;
@@ -144,6 +147,10 @@
    
     z-index: 999; 
 }
+ .forms-wrap{
+        width: 33%;
+    }
+
 .quick-navigation {
     position: relative;
     margin-bottom: 32px;
@@ -153,6 +160,7 @@
     margin-bottom: 40px;
     &__wrap {
         display: flex;
+        align-items: center;
         width: 65%;
     }
 
@@ -163,7 +171,7 @@
     }
 
     &__btn {
-        margin: 9px 0;
+        margin: 8px 0;
         padding: 6px 16px;
         width: 146px;
         text-transform: uppercase;
@@ -173,6 +181,7 @@
         border-radius: 18.5px;
         font-size: 20px;
         text-align: center;
+        cursor: pointer;
 
         &--active{
             background: linear-gradient(207.28deg, #FF0000 9.11%, #CE0000 98.12%);
@@ -257,13 +266,13 @@
     }
 }
 .universe-item {
+    display: block;
     position: relative;
     padding: 25px 9px 7px;
     background: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
     border-radius: 18px;
-    // flex-basis: 100px;
-    max-width: 88px;
+    max-width: 95px;
 
     &::before {
         content: url('../img/icons/arrows-asisstent-top.svg');
@@ -315,9 +324,6 @@
  }
 
  .admission-form {
-     &__list {
-
-     }
 
      &__item {
         border-bottom: 4px solid #fff;
@@ -332,12 +338,13 @@
         left: 15px;
         font-size: 18px;
         line-height: 133.3%;
-        color:#018FF6;
+        font-weight: bold;
+        color:#0031C4;
      }
  }
  .comments-section {
      position: relative;
-     margin-bottom: 90px;
+     margin-bottom: 50px;
      .arrow-decorate-blue {
         position: absolute;
         left: 5%;
@@ -360,6 +367,10 @@
         top: 345px;
         right: 5%;
      }
+
+     &__comments {
+         margin-top: 60px;
+     }
  }
 
  .comments__wrap {
@@ -374,9 +385,8 @@
 
  .comments-items {
      position: relative;
-    //  display: flex;
-   
  }
+
  .comment-item {
      position: relative;
      z-index: 2;
@@ -432,22 +442,7 @@
         }
     }
   
- 
-    // &__wrap {
-    //     background-color: #fff;
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     right: 0;
-    //     bottom: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     border-radius: 24px;
-    //     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
-    //     border: 1px solid #ccc;
-    //     background-color: #fff;
-    //     z-index: 99;
-    // }
+
     &__title {
         left: -1px;
         top: -32px;
@@ -503,6 +498,10 @@
         color: #FFFFFF;
         min-width: 156px;
     }
+}
+
+.comment-item:last-of-type { 
+    margin-bottom:0; 
 }
 
 .commetns-form {

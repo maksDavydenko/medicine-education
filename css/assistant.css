@@ -116,6 +116,9 @@
   width: 65%;
   z-index: 3;
 }
+.about__wrap {
+  margin-top: 25px;
+}
 .forms-wrap {
   display: flex;
   flex-direction: column;
@@ -123,6 +126,9 @@
 .about-form {
   display: flex;
   z-index: 999;
+}
+.forms-wrap {
+  width: 33%;
 }
 .quick-navigation {
   position: relative;
@@ -134,6 +140,7 @@
 }
 .check-universe__wrap {
   display: flex;
+  align-items: center;
   width: 65%;
 }
 .check-universe__buttons {
@@ -142,7 +149,7 @@
   margin-right: 20px;
 }
 .check-universe__btn {
-  margin: 9px 0;
+  margin: 8px 0;
   padding: 6px 16px;
   width: 146px;
   text-transform: uppercase;
@@ -152,6 +159,7 @@
   border-radius: 18.5px;
   font-size: 20px;
   text-align: center;
+  cursor: pointer;
 }
 .check-universe__btn--active {
   background: linear-gradient(207.28deg, #ff0000 9.11%, #ce0000 98.12%);
@@ -217,12 +225,13 @@
   display: none;
 }
 .universe-item {
+  display: block;
   position: relative;
   padding: 25px 9px 7px;
   background: #FFFFFF;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
   border-radius: 18px;
-  max-width: 88px;
+  max-width: 95px;
 }
 .universe-item::before {
   content: url('../img/icons/arrows-asisstent-top.svg');
@@ -278,11 +287,12 @@
   left: 15px;
   font-size: 18px;
   line-height: 133.3%;
-  color: #018FF6;
+  font-weight: bold;
+  color: #0031C4;
 }
 .comments-section {
   position: relative;
-  margin-bottom: 90px;
+  margin-bottom: 50px;
 }
 .comments-section .arrow-decorate-blue {
   position: absolute;
@@ -304,6 +314,9 @@
   height: 245.72px;
   top: 345px;
   right: 5%;
+}
+.comments-section__comments {
+  margin-top: 60px;
 }
 .comments__wrap {
   position: relative;
@@ -413,6 +426,9 @@
   margin-left: auto;
   color: #FFFFFF;
   min-width: 156px;
+}
+.comment-item:last-of-type {
+  margin-bottom: 0;
 }
 .commetns-form {
   display: flex;
