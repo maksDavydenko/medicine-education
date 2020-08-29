@@ -843,6 +843,8 @@
   .header-slider .dots-img {
     width: 27px;
     height: 21px;
+    margin-right: 10px;
+    margin-top: 3px;
   }
   .header-slider__assistant-subtitle {
     font-size: 15px;
@@ -1089,6 +1091,9 @@
   .navigation-item--tablet {
     margin-bottom: 6px;
   }
+  .adaptive-menu .navigation-item {
+    margin-bottom: 6px;
+  }
   .adaptive-header__inner--tablet {
     padding-bottom: 0;
   }
@@ -1100,7 +1105,7 @@
     font-weight: bold;
   }
   .navigation-item__link--adaptive-menu {
-    font-size: 13px;
+    font-size: 10.5px;
   }
   .btn--university {
     padding: 10px;
@@ -1188,7 +1193,7 @@
     margin: 21px 24px 24px 24px;
   }
   .feedback-item__img img {
-    margin-right: 20px;
+    margin-right: 0;
     bottom: 25px;
   }
   .feedback-item__title {
@@ -1261,9 +1266,12 @@
     margin-right: 0;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 351px) {
   .btn--university {
     font-size: 10px;
+  }
+  .navigation-item__link {
+    font-size: 12px;
   }
   .academic-header__title {
     font-size: 22px;

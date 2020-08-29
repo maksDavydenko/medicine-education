@@ -1113,6 +1113,9 @@
      .dots-img {
         width: 27px;
         height: 21px;
+        margin-right: 10px;
+        margin-top: 3px;
+    
      }
 
      &__assistant-subtitle{
@@ -1406,6 +1409,12 @@
     .navigation-item--tablet {
         margin-bottom: 6px;
     }
+    
+    .adaptive-menu {
+        .navigation-item {
+            margin-bottom: 6px;
+        }
+    }
 
     .adaptive-header__inner--tablet {
         padding-bottom: 0;
@@ -1417,7 +1426,7 @@
         font-size: 14px;
         font-weight: bold;
        &--adaptive-menu {
-           font-size: 13px;
+           font-size: 10.5px;
        }
     }
   
@@ -1528,8 +1537,8 @@
 
         &__img {
             img {
-                margin-right: 20px;
-                    bottom: 25px;
+                margin-right: 0;
+                bottom: 25px;
             }
         }
 
@@ -1616,9 +1625,13 @@
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 351px) {
     .btn--university {
         font-size: 10px;
+    }
+
+    .navigation-item__link {
+        font-size: 12px;
     }
 
     .academic-header {
