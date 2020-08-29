@@ -322,6 +322,13 @@
 
         &--sticky {
             padding: 5px 0;
+
+             .logo {
+                 img {
+                width: 175px;
+                height: 38px;
+            }
+            }
         }
     }
 
@@ -1110,9 +1117,9 @@
 
      &__assistant-subtitle{
          font-size: 15px;
+         line-height: 15px;
      }
-     
-   
+
      &__nav {
          position: relative;
          margin-top: 40px;
@@ -1160,6 +1167,19 @@
     .header-slider__nav-item--active {
         font-size: 15px; 
         line-height: 1.2;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: -4px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 9px;
+            height: 9px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
     }
     .square-decorate,
     .assistent-slider-wrap,
@@ -1168,7 +1188,7 @@
     }
 
     .btn--header-slider{
-        padding: 7px;
+        padding: 7px 13px;
         font-size: 12px;
     }
     .header-slider__buttons {
@@ -1351,6 +1371,13 @@
         width: 100%;
         padding: 0 20px;
     }
+
+    .header--sticky {
+        .logo--header img {
+            height: 25px;
+            width: 113px;
+        }
+    }
     .search__input--menu {
         width: 100%;
         margin-right: 0;
@@ -1364,27 +1391,36 @@
         width: ~"calc(100% + 9px)" !important;
         padding: 10px 0;
     }
+    .connection-info__item--menu {
+        margin-bottom: 0;
+    }
     .search__btn {
         right: 0px;
     }
     .connection-info-tablet{
         width: 100%;
         justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .navigation-item--tablet {
+        margin-bottom: 6px;
+    }
+
+    .adaptive-header__inner--tablet {
+        padding-bottom: 0;
     }
     .navigation-item--tablet {
         margin-right: 1%;
     }
     .navigation-item__link {
-        font-size: 8px;
+        font-size: 14px;
+        font-weight: bold;
        &--adaptive-menu {
            font-size: 13px;
        }
     }
-    .navigation-item__icon {
-        margin-right: 5px;
-        width: 9px;
-        height: 9px;
-    }
+  
      .btn--university {
         padding: 10px;
      }
@@ -1423,18 +1459,30 @@
         }
     }
     .rectangle-decorate {
-        top: -36%;
-        left: -126px;
+        top: -40%;
+        left: -110px;
     }
-    .header-slider__mail-title{
-        margin-top: 0;
-        font-size: 33px;
+
+    .header-slider{
+        &__mail-title{
+            margin-top: 0;
+            font-size: 33px;
+        }
+
+        &__assistant-subtitle {
+            margin-bottom: 7px;
+        }
+
+        &__content {
+            padding-top: 40px;
+        }
     }
+
     .slider-header-btn {
         top: 63%;
     }
     .header-slider {
-        background-position: 63%, 40%;
+        background-position: 68%, 40%;
     }
 
     .header-slider__nav {
@@ -1503,9 +1551,8 @@
         &:before {
             width: 33%;
         }
-
-
     }
+
     .form-title, 
     .telephones__link {
         font-size: 14px;
