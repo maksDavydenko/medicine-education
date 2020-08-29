@@ -59,7 +59,11 @@
     max-width: 88px;
   }
   .universe-item__title {
-    font-size: 15px;
+    font-size: 14px;
+  }
+  .forms-wrap,
+  .comment-form {
+    max-width: 304px;
   }
 }
 @media screen and (max-width: 997px) {

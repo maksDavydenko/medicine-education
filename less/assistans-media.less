@@ -70,18 +70,22 @@
     }
 
 
-    .universe-item {
-       
-        // flex-basis: 100px;
+    .universe-item {       
         max-width: 88px;
     
         &__title {        
-            font-size: 15px; 
-          
+            font-size: 14px; 
         }
-    
-       
     }
+    .forms-wrap,
+    .comment-form {
+        max-width: 304px;
+    }
+  
+}
+
+@media screen and (max-width: 997px) {
+
 }
 
 @media screen and (max-width: 997px){
@@ -123,12 +127,8 @@
         }
     
         &__list{
-            // width: 100%;
-            // margin: 5px 0;
-            // position: relative;
-            // justify-content: space-between;
-            // position: relative;
             flex-direction: column;
+
             &::before{
                 content: "";
                 position: absolute;
