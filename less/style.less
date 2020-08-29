@@ -52,6 +52,17 @@ a{
     &--sticky {
         background: #FFFFFF;
         box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+        padding: 12px 0px 22px;
+        .logo--header {
+            img {
+                width: 186.17px;
+                height: 43.27px;
+            }
+        }
+
+        .header__nav-sticky {
+            display: flex;
+        }
     }
 
     &-wrap{
@@ -82,6 +93,27 @@ a{
         color: #343434;
         transition: 0.3s;
     }
+
+    &__nav {
+        &-sticky {
+            display: none;
+            justify-content: flex-end;
+            margin-bottom: 15px;
+            .navigation-item__link {
+                 color:#0031C4;
+                 font-weight: bold;
+                    font-size: 13px;
+            }
+            .navigation-item__icon {
+                background-color: #fff;
+            } 
+
+            .navigation-item--header--sticky{
+                margin-left: 53px;
+            }
+        }
+    }
+
 }
 
 .header__item {
@@ -286,7 +318,7 @@ a{
     display: none;
     position: absolute;
     z-index: 3;
-    bottom: -22px;
+    bottom: -36px;
     right: -56px;
     padding: 8px 23px;
     font-size: 17px;

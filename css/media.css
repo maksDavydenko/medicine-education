@@ -243,6 +243,9 @@
   .header__nav {
     display: none;
   }
+  .header--sticky {
+    padding: 5px 0;
+  }
   .universities .dots-decorate-red {
     width: 66.28px;
     height: 51.55px;
