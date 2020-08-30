@@ -194,74 +194,99 @@
 }
 
 @media screen and (max-width: 800px){
-
     .header-slider {
         background-position: 41%, 40%;
     }
-    // .check-universe {
-    //     margin-bottom: 40px;
-    //     &__wrap {
-    //         // display: flex;
-    //         // width: 65%;
-    //         flex-direction: column;
-    //     }
-    
-    //     &__buttons {
-    //         display: flex;
-    //         margin-right: 20px;
-    //     }
-    
-    //     &__btn {
-    //         margin: 9px 0;
-    //         padding: 6px 16px;
-    //         width: 146px;
-    //         text-transform: uppercase;
-    //         color: #fff;
-    //         background: linear-gradient(188.21deg, #0066FF -8.5%, #00369C 51.46%, #0031C4 130.73%, #018FF6 130.74%);
-    //         box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-    //         border-radius: 18.5px;
-    //         font-size: 20px;
-    //         text-align: center;
-    
-    //         &--active{
-    //             background: linear-gradient(207.28deg, #FF0000 9.11%, #CE0000 98.12%);
-    //             position: relative;
-    //         }
-    //     }
-    
-    //     &__list{
-    //         flex-direction: column;
+}
 
-    //         &::before{
-    //             content: "";
-    //             position: absolute;
-    //             left: 50%;
-    //             top: 50%;
-    //             transform: translate(-60%, 0);
-    //             height: 3px;
-    //             background: linear-gradient(188.21deg, #0066FF -8.5%, #00369C 51.46%, #0031C4 130.73%, #018FF6 130.74%);
-    //             width: 100%;
-    //             z-index: -1;
-    //         }
+// mobile marcup
+@media screen and (max-width: 760px){
+
+    .about,
+    .check-universe__wrap {
+        width: 100%;
+    }
+
+    .check-universe__wrap, 
+    .universe-items {
+        flex-direction: column;
+    }
+
+    .check-universe{
+        &__buttons{
+            margin-right: 0;
+            width: 72%;
+            margin-bottom: 27px;
+        }
+        &__btn {
+            width: 100%;
+            max-width: 100%;
+        }
+        &__list {
+            &::before {
+                width: 0;
+                height: 0;
+            }
+
+            &::after {
+                width: 0;
+                height: 0;
+            }
+        }
+
+        &__btn--active {
+            position: relative;
+            &::before {
+                left: -4px;
+                transform: translate(0, -50%);
+                top: 50%;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: linear-gradient(188.21deg, #0066FF -8.5%, #00369C 51.46%, #0031C4 130.73%, #018FF6 130.74%);
+                content: "";
+                position: absolute;
+            }
+            &::after {
+                transform: translate(0, -50%);
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: -4px;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: linear-gradient(188.21deg, #0066FF -8.5%, #00369C 51.46%, #0031C4 130.73%, #018FF6 130.74%);
+            }
+        }
+    }
+
+    .universe-items {
+        margin: 0 auto;
+    }
+    .universe-item {
+        padding: 15px 9px;
+        max-width: 72%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin-bottom: 14px;
+
+        &::before {
+            top: 50%;
+            left: 0;
+            transform: translate(-50%, -50%) rotate(-90deg);
+        }
+        
+        &::after {
+            top: 50%;
+            transform: translate(0, -50%) rotate(270deg);
+            left: 100%;
+        }
     
-    //         &::after {
-    //             content: "";
-    //             position: absolute;
-    //             width: 11px;
-    //             height: 11px;
-    //             border-radius: 50%;
-    //             left: -20px;
-    //             top: 50%;
-    //             transform: translate(-50%, -4px);
-    //             background: linear-gradient(188.21deg, #0066FF -8.5%, #00369C 51.46%, #0031C4 130.73%);
-    //         }
-    //     }
-    // }
-    // .universe-items{
-    //     flex-direction: column;
-    // }
-    // .universe-item {
-    //     margin: 0 auto;
-    //     max-width: 221px;
-    // }
+    }
+
+    .forms-wrap {
+        display: none;
+    }
 }
