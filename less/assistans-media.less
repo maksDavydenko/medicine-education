@@ -149,7 +149,7 @@
 
      .check-universe {
         &__btn {
-            margin: 4px 0;
+            margin: 7px 0;
             max-width: 103px;
             font-size: 13px;
         }
@@ -202,6 +202,31 @@
 // mobile marcup
 @media screen and (max-width: 760px){
 
+
+    .header-decorate {
+        
+        width: 491.76px;
+        height: 262.39px;
+        left: -64.38px;
+        top: -42px;
+        transform: none;
+        /* Linear */
+        
+        // background: linear-gradient(188.21deg, #0066FF -8.5%, #00369C 51.46%, #0031C4 130.73%, #018FF6 130.74%);
+        border-radius: 28px;
+        &__inner {
+            width: 515px;
+            height: 261px;
+            left: -76px;
+            top: -27.33px;
+            transform: none;
+            /* #0096EB */
+            
+            // background: rgba(0, 150, 235, 0.7);
+            border-radius: 28px;
+        }
+    }
+
     .about,
     .check-universe__wrap {
         width: 100%;
@@ -218,7 +243,7 @@
             width: 72%;
             margin-bottom: 27px;
         }
-        &__btn {
+        &__btn{
             width: 100%;
             max-width: 100%;
         }
@@ -286,6 +311,15 @@
     
     }
 
+    .comments-section{
+        &__comments{
+            margin-bottom: 30px;
+        }
+    }
+    .forms-wrap{
+        width: 100%;
+    }
+
     .comment-item{
         margin-bottom: 55px;
         &__text{
@@ -300,9 +334,8 @@
         }
     }
 
-  
-
-    .forms-wrap {
+    .quick-navigation,
+    .about-form {
         display: none;
     }
 }

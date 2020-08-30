@@ -126,7 +126,7 @@
     padding: 8px 28px;
   }
   .check-universe__btn {
-    margin: 4px 0;
+    margin: 7px 0;
     max-width: 103px;
     font-size: 13px;
   }
@@ -165,6 +165,24 @@
   }
 }
 @media screen and (max-width: 760px) {
+  .header-decorate {
+    width: 491.76px;
+    height: 262.39px;
+    left: -64.38px;
+    top: -42px;
+    transform: none;
+    /* Linear */
+    border-radius: 28px;
+  }
+  .header-decorate__inner {
+    width: 515px;
+    height: 261px;
+    left: -76px;
+    top: -27.33px;
+    transform: none;
+    /* #0096EB */
+    border-radius: 28px;
+  }
   .about,
   .check-universe__wrap {
     width: 100%;
@@ -236,6 +254,12 @@
     transform: translate(0, -50%) rotate(270deg);
     left: 100%;
   }
+  .comments-section__comments {
+    margin-bottom: 30px;
+  }
+  .forms-wrap {
+    width: 100%;
+  }
   .comment-item {
     margin-bottom: 55px;
   }
@@ -249,7 +273,8 @@
     height: 85.45px;
     bottom: -84px;
   }
-  .forms-wrap {
+  .quick-navigation,
+  .about-form {
     display: none;
   }
 }
