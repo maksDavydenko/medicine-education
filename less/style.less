@@ -1410,9 +1410,7 @@ summary {
     flex-basis: 155px;
     position: relative;
     background: #FFFFFF;
-  
- 
-    
+   
     &__wrap {
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     }
@@ -1427,11 +1425,13 @@ summary {
         position: absolute;
         z-index: 2;
         left: 50%;
-        top: 0;
+        top: -2px;
         transform: translate(-50%, 0);
         border: 55px solid transparent; border-top: 15px solid #fff;
     }
     &__header {
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
         position: relative;
         padding: 20px 0;
         font-family: Roboto;
