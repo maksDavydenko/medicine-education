@@ -236,6 +236,19 @@
     transform: translate(0, -50%) rotate(270deg);
     left: 100%;
   }
+  .comment-item {
+    margin-bottom: 55px;
+  }
+  .comment-item__text {
+    margin-bottom: 17px;
+  }
+  .comment-item__btn {
+    margin-right: auto;
+  }
+  .comment-item--question::before {
+    height: 85.45px;
+    bottom: -84px;
+  }
   .forms-wrap {
     display: none;
   }
