@@ -278,3 +278,12 @@
     display: none;
   }
 }
+@media screen and (max-width: 700px) {
+  .header-slider {
+    margin-bottom: 0;
+  }
+  .academic-header {
+    display: block;
+    margin-bottom: 20px;
+  }
+}

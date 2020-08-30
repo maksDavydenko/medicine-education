@@ -13,6 +13,9 @@
   height: 219px;
   top: -87px;
 }
+.academic-header {
+  display: none;
+}
 .header-decorate {
   position: absolute;
   width: 1240.78px;
