@@ -15,7 +15,7 @@ $(window).resize(function () {
     console.log(screenSize)
 })
 
-if (screenSize > 800) {
+if (screenSize > 700) {
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         var offsetAbout = $elementAbout.offset().top
