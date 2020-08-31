@@ -25,6 +25,7 @@ if (screenSize > 700) {
         if (scroll < offsetAbout + $('.quick-navigation').height()) {
             $('.about-form').css('position', 'static');
             $('.about-form').css('margin-top', '0');
+            // $('.about-form').css('width', '100%');
 
         }
 
@@ -40,6 +41,8 @@ if (screenSize > 700) {
         if (scroll > offsercheckUniverse - $('.about-form').height() - 300) {
             $('.about-form').css('position', 'static');
             $('.about-form').css('margin-top', 'auto');
+            // $('.about-form').css('width', '100%');
+
         }
 
         // comment-form
