@@ -1576,6 +1576,9 @@ summary {
   display: flex;
   margin-right: 20px;
 }
+textarea {
+  resize: none;
+}
 .quotes {
   padding: 0px 14px;
   background-color: #fff;
