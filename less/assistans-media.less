@@ -201,27 +201,59 @@
 
 // mobile marcup
 @media screen and (max-width: 760px){
+    .header-slider {
+        height: 307px;
+       &__mail-title {
+        font-size: 36px;
+    }
+    &__subtitle {
+        font-size: 12.5px;
+    }
+    &__block {
+        position: absolute;
+        top: -70%;
+        background-color: violet;
+        width: 60vw;
+    }
+}
 
+.header-decorate__inner {
+    width: 0;
+    height: 0;
+}
+
+.header-slider {
+    overflow: visible;
+}
+
+.header-slider-wrap {
+height: 235px;
+}
+
+.subtitle-wrap {
+    margin-bottom: 0;
+}
 
     .header-decorate {
-        left: -3%;
-        top: 80px;
-        height: 84px;
         width: 100vw;
-        border-bottom: 164px solid rgba(0, 150, 235, 0.7);
-        border-left: 52px solid transparent;
-        border-right: 50px solid transparent;
-        background: transparent;
-        border-radius: 28px;
-        transform: rotate(-180deg);
-
+        // height: 145px;
+        // width: 515px;
+height: 314.67px;
+        background: url('../img//icons/header-decorate-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: none;
         &__inner {
-         background: transparent;
-            transform: none;
-            /* #0096EB */
-            
-            // background: rgba(0, 150, 235, 0.7);
+            // left: 0;
+            // top: 80px;
+            // height: 84px;
+            // width: 100vw;
+            // border-bottom: 164px solid rgba(0, 150, 235, 0.7);
+            // border-left: 52px solid transparent;
+            // border-right: 50px solid transparent;
+            background: transparent;
             border-radius: 28px;
+            transform: none
         }
     }
     
@@ -361,5 +393,11 @@
     .academic-header {
         display: block;
         margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .header-slider {
+        background-position: 61%, 40%;
     }
 }
