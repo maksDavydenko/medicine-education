@@ -25,12 +25,15 @@ if (screenSize > 700) {
         if (scroll < offsetAbout + $('.quick-navigation').height()) {
             $('.about-form').css('position', 'static');
             $('.about-form').css('margin-top', '0');
+
         }
 
         if (scroll > offsetAbout + $('.quick-navigation').height()) {
-            $('.about-form').css('position', 'absolute');
-            $('.comment-form').css('transition', '0.01s');
-            $('.about-form').css('top', $(window).scrollTop() - $('.about-form').height() + 100);
+            $('.about-form').css('position', 'fixed');
+            // $('.comment-form').css('transition', '0.3s');
+            $('.about-form').css('top', 120);
+
+            // $('.about-form').css('top', $(window).scrollTop() - $('.about-form').height() + 100);
 
         }
 
@@ -49,11 +52,12 @@ if (screenSize > 700) {
         }
 
         if (scroll > offsercheckUniverse) {
-            $('.comment-form').css('position', 'absolute');
-            $('.comment-form').css('right', '0');
-            $('.comment-form').css('width', ' 33%');
-            $('.comment-form').css('transition', '0.01s');
-            $('.comment-form').css('top', $(window).scrollTop() - offsercheckUniverse - 50);
+            // $('.comment-form').css('position', 'absolute');
+            // $('.comment-form').css('right', '0');
+            $('.comment-form').css('width', $('.about-form').width());
+            $('.comment-form').css('position', 'fixed');
+            $('.comment-form').css('top', 120);
+            // $('.comment-form').css('top', $(window).scrollTop() - offsercheckUniverse - 50);
 
         }
 
