@@ -166,7 +166,7 @@
 }
 @media screen and (max-width: 760px) {
   .header-slider {
-    height: 470px;
+    height: 370px;
     overflow: visible;
     background-image: url('../img//photo/assistent-img-bg-mobile.png');
   }
@@ -182,7 +182,24 @@
   .header-slider__block {
     position: absolute;
     top: -23%;
-    width: 60vw;
+    width: 100%;
+    min-width: 100%;
+  }
+  .header-subtitle-decorate {
+    margin-left: 1px;
+  }
+  .dots-img {
+    display: none;
+  }
+  .dots-img-mobile {
+    display: block;
+    margin-right: 9px;
+  }
+  .decor-arrow {
+    display: block;
+    position: absolute;
+    top: 37px;
+    right: 58px;
   }
   .header-decorate {
     right: 0;
@@ -191,6 +208,9 @@
   .header-decorate__inner {
     width: 0;
     height: 0;
+  }
+  .header-slider__subtitle {
+    display: flex;
   }
   .subtitle-wrap {
     margin-bottom: 0;
@@ -216,8 +236,8 @@
     position: relative;
     display: block;
     width: 100%;
-    height: 172px;
-    top: 230%;
+    height: 189px;
+    top: 160%;
   }
   .about,
   .check-universe__wrap {
@@ -308,6 +328,11 @@
   .comment-item--question::before {
     height: 85.45px;
     bottom: -84px;
+  }
+  .btn--header-slider {
+    display: block;
+    margin: 16px auto;
+    width: 95px;
   }
   .quick-navigation,
   .about-form,
