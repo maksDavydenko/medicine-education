@@ -9,7 +9,7 @@ $(document).ready(function () {
         dots: true,
         appendDots: $('.js-slider-line-universities'),
         autoplay: true,
-        autoplaySpeed: 15000,
+        autoplaySpeed: 10000,
 
 
         responsive: [

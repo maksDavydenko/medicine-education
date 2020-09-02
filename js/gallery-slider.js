@@ -6,7 +6,7 @@ $(document).ready(function () {
         arrows: false,
         speed: 500,
         autoplay: true,
-        autoplaySpeed: 15000,
+        autoplaySpeed: 10000,
         dots: true,
         appendDots: $('.js-slider-line-gallery'),
         responsive: [
