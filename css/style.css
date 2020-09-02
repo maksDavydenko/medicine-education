@@ -1648,7 +1648,7 @@ textarea {
   height: 76.58px;
   border-radius: 30px;
   padding: 12px 90px 17px;
-  background: #0052d5;
+  background: linear-gradient(90deg, #014fcf -0.05%, #0152d4 100.05%);
 }
 .telephones {
   top: -18px;

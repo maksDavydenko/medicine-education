@@ -1,6 +1,8 @@
 .header-slider {
   background-image: url('../img//photo/assistent-img-bg.png');
   margin-bottom: 30px;
+  background-position: center 0;
+  background-size: auto;
 }
 .header-slider__mail-title {
   font-size: 71px;
@@ -106,7 +108,7 @@
   right: 5%;
 }
 .decor-text-blue {
-  color: #0066FF;
+  color: #00369C;
   font-weight: bold;
 }
 .paragraph {
@@ -308,6 +310,21 @@
   line-height: 133.3%;
   font-weight: bold;
   color: #0031C4;
+}
+.admission-form__link:hover {
+  color: #343434;
+  border-bottom: 2px solid #343434;
+}
+.admission-form__link::before {
+  content: url(../img/icons/menu-item-arr-decor.svg);
+  top: 50%;
+  transform: translate(-50%, -48%);
+  display: none;
+  position: absolute;
+  left: -12.5px;
+}
+.admission-form__link:hover:before {
+  display: block;
 }
 .comments-section {
   position: relative;

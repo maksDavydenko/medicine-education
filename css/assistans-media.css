@@ -50,10 +50,6 @@
   }
 }
 @media screen and (max-width: 1200px) {
-  .header-decorate {
-    right: 55%;
-    top: -156%;
-  }
   .header-slider__mail-title {
     font-size: 55px;
   }
@@ -62,6 +58,10 @@
   }
   .header-slider__block {
     margin-top: 80px;
+  }
+  .header-decorate {
+    right: 55%;
+    top: -156%;
   }
   .universe-item {
     max-width: 80px;
@@ -84,7 +84,7 @@
 }
 @media screen and (max-width: 997px) {
   .header-slider {
-    background-position: 52%, 40%;
+    background-position: 46%, 0;
   }
   .header-slider__mail-title {
     font-size: 51px;
@@ -161,7 +161,7 @@
 }
 @media screen and (max-width: 800px) {
   .header-slider {
-    background-position: 41%, 40%;
+    background-position: 41%, 0;
   }
 }
 @media screen and (max-width: 760px) {
@@ -169,6 +169,7 @@
     height: 370px;
     overflow: visible;
     background-image: url('../img//photo/assistent-img-bg-mobile.png');
+    background-size: cover;
   }
   .header-slider-wrap {
     height: 82px;
@@ -333,6 +334,8 @@
     display: block;
     margin: 16px auto;
     width: 95px;
+    padding: 7px 13px;
+    font-size: 12px;
   }
   .quick-navigation,
   .about-form,
