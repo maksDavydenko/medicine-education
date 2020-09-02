@@ -1191,6 +1191,7 @@ summary {
   background: #FFFFFF;
 }
 .step-block__wrap {
+  position: relative;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 .step-block__icon {
@@ -1200,17 +1201,17 @@ summary {
   position: relative;
 }
 .step-block .tringle-decorate {
+  top: 3px;
   position: absolute;
   z-index: 2;
   left: 50%;
-  top: -2px;
   transform: translate(-50%, 0);
   border: 55px solid transparent;
   border-top: 15px solid #fff;
 }
 .step-block__header {
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
   position: relative;
   padding: 20px 0;
   font-family: Roboto;

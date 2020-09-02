@@ -1336,6 +1336,7 @@ summary {
 }
 
 .steps-wrap{
+  
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
@@ -1418,6 +1419,7 @@ summary {
     background: #FFFFFF;
    
     &__wrap {
+        position: relative;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     }
     &__icon {
@@ -1428,16 +1430,16 @@ summary {
 
     }
     .tringle-decorate {
+        top: 3px;
         position: absolute;
         z-index: 2;
         left: 50%;
-        top: -2px;
         transform: translate(-50%, 0);
         border: 55px solid transparent; border-top: 15px solid #fff;
     }
     &__header {
-        border-top: 1px solid #fff;
-        border-bottom: 1px solid #fff;
+        border-top: 4px solid #fff;
+        border-bottom: 4px solid #fff;
         position: relative;
         padding: 20px 0;
         font-family: Roboto;
@@ -1449,7 +1451,6 @@ summary {
         color: #FFFFFF;
         background: linear-gradient(183.02deg, #0066FF -8.5%, #00369C 51.46%, #0031C4 130.73%, #018FF6 130.74%);
         overflow: hidden;
-        
 
         &::after {
            content: "";
