@@ -1064,6 +1064,15 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 650px) {
+  .connection-info--tablet-main,
+  .social-links-list {
+    display: none;
+  }
+  .social-links-list--mobile {
+    display: flex;
+  }
+}
 @media screen and (max-width: 570px) {
   .title-block__img {
     margin-bottom: 20px;
