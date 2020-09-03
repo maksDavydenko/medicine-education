@@ -55,8 +55,10 @@ a{
         padding: 12px 0px 22px;
         .logo--header {
             img {
-                width: 200px;
-                height: 47px;
+                width: 215px;
+                height: 50px;
+                top: 5px;
+                position: relative;
             }
         }
 
@@ -136,14 +138,14 @@ a{
          border: 17px solid transparent;
         //  border-bottom: 15px solid rgba(244, 244, 244, 0.9);
         //  border-left: 20px solid rgba(244, 244, 244, 0.9);
-        border-bottom: 15px solid #fff;
-        border-left: 20px solid #fff;
+        border-bottom: 15px solid #dbdbdb;
+        border-left: 20px solid #dbdbdb;
      }
 
     &__list{
         padding: 20px 20px 20px 30px;
-        background-color: rgba(255, 255, 255, 1);
-
+        // background-color: rgba(255, 255, 255, 1);
+        background: #dbdbdb;
         // background-color: rgba(244, 244, 244, 0.9);
         border-radius: 6px;
         border-top-left-radius: 0;
@@ -151,19 +153,12 @@ a{
 }
 .hover-items--stiky {
     opacity: 1 !important;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
     &::before {       
-        // border-bottom: 15px solid #fff;
-        // border-left: 20px solid #fff;
-
-        border-bottom: 15px solid rgba(244, 244, 244, 0.9);
-        border-left: 20px solid rgba(244, 244, 244, 0.9);
+        border-bottom: 15px solid rgba(255, 255, 255, 0.85);
+        border-left: 20px solid rgba(255, 255, 255, 0.85);
     }
     .hover-items__list {
-
-        // background-color: rgba(255, 255, 255, 1);
-        background-color: rgba(244, 244, 244, 0.9);
-
+        background-color: rgba(255, 255, 255, 0.85);
         opacity: 1 !important;
     }
 }
@@ -198,7 +193,6 @@ a{
             color:  #00369C;
         }
     }
-
 }
 
 .subitem:hover .subitem-link{
@@ -1349,7 +1343,7 @@ summary {
 }
 
 .admission-item {
-    margin-top: 36px;
+    margin-top: 27px;
     width: 65%;
     max-width: 730px;
 }
@@ -1430,12 +1424,13 @@ summary {
 
     }
     .tringle-decorate {
-        top: 3px;
+        top: -2px;
         position: absolute;
         z-index: 2;
         left: 50%;
         transform: translate(-50%, 0);
-        border: 55px solid transparent; border-top: 15px solid #fff;
+        border: 83px solid transparent;
+        border-top: 24px solid #fff;
     }
     &__header {
         border-top: 4px solid #fff;

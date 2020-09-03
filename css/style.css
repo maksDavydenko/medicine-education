@@ -44,8 +44,10 @@ a {
   padding: 12px 0px 22px;
 }
 .header--sticky .logo--header img {
-  width: 200px;
-  height: 47px;
+  width: 215px;
+  height: 50px;
+  top: 5px;
+  position: relative;
 }
 .header--sticky .header__nav-sticky {
   display: flex;
@@ -109,25 +111,24 @@ a {
   top: 0;
   left: 0;
   border: 17px solid transparent;
-  border-bottom: 15px solid #fff;
-  border-left: 20px solid #fff;
+  border-bottom: 15px solid #dbdbdb;
+  border-left: 20px solid #dbdbdb;
 }
 .hover-items__list {
   padding: 20px 20px 20px 30px;
-  background-color: #ffffff;
+  background: #dbdbdb;
   border-radius: 6px;
   border-top-left-radius: 0;
 }
 .hover-items--stiky {
   opacity: 1 !important;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
 }
 .hover-items--stiky::before {
-  border-bottom: 15px solid rgba(244, 244, 244, 0.9);
-  border-left: 20px solid rgba(244, 244, 244, 0.9);
+  border-bottom: 15px solid rgba(255, 255, 255, 0.85);
+  border-left: 20px solid rgba(255, 255, 255, 0.85);
 }
 .hover-items--stiky .hover-items__list {
-  background-color: rgba(244, 244, 244, 0.9);
+  background-color: rgba(255, 255, 255, 0.85);
   opacity: 1 !important;
 }
 .header__item:hover > .hover-items {
@@ -1130,7 +1131,7 @@ summary {
   justify-content: space-between;
 }
 .admission-item {
-  margin-top: 36px;
+  margin-top: 27px;
   width: 65%;
   max-width: 730px;
 }
@@ -1201,13 +1202,13 @@ summary {
   position: relative;
 }
 .step-block .tringle-decorate {
-  top: 3px;
+  top: -2px;
   position: absolute;
   z-index: 2;
   left: 50%;
   transform: translate(-50%, 0);
-  border: 55px solid transparent;
-  border-top: 15px solid #fff;
+  border: 83px solid transparent;
+  border-top: 24px solid #fff;
 }
 .step-block__header {
   border-top: 4px solid #fff;
