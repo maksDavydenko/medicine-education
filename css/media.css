@@ -639,7 +639,7 @@
     display: block;
   }
   .connection-info__btn {
-    padding: 7px;
+    padding: 7px 15px;
     bottom: -31px;
     right: 10px;
   }
@@ -943,7 +943,7 @@
     display: none;
   }
   .universities {
-    margin: 0px 0 40px;
+    margin: 0;
     padding-top: 30px;
   }
   .universities::before {
@@ -1290,6 +1290,11 @@
   }
   .feedback-slider__list {
     margin-right: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .connection-info__btn {
+    padding: 7px;
   }
 }
 @media screen and (max-width: 351px) {
