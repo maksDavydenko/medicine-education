@@ -42,39 +42,22 @@ $(document).ready(function () {
 //suctom buttons
 let curSlide = 1;
 $('.js-header-slide-prev').on('click', function () {
-
     renderSlidePrev();
     $('.header-assistent-slider').slick('slickGoTo', curSlide * 3 - 2, false);
-
-
 });
 
 $('.js-header-slide-prev-mobile').on('click', function () {
-    // curSlide--;
-    // curSlide = curSlide < 1 ? 6 : curSlide;
-    // setTimeout(renderSlide, 0)
     renderSlidePrev();
     $('.header-assistent-slider').slick('slickGoTo', curSlide * 3 - 2, false);
-
 });
-
 
 $('.js-header-slide-next').on('click', function () {
     $('.header-assistent-slider').slick('slickNext');
-    // curSlide++;
-    // curSlide = curSlide > 6 ? 1 : curSlide;
-    // changeSlide();
-    // changeContent();
-    // setTimeout(renderSlide, 0)
     renderSlideNext();
     $('.header-assistent-slider').slick('slickGoTo', curSlide * 3 - 2, false);
 });
 
 $('.js-header-slide-next-mobile').on('click', function () {
-    // curSlide++;
-    // curSlide = curSlide > 6 ? 1 : curSlide;
-    // setTimeout(renderSlide, 0)
-    // renderSlideNext
     renderSlideNext();
     $('.header-assistent-slider').slick('slickGoTo', curSlide * 3 - 2, false);
 });
@@ -133,7 +116,6 @@ changeSlide();
 //auto play
 
 let pauseAutoPlay = false;
-// header-slider__nav
 setInterval(autoPlay, 4000);
 
 function autoPlay() {
@@ -156,8 +138,6 @@ sliderList.addEventListener('click', e => {
     changeSlide();
     changeContent();
 })
-
-
 
 headerAssistentSlider.addEventListener('mouseover', () => {
     pauseAutoPlay = true;
