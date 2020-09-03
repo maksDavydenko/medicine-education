@@ -522,6 +522,11 @@ summary {
     cursor: pointer;
 }
 
+details[open] {
+    .summary-arrow {
+        transform: rotate(180deg);
+    }
+}
 .adaptive-menu {
    position: absolute;
    padding: 10px 35px;

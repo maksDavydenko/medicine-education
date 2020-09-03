@@ -255,6 +255,7 @@
   .header--sticky .logo img {
     width: 175px;
     height: 38px;
+    position: static;
   }
   .universities .dots-decorate-red {
     width: 66.28px;
@@ -372,8 +373,11 @@
   .admission-form__header {
     font-size: 23px;
   }
+  .footer-form {
+    padding-bottom: 30px;
+  }
   .footer-form__btn {
-    margin: 20px auto 0;
+    margin: 30px auto 0;
   }
 }
 @media screen and (max-width: 997px) {
@@ -561,7 +565,7 @@
     margin: 15px auto;
   }
   .footer-form__btn {
-    margin: 0 auto;
+    margin: 15px auto 0;
   }
   .footer-items {
     margin: 0 -20px 0 -20px;
@@ -940,7 +944,7 @@
   }
   .universities {
     margin: 0px 0 40px;
-    padding-top: 20px;
+    padding-top: 30px;
   }
   .universities::before {
     content: "";
@@ -1061,6 +1065,9 @@
   }
 }
 @media screen and (max-width: 570px) {
+  .title-block__img {
+    margin-bottom: 20px;
+  }
   .container {
     width: 100%;
     padding: 0 20px;
@@ -1176,16 +1183,21 @@
   }
   .academic-header {
     padding: 14px 0;
+    margin-bottom: 20px;
   }
   .academic-header__icon {
-    width: 40px;
+    width: 36px;
   }
   .academic-header__title {
-    font-size: 25px;
+    font-size: 28px;
+    margin-right: 0;
+  }
+  .academic-header__content {
+    justify-content: space-between;
   }
   .academic__years {
     font-size: 11px;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
   }
   .academic__title {
     font-size: 14px;

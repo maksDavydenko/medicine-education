@@ -317,6 +317,7 @@
             font-size: 68px;
         }
     }
+
     .header {
         padding: 5px 0 10px;
         &__nav {
@@ -330,6 +331,7 @@
                  img {
                 width: 175px;
                 height: 38px;
+                position: static;
             }
             }
         }
@@ -447,6 +449,7 @@
             display: none;
         }
     }
+    
     .header-assistent-slider {
         left: 14%;
     }
@@ -491,9 +494,10 @@
         }
     }
     .footer-form {
+        padding-bottom: 30px;
 
         &__btn {
-            margin: 20px auto 0;
+            margin: 30px auto 0;
         }
     }
 }
@@ -732,7 +736,7 @@
         }
 
         &__btn {
-            margin: 0 auto;
+            margin: 15px auto 0;
         }
     }
     .footer-items {
@@ -1227,7 +1231,7 @@
     }
     .universities{
         margin: 0px 0 40px;
-        padding-top: 20px;
+        padding-top: 30px;
         &::before {
             content: "";
             position: absolute;
@@ -1378,6 +1382,13 @@
 
 @media screen and (max-width: 570px){
 
+
+    .title-block {
+        &__img {
+            margin-bottom: 20px;
+        }
+    }
+
     .container {
         width: 100%;
         padding: 0 20px;
@@ -1512,20 +1523,25 @@
 
     .academic-header {
         padding: 14px 0;
+        margin-bottom: 20px;
 
         &__icon {
-            width: 40px;
+            width: 36px;
         }
        
         &__title {
-            font-size: 25px;
+            font-size: 28px;
+            margin-right: 0;
+        }
+        &__content {
+            justify-content: space-between;
         }
     }
 
     .academic {
         &__years {
             font-size: 11px;
-            border: 2px solid #fff;
+            border: 1px solid #fff;
         }
         &__title {
             font-size: 14px;
