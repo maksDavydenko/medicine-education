@@ -10,30 +10,6 @@ $(document).ready(function () {
         autoplay: true,
 
         appendDots: $('.feedback-slider__list'),
-
-
-        // responsive: [
-        //     {
-        //         breakpoint: 1560,
-        //         settings: {
-        //             slidesToShow: 1
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 1024,
-        //         settings: {
-        //             centerPadding: '40px',
-        //             slidesToShow: 3
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 480,
-        //         settings: {
-        //             centerPadding: '40px',
-        //             slidesToShow: 1
-        //         }
-        //     }
-        // ]
     });
 });
 

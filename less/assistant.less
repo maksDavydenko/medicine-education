@@ -363,24 +363,23 @@
         line-height: 133.3%;
         font-weight: bold;
         color:#0031C4;
-        &:hover {
-            left: 18px;
-            color: #343434;
-            border-bottom: 2px solid #343434;
-        }
-        &::before {
-            content: url(../img/icons/menu-item-arr-decor.svg);
-            top: 0;
-            display: none;
-            position: absolute;
-            left: -18px;
-        }
+        // &:hover {
+           
+        // }
+       
      }
  }
- .admission-form__link:hover:before {
-    display: block;
+ 
+ .admission-form__item:hover::before {
+    content:  url('../img/icons/hoverFormItem.svg');
  }
 
+ .admission-form__item:hover {
+    .admission-form__link {
+        color: #343434;
+        border-bottom: 2px solid #343434;
+    }
+ }
  .comments-section {
      position: relative;
      margin-bottom: 50px;

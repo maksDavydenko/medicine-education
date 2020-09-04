@@ -1912,6 +1912,7 @@ textarea {
     }
 
     &__line {
+        margin: 10px 0;
         border: none;
         outline: none;
         width: 107px;
@@ -1936,7 +1937,6 @@ textarea {
     
     &__title {
         font-size: 22px;
-        margin-bottom: 15px;
     }
 
     &__subtitle {
@@ -2127,12 +2127,15 @@ textarea {
             background-color: #fff;
         }
     }
+
+    &__list-item {
+        position: relative;
+        margin-bottom: 24px;
+    }
     &__subtitle {
         position: relative;
         font-size: 19px;
-        margin-bottom: 24px;
         color: #fff;
-        display: block;
         &::before {
             content: "";
             position: absolute;
@@ -2140,6 +2143,9 @@ textarea {
             width: 34px;
             height: 2px;
             background-color: #fff;
+        }
+        &--item {
+            margin-bottom: 14px;
         }
         &--last {
             margin-top: 11px;
@@ -2153,7 +2159,13 @@ textarea {
     }
 }
 
-
+.footer-item__hover-link:hover {
+    padding-bottom: 8px;
+    border-bottom: 2px solid #fff;
+    &::before {
+        display: none;
+    }
+}
 // copiright
 
 .copiright {

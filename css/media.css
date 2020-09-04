@@ -705,8 +705,11 @@
   }
 }
 @media screen and (max-width: 720px) {
-  section {
-    background-image: none;
+  .universities,
+  .courses,
+  .benefits,
+  .gallery,
+  .feedback {
     background: none;
   }
   .universities__slider .slider-item {
@@ -800,7 +803,7 @@
     flex-wrap: wrap;
   }
   .feedback-item__headers {
-    flex-basis: 47%;
+    flex-basis: 51%;
   }
   .feedback-item__info {
     display: flex;
@@ -1009,7 +1012,7 @@
     display: flex;
     left: 50%;
     transform: translate(-50%, 0);
-    bottom: 66px;
+    bottom: 69px;
   }
   .btn-wrap--courses {
     margin: auto;
@@ -1019,7 +1022,10 @@
     display: flex;
     left: 50%;
     transform: translate(-50%, 0);
-    bottom: 66px;
+    bottom: 69px;
+  }
+  .slider-item__btn {
+    padding: 9px 22px;
   }
   .benefits-items {
     display: flex;
@@ -1243,7 +1249,7 @@
     margin-bottom: 15px;
   }
   .feedback-item__text {
-    font-size: 12px;
+    font-size: 11px;
   }
   .form-title,
   .telephones__link {
@@ -1287,6 +1293,9 @@
   .feedback-slider-mobile {
     display: block;
   }
+  .feedback-item__line {
+    margin: 5px 0;
+  }
   .feedback-slider {
     border: 3px solid #0031C4;
   }
@@ -1304,7 +1313,8 @@
 }
 @media screen and (max-width: 400px) {
   .connection-info__btn {
-    padding: 7px;
+    padding: 7px 16px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 351px) {

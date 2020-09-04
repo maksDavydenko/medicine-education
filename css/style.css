@@ -1615,6 +1615,7 @@ textarea {
   flex-wrap: wrap;
 }
 .feedback-item__line {
+  margin: 10px 0;
   border: none;
   outline: none;
   width: 107px;
@@ -1637,7 +1638,6 @@ textarea {
 }
 .feedback-item__title {
   font-size: 22px;
-  margin-bottom: 15px;
 }
 .feedback-item__subtitle {
   font-size: 12px;
@@ -1797,12 +1797,14 @@ textarea {
   height: 2px;
   background-color: #fff;
 }
+.footer-item__list-item {
+  position: relative;
+  margin-bottom: 24px;
+}
 .footer-item__subtitle {
   position: relative;
   font-size: 19px;
-  margin-bottom: 24px;
   color: #fff;
-  display: block;
 }
 .footer-item__subtitle::before {
   content: "";
@@ -1812,6 +1814,9 @@ textarea {
   height: 2px;
   background-color: #fff;
 }
+.footer-item__subtitle--item {
+  margin-bottom: 14px;
+}
 .footer-item__subtitle--last {
   margin-top: 11px;
 }
@@ -1819,6 +1824,13 @@ textarea {
   font-size: 12px;
   color: #FFFFFF;
   margin-bottom: 8px;
+}
+.footer-item__hover-link:hover {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #fff;
+}
+.footer-item__hover-link:hover::before {
+  display: none;
 }
 .copiright {
   padding: 20px 0;
