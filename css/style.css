@@ -21,6 +21,12 @@ button {
   outline: none;
   border: none;
 }
+input[type="submit"] {
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
 .container {
   max-width: 1080px;
   width: 90%;
