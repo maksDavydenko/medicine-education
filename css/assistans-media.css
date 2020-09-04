@@ -217,6 +217,8 @@
     height: 0;
   }
   .header-slider__subtitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .subtitle-wrap {
@@ -230,14 +232,16 @@
     background: none;
     background-repeat: no-repeat;
     background-size: cover;
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
   }
   .header-decorate__inner {
     width: 0;
     height: 0;
     background: transparent;
     border-radius: 28px;
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
   }
   .header-decorate img {
     position: relative;
@@ -252,7 +256,10 @@
   }
   .check-universe__wrap,
   .universe-items {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .check-universe__buttons {
     margin-right: 0;
@@ -276,7 +283,8 @@
   }
   .check-universe__btn--active::before {
     left: -4px;
-    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
     top: 50%;
     width: 8px;
     height: 8px;
@@ -286,7 +294,8 @@
     position: absolute;
   }
   .check-universe__btn--active::after {
-    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
     content: "";
     position: absolute;
     top: 50%;
@@ -304,17 +313,20 @@
     max-width: 72%;
     position: relative;
     left: 50%;
-    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
     margin-bottom: 14px;
   }
   .universe-item::before {
     top: 50%;
     left: 0;
-    transform: translate(-50%, -50%) rotate(-90deg);
+    -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+            transform: translate(-50%, -50%) rotate(-90deg);
   }
   .universe-item::after {
     top: 50%;
-    transform: translate(0, -50%) rotate(270deg);
+    -webkit-transform: translate(0, -50%) rotate(270deg);
+            transform: translate(0, -50%) rotate(270deg);
     left: 100%;
   }
   .comments-section__comments {
@@ -338,6 +350,8 @@
   }
   .btn--header-slider {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 16px auto;
     width: 95px;
