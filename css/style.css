@@ -1199,6 +1199,8 @@ details[open] .summary-arrow {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 .step-block__icon {
+  width: 107px;
+  height: 107px;
   display: block;
   justify-content: center;
   margin: 0 auto 10px;
@@ -1652,7 +1654,7 @@ textarea {
   width: 479.5px;
   height: 76.58px;
   border-radius: 30px;
-  background: linear-gradient(90deg, #014cc7 0%, #0148bf 100%);
+  background: linear-gradient(90deg, #0157de 0%, #1b2db3 100%);
 }
 .telephones {
   top: -18px;
