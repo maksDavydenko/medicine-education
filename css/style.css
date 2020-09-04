@@ -1639,7 +1639,7 @@ textarea {
   color: #6F6F6F;
 }
 .footer {
-  background: linear-gradient(177.39deg, #0066ff -13.52%, #00318e 32.41%);
+  background: linear-gradient(170.81deg, #0066ff -13.52%, #00318e 32.41%);
   position: relative;
 }
 .footer::before {
@@ -1652,8 +1652,7 @@ textarea {
   width: 479.5px;
   height: 76.58px;
   border-radius: 30px;
-  padding: 12px 90px 17px;
-  background: linear-gradient(90deg, #014fcf -0.05%, #0152d4 100.05%);
+  background: linear-gradient(90deg, #014cc7 0%, #0148bf 100%);
 }
 .telephones {
   top: -18px;

@@ -37,20 +37,16 @@ menu.addEventListener('click', () => {
         headerSlider.style.marginTop = '0';
         window.scrollTo(0, 0);
         menuOpen = true;
-        let $element = $('.about-section');
+        let $element = $('.adaptive-menu');
 
         $(window).scroll(function () {
             let scroll = $(window).scrollTop() + $(window).height();
-            let offset = $element.offset().top
-
-            // if (scroll > offset) {
-
-            // }
+            let offset = $element.height();
             scrollEvent(scroll > offset)
         });
         function scrollEvent(scrollEvent) {
             if (scrollEvent && menuOpen) {
-                $('body').css('height', `${$element.offset().top}px`);
+                $('body').css('height', `${$element.height()}px`);
                 $('body').css('overflow', 'hidden');
             }
         }
