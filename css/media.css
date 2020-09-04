@@ -1211,6 +1211,8 @@
   .container {
     width: 100%;
     padding: 0 20px;
+    padding-right: env(safe-area-inset-right, 20px);
+    padding-left: env(safe-area-inset-left, 20px);
   }
   .header--sticky .logo--header img {
     height: 25px;
