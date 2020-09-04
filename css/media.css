@@ -1444,7 +1444,7 @@
         flex-basis: 230px;
   }
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (max-width: 570px) and (-webkit-min-device-pixel-ratio: 2) {
   .container {
     padding-right: env(safe-area-inset-right);
     padding-left: env(safe-area-inset-left);
