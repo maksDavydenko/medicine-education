@@ -824,6 +824,7 @@
     grid-area: title;
     font-size: 14px;
     color: #6F6F6F;
+    text-align: justify;
   }
   .btn--slider-link {
     width: 175px;

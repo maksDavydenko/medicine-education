@@ -1,3 +1,9 @@
+@media screen and (max-width: 1600px) {
+    .header-slider__mail-title {
+        margin-top: 50px;
+    }
+}
+
 @media screen and (max-width: 1570px) {
     .rectangle-decorate-block {
         top: -156px;
@@ -225,6 +231,7 @@
         }
        &__mail-title {
         font-size: 36px;
+        margin-top: 0;
     }
     &__subtitle {
         font-size: 12.5px;
@@ -412,11 +419,13 @@
     }
 
     .btn--header-slider {
-        display: block;
+        position: relative;
+        display: flex;
         margin: 16px auto;
         width: 95px;
         padding: 7px 13px;
-    font-size: 12px;
+        font-size: 12px;
+        left: -18px;
     }
     .quick-navigation,
     .about-form,

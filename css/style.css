@@ -795,7 +795,7 @@ details[open] .summary-arrow {
 .header-assistent-slider {
   position: absolute;
   top: -128px;
-  left: 25%;
+  left: 26%;
   max-width: 835px;
   display: flex;
   z-index: 2;
@@ -1614,6 +1614,14 @@ textarea {
   display: flex;
   flex-wrap: wrap;
 }
+.feedback-item__line {
+  border: none;
+  outline: none;
+  width: 107px;
+  height: 2px;
+  background: linear-gradient(207.28deg, #ff0000 9.11%, #ce0000 98.12%);
+  border-radius: 18.5px;
+}
 .feedback-item__img {
   grid-area: img;
 }
@@ -1639,6 +1647,7 @@ textarea {
   grid-area: title;
   font-size: 14px;
   color: #6F6F6F;
+  text-align: justify;
 }
 .footer {
   background: linear-gradient(162.73deg, #0042a5 6.44%, #01498b 45.77%, #002365 75.36%);
@@ -1774,7 +1783,6 @@ textarea {
 }
 .footer-item__text {
   font-size: 14px;
-  text-align: justify;
 }
 .footer-item__title {
   position: relative;

@@ -944,12 +944,10 @@ details[open] {
 .header-assistent-slider {
     position: absolute;
     top: -128px;
-    left: 25%;
+    left: 26%;
     max-width: 835px;
-    // margin: 0 auto;
     display: flex;
     z-index: 2;
-    // transform: translate(-25%, 0);
     .slick-list {
         padding: 13px 0 5px;
     }
@@ -1912,10 +1910,17 @@ textarea {
        display: flex;
        flex-wrap: wrap;
     }
+
+    &__line {
+        border: none;
+        outline: none;
+        width: 107px;
+        height: 2px;
+        background: linear-gradient(207.28deg, #FF0000 9.11%, #CE0000 98.12%);
+        border-radius: 18.5px;
+    }
     &__img {
         grid-area: img;
-        // min-width: 100px;
-
         img {
             position: relative;
             bottom: 40px;
@@ -1944,6 +1949,7 @@ textarea {
         grid-area: title;
         font-size: 14px;
         color: #6F6F6F;
+        text-align: justify;
     }
 
 }
@@ -2106,9 +2112,7 @@ textarea {
     margin: 20px;
 
     &__text {
-        font-size: 14px;
-        text-align: justify;
-       
+        font-size: 14px;   
     }
     &__title {
         position: relative;
