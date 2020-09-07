@@ -16,6 +16,7 @@ document.addEventListener('click', (e) => {
         headerSlider.style.marginTop = '52px';
         $('body').css('height', 'auto');
         $('body').css('overflow', 'auto');
+        $('body').css('overflow-x', 'hidden');
         menuOpen = false;
     }
 })
@@ -29,6 +30,7 @@ menu.addEventListener('click', () => {
         headerSlider.style.marginTop = '52px';
         $('body').css('height', 'auto');
         $('body').css('overflow', 'auto');
+        $('body').css('overflow-x', 'hidden');
         menuOpen = false
 
     } else {
@@ -39,11 +41,14 @@ menu.addEventListener('click', () => {
         menuOpen = true;
         let $element = $('.adaptive-menu');
 
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop() + $(window).height();
-            let offset = $element.height();
-            scrollEvent(scroll > offset)
-        });
+        if ($element.height() > $(window).height()) {
+            $(window).scroll(function () {
+                let scroll = $(window).scrollTop() + $(window).height();
+                let offset = $element.height();
+                scrollEvent(scroll > offset)
+            });
+        }
+
         function scrollEvent(scrollEvent) {
             if (scrollEvent && menuOpen) {
                 $('body').css('height', `${$element.height()}px`);
